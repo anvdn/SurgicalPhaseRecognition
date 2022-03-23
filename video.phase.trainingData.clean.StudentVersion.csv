@@ -1,0 +1,2026 @@
+videoName,PhaseName,Start,End
+RALIHR_surgeon01_fps01_0001,Access,---,---
+RALIHR_surgeon01_fps01_0001,Stationary Idle1,00:00,00:16
+RALIHR_surgeon01_fps01_0001,Transitionary Idle1,00:16,00:35
+RALIHR_surgeon01_fps01_0001,Out of body,00:35,01:05
+RALIHR_surgeon01_fps01_0001,Transitionary Idle2,01:05,01:59
+RALIHR_surgeon01_fps01_0001,Peritoneal Scoring,01:59,02:55
+RALIHR_surgeon01_fps01_0001,Preperioneal dissection,02:55,06:43
+RALIHR_surgeon01_fps01_0001,Reduction of hernia,06:43,15:58
+RALIHR_surgeon01_fps01_0001,Transitionary Idle3,15:58,16:05
+RALIHR_surgeon01_fps01_0001,Stationary Idle2,16:05,17:24
+RALIHR_surgeon01_fps01_0001,Transitionary Idle4,17:24,18:20
+RALIHR_surgeon01_fps01_0001,Blurry,18:20,19:15
+RALIHR_surgeon01_fps01_0001,Out of body1,19:15,20:40
+RALIHR_surgeon01_fps01_0001,Positioning of suture1,20:40,21:03
+RALIHR_surgeon01_fps01_0001,Mesh placement,21:03,23:49
+RALIHR_surgeon01_fps01_0001,Transitionary Idle5,23:49,23:54
+RALIHR_surgeon01_fps01_0001,Acquiring Suture,23:54,24:07
+RALIHR_surgeon01_fps01_0001,Peritoneal closure1,24:07,24:14
+RALIHR_surgeon01_fps01_0001,Transitionary Idle6,24:14,24:21
+RALIHR_surgeon01_fps01_0001,Positioning of suture2,24:21,25:02
+RALIHR_surgeon01_fps01_0001,Transitionary Idle7,25:02,25:05
+RALIHR_surgeon01_fps01_0001,Peritoneal closure2,25:05,31:37
+RALIHR_surgeon01_fps01_0001,Transitionary Idle8,31:37,32:45
+RALIHR_surgeon01_fps01_0001,Out of body2,32:45,32:47
+RALIHR_surgeon01_fps01_0002,Access,---,---
+RALIHR_surgeon01_fps01_0002,Stationary Idle1,00:00,00:16
+RALIHR_surgeon01_fps01_0002,Transitionary Idle1,00:16,01:09
+RALIHR_surgeon01_fps01_0002,Peritoneal Scoring1,01:09,01:26
+RALIHR_surgeon01_fps01_0002,Preperitoneal dissection1,01:26,03:20
+RALIHR_surgeon01_fps01_0002,Reduction of Hernia1,03:20,11:46
+RALIHR_surgeon01_fps01_0002,Transitionary Idle2,11:46,12:02
+RALIHR_surgeon01_fps01_0002,Peritoneal Scoring2,12:02,12:13
+RALIHR_surgeon01_fps01_0002,Preperitoneal dissection2,12:13,16:20
+RALIHR_surgeon01_fps01_0002,Reduction of Hernia2,16:20,19:46
+RALIHR_surgeon01_fps01_0002,Transitionary Idle3,19:46,19:50
+RALIHR_surgeon01_fps01_0002,Out of Body1,19:50,19:54
+RALIHR_surgeon01_fps01_0002,Transitionary Idle4,19:54,20:15
+RALIHR_surgeon01_fps01_0002,Stationary Idle2,20:15,20:38
+RALIHR_surgeon01_fps01_0002,Transitionary Idle5,20:38,20:39
+RALIHR_surgeon01_fps01_0002,Stationary Idle3,20:39,23:21
+RALIHR_surgeon01_fps01_0002,Transitionary Idle6,23:21,23:43
+RALIHR_surgeon01_fps01_0002,Mesh positioning1,23:43,24:04
+RALIHR_surgeon01_fps01_0002,Transitionary Idle7,24:04,24:30
+RALIHR_surgeon01_fps01_0002,Mesh positioning2,24:30,25:05
+RALIHR_surgeon01_fps01_0002,Transitionary Idle8,25:05,25:15
+RALIHR_surgeon01_fps01_0002,Positioning suture2,25:15,27:38
+RALIHR_surgeon01_fps01_0002,Transitionary Idle9,27:38,27:53
+RALIHR_surgeon01_fps01_0002,Mesh placement1,27:53,37:15
+RALIHR_surgeon01_fps01_0002,Transitionary Idle10,37:15,37:19
+RALIHR_surgeon01_fps01_0002,Positioning Suture1,37:19,37:48
+RALIHR_surgeon01_fps01_0002,Direct hernia repair,37:48,40:15
+RALIHR_surgeon01_fps01_0002,Positioning Suture3,40:15,40:33
+RALIHR_surgeon01_fps01_0002,Transitionary Idle11,40:33,40:44
+RALIHR_surgeon01_fps01_0002,Mesh Placement2,40:44,41:34
+RALIHR_surgeon01_fps01_0002,Transitionary Idle12,41:34,42:32
+RALIHR_surgeon01_fps01_0002,Catheter insertion,42:32,43:14
+RALIHR_surgeon01_fps01_0002,Transitionary Idle13,43:14,43:19
+RALIHR_surgeon01_fps01_0002,Positioning Suture4,43:19,43:27
+RALIHR_surgeon01_fps01_0002,Peritoneal closure1,43:27,47:02
+RALIHR_surgeon01_fps01_0002,Positioning Suture5,47:02,47:38
+RALIHR_surgeon01_fps01_0002,Peritoneal closure2,47:38,51:19
+RALIHR_surgeon01_fps01_0002,Positioning suture6,51:19,52:37
+RALIHR_surgeon01_fps01_0002,Transitionary Idle14,52:37,53:07
+RALIHR_surgeon01_fps01_0002,Out of Body2,53:07,53:18
+RALIHR_surgeon01_fps01_0003,Access,---,---
+RALIHR_surgeon01_fps01_0003,Transitionary Idle1,00:00,00:04
+RALIHR_surgeon01_fps01_0003,Positioning suture1,00:04,00:46
+RALIHR_surgeon01_fps01_0003,Transitionary Idle2,00:46,00:55
+RALIHR_surgeon01_fps01_0003,Mesh positioning1,00:55,01:28
+RALIHR_surgeon01_fps01_0003,Peritoneal scoring1,01:28,02:20
+RALIHR_surgeon01_fps01_0003,Preperitoneal dissection1,02:20,04:42
+RALIHR_surgeon01_fps01_0003,Reduction of Hernia1,04:42,09:14
+RALIHR_surgeon01_fps01_0003,Transitionary idle3,09:14,09:20
+RALIHR_surgeon01_fps01_0003,Mesh placement1,09:20,09:47
+RALIHR_surgeon01_fps01_0003,Transitionary Idle4,09:47,10:01
+RALIHR_surgeon01_fps01_0003,Peritoneal scoring2,10:01,10:45
+RALIHR_surgeon01_fps01_0003,Preperitoneal dissection2,10:45,13:49
+RALIHR_surgeon01_fps01_0003,Reduction of Hernia2,13:49,16:12
+RALIHR_surgeon01_fps01_0003,Transitionary Idle5,16:12,16:15
+RALIHR_surgeon01_fps01_0003,Mesh placement2,16:15,20:20
+RALIHR_surgeon01_fps01_0003,Transitionary Idle6,20:20,20:26
+RALIHR_surgeon01_fps01_0003,Mesh placement3,20:26,23:16
+RALIHR_surgeon01_fps01_0003,Transitionary Idle7,23:16,23:27
+RALIHR_surgeon01_fps01_0003,Positioning suture2,23:27,23:39
+RALIHR_surgeon01_fps01_0003,Peritoneal closure1,23:39,23:59
+RALIHR_surgeon01_fps01_0003,Transitionary Idle8,23:59,24:18
+RALIHR_surgeon01_fps01_0003,Catheter insertion,24:18,25:03
+RALIHR_surgeon01_fps01_0003,Transitionary Idle9,25:03,25:28
+RALIHR_surgeon01_fps01_0003,Positioning suture,25:28,25:29
+RALIHR_surgeon01_fps01_0003,Peritoneal closure2,25:29,25:40
+RALIHR_surgeon01_fps01_0004,Mesh placement,00:00,01:14
+RALIHR_surgeon01_fps01_0004,Transitionary Idle1,01:14,01:24
+RALIHR_surgeon01_fps01_0004,Positioning suture1,01:24,01:32
+RALIHR_surgeon01_fps01_0004,Transitionary Idle2,01:32,01:40
+RALIHR_surgeon01_fps01_0004,Stationary Idle1,01:40,01:59
+RALIHR_surgeon01_fps01_0004,Transitionary Idle3,01:59,02:42
+RALIHR_surgeon01_fps01_0004,Catheter insertion,02:42,03:35
+RALIHR_surgeon01_fps01_0004,Transitionary Idle4,03:35,03:44
+RALIHR_surgeon01_fps01_0004,Positioning suture2,03:44,03:52
+RALIHR_surgeon01_fps01_0004,Peritoneal closure,03:52,08:43
+RALIHR_surgeon01_fps01_0004,Positioning suture3,08:43,09:39
+RALIHR_surgeon01_fps01_0004,Stationary Idle2,09:39,09:59
+RALIHR_surgeon01_fps01_0005,Transitionary Idle1,00:00,00:20
+RALIHR_surgeon01_fps01_0005,Peritoneal scoring1,00:20,01:09
+RALIHR_surgeon01_fps01_0005,Preperitoneal dissection1,01:09,04:37
+RALIHR_surgeon01_fps01_0005,Reduction of hernia1,04:37,09:04
+RALIHR_surgeon01_fps01_0005,Transitionary Idle2,09:04,09:18
+RALIHR_surgeon01_fps01_0005,Peritoneal scoring2,09:18,09:52
+RALIHR_surgeon01_fps01_0005,Preperitoneal dissection2,09:52,16:39
+RALIHR_surgeon01_fps01_0005,Reduction of hernia2,16:39,18:09
+RALIHR_surgeon01_fps01_0005,Transitionary Idle3,18:09,18:19
+RALIHR_surgeon01_fps01_0005,Reduction of hernia3,18:19,23:07
+RALIHR_surgeon01_fps01_0005,Transitionary Idle4,23:07,23:20
+RALIHR_surgeon01_fps01_0005,Mesh positioning1,23:20,23:48
+RALIHR_surgeon01_fps01_0005,Transitionary Idle5,23:48,23:57
+RALIHR_surgeon01_fps01_0005,Stationary Idle1,23:57,24:05
+RALIHR_surgeon01_fps01_0005,Transitionary Idle6,24:05,24:07
+RALIHR_surgeon01_fps01_0005,Stationary Idle2,24:07,24:39
+RALIHR_surgeon01_fps01_0005,Positioning Suture1,24:39,25:16
+RALIHR_surgeon01_fps01_0005,Transitionary Idle7,25:16,25:28
+RALIHR_surgeon01_fps01_0005,Stationary Idle3,25:28,26:05
+RALIHR_surgeon01_fps01_0005,Transitionary Idle8,26:05,26:14
+RALIHR_surgeon01_fps01_0005,Mesh placement1,26:14,29:00
+RALIHR_surgeon01_fps01_0005,Transitionary Idle9,29:00,29:13
+RALIHR_surgeon01_fps01_0005,Mesh placement2,29:13,32:45
+RALIHR_surgeon01_fps01_0005,Transitionary Idle10,32:45,33:22
+RALIHR_surgeon01_fps01_0005,Catheter Insertion,33:22,34:11
+RALIHR_surgeon01_fps01_0005,Transitionary Idle11,34:11,34:15
+RALIHR_surgeon01_fps01_0005,Positioning Suture2,34:15,34:22
+RALIHR_surgeon01_fps01_0005,Peritoneal closure1,34:22,37:45
+RALIHR_surgeon01_fps01_0005,Transitionary Idle12,37:45,37:52
+RALIHR_surgeon01_fps01_0005,Positioning Suture3,37:52,38:11
+RALIHR_surgeon01_fps01_0005,Peritoneal closure2,38:11,41:22
+RALIHR_surgeon01_fps01_0005,Transitionary Idle13,41:22,42:14
+RALIHR_surgeon01_fps01_0005,Peritoneal closure3,42:14,42:43
+RALIHR_surgeon01_fps01_0005,Positioning Suture4,42:43,42:47
+RALIHR_surgeon01_fps01_0005,Peritoneal closure4,42:47,44:32
+RALIHR_surgeon01_fps01_0005,Positioning Suture5,44:32,44:40
+RALIHR_surgeon01_fps01_0005,Transitionary Idle14,44:40,44:46
+RALIHR_surgeon01_fps01_0005,Peritoneal closure5,44:46,44:49
+RALIHR_surgeon01_fps01_0005,Positioning Suture6,44:49,45:27
+RALIHR_surgeon01_fps01_0005,Transitionary Idle15,45:27,45:31
+RALIHR_surgeon01_fps01_0005,Positioning Suture7,45:31,45:48
+RALIHR_surgeon01_fps01_0005,Mesh positioning2,45:48,46:54
+RALIHR_surgeon01_fps01_0005,Transitionary Idle16,46:54,47:13
+RALIHR_surgeon01_fps01_0006,Peritoneal closure1,00:00,00:23
+RALIHR_surgeon01_fps01_0006,Transitionary Idle1,00:23,00:57
+RALIHR_surgeon01_fps01_0006,Catheter insertion,00:57,01:38
+RALIHR_surgeon01_fps01_0006,Transitionary Idle2,01:38,01:47
+RALIHR_surgeon01_fps01_0006,Peritoneal closure2,01:47,04:01
+RALIHR_surgeon01_fps01_0006,Suture Positioning1,04:01,04:11
+RALIHR_surgeon01_fps01_0006,Peritoneal closure3,04:11,05:33
+RALIHR_surgeon01_fps01_0006,Suture Positioning2,05:33,06:07
+RALIHR_surgeon01_fps01_0006,Peritoneal closure4,06:07,09:26
+RALIHR_surgeon01_fps01_0006,Suture Positioning3,09:26,09:35
+RALIHR_surgeon01_fps01_0006,Peritoneal closure5,09:35,10:46
+RALIHR_surgeon01_fps01_0006,Suture Positioning4,10:46,12:00
+RALIHR_surgeon01_fps01_0006,Transitionary Idle3,12:00,12:06
+RALIHR_surgeon01_fps01_0006,Mesh positioning1,12:06,12:24
+RALIHR_surgeon01_fps01_0006,Transitionary Idle4,12:24,12:30
+RALIHR_surgeon01_fps01_0006,Mesh positioning2,12:30,12:46
+RALIHR_surgeon01_fps01_0006,Transitionary Idle5,12:46,12:57
+RALIHR_surgeon01_fps01_0006,Stationary Idle,12:57,13:20
+RALIHR_surgeon01_fps01_0007,Transitionary Idle1,00:00,00:42
+RALIHR_surgeon01_fps01_0007,Catheter Insertion,00:42,01:57
+RALIHR_surgeon01_fps01_0007,Transitionary Idle2,01:57,02:11
+RALIHR_surgeon01_fps01_0007,Suture positioning1,02:11,02:26
+RALIHR_surgeon01_fps01_0007,Peritoneal closure1,02:26,05:17
+RALIHR_surgeon01_fps01_0007,Suture positioining2,05:17,05:47
+RALIHR_surgeon01_fps01_0007,Peritoneal closure2,05:47,08:46
+RALIHR_surgeon01_fps01_0007,Suture positioining3,08:46,09:40
+RALIHR_surgeon01_fps01_0007,Transitionary Idle3,09:40,09:56
+RALIHR_surgeon01_fps01_0007,Stationary Idle,09:56,10:08
+RALIHR_surgeon01_fps01_0008,Stationary Idle1,00:00,00:17
+RALIHR_surgeon01_fps01_0008,Transitionary Idle1,00:17,00:30
+RALIHR_surgeon01_fps01_0008,Peritoneal scoring1,00:30,01:08
+RALIHR_surgeon01_fps01_0008,Preperitoneal dissection1,01:08,07:06
+RALIHR_surgeon01_fps01_0008,Reduction of Hernia1,07:06,09:23
+RALIHR_surgeon01_fps01_0008,Transitionary Idle2,09:23,09:38
+RALIHR_surgeon01_fps01_0008,Peritoneal scoring2,09:38,09:58
+RALIHR_surgeon01_fps01_0008,Preperitoneal dissection2,09:58,18:26
+RALIHR_surgeon01_fps01_0008,Reduction of Hernia2,18:26,20:50
+RALIHR_surgeon01_fps01_0008,Transitionary Idle3,20:50,21:01
+RALIHR_surgeon01_fps01_0008,Reduction of hernia3,21:01,23:00
+RALIHR_surgeon01_fps01_0008,Transitionary Idle4,23:00,23:18
+RALIHR_surgeon01_fps01_0008,Reduction of hernia4,23:18,25:32
+RALIHR_surgeon01_fps01_0008,Stationary Idle2,25:32,25:54
+RALIHR_surgeon01_fps01_0008,Transitionary Idle5,25:54,25:58
+RALIHR_surgeon01_fps01_0008,Stationary Idle3,25:58,26:30
+RALIHR_surgeon01_fps01_0008,Transitionary Idle6,26:30,26:50
+RALIHR_surgeon01_fps01_0008,Stationary Idle4,26:50,27:15
+RALIHR_surgeon01_fps01_0008,Transitionary Idle7,27:15,27:44
+RALIHR_surgeon01_fps01_0008,Mesh positioning1,27:44,28:29
+RALIHR_surgeon01_fps01_0008,Transitionary Idle8,28:29,28:53
+RALIHR_surgeon01_fps01_0008,Positioning suture1,28:53,29:15
+RALIHR_surgeon01_fps01_0008,Transitionary Idle9,29:15,30:15
+RALIHR_surgeon01_fps01_0008,Out of body1,30:15,31:01
+RALIHR_surgeon01_fps01_0008,Transitionary Idle10,31:01,31:10
+RALIHR_surgeon01_fps01_0008,Mesh placement1,31:10,34:33
+RALIHR_surgeon01_fps01_0008,Transitionary Idle11,34:33,34:43
+RALIHR_surgeon01_fps01_0008,Mesh placement2,34:43,38:26
+RALIHR_surgeon01_fps01_0008,Transitionary Idle12,38:26,38:50
+RALIHR_surgeon01_fps01_0008,Catheter insertion,38:50,39:43
+RALIHR_surgeon01_fps01_0008,Positioning suture2,39:43,40:14
+RALIHR_surgeon01_fps01_0008,Peritoneal closure1,40:14,44:06
+RALIHR_surgeon01_fps01_0008,Positioning suture3,44:06,44:18
+RALIHR_surgeon01_fps01_0008,Peritoneal closure2,44:18,48:34
+RALIHR_surgeon01_fps01_0008,Positioning suture4,48:34,49:15
+RALIHR_surgeon01_fps01_0008,Transitionary Idle13,49:15,49:20
+RALIHR_surgeon01_fps01_0009,Transitionary Idle1,00:00,00:05
+RALIHR_surgeon01_fps01_0009,Positioning suture1,00:05,00:17
+RALIHR_surgeon01_fps01_0009,Transitionary Idle2,00:17,00:22
+RALIHR_surgeon01_fps01_0009,Mesh positioning1,00:22,00:35
+RALIHR_surgeon01_fps01_0009,Transitionary Idle3,00:35,00:50
+RALIHR_surgeon01_fps01_0009,Peritoneal scoring1,00:50,01:03
+RALIHR_surgeon01_fps01_0009,Preperitoneal dissection1,01:03,06:18
+RALIHR_surgeon01_fps01_0009,Reduction of hernia1,06:18,07:44
+RALIHR_surgeon01_fps01_0009,Transitionary Idle4,07:44,07:49
+RALIHR_surgeon01_fps01_0009,Mesh placement1,07:49,09:16
+RALIHR_surgeon01_fps01_0009,Transitionary Idle5,09:16,09:39
+RALIHR_surgeon01_fps01_0009,Peritoneal scoring2,09:39,10:16
+RALIHR_surgeon01_fps01_0009,Preperitoneal dissection2,10:16,16:24
+RALIHR_surgeon01_fps01_0009,Reduction of hernia2,16:24,19:55
+RALIHR_surgeon01_fps01_0009,Transitionary Idle6,19:55,21:46
+RALIHR_surgeon01_fps01_0009,Mesh placement2,21:46,22:28
+RALIHR_surgeon01_fps01_0009,Transitionary Idle7,22:28,22:40
+RALIHR_surgeon01_fps01_0009,Stationary idle,22:40,22:55
+RALIHR_surgeon01_fps01_0009,Transitionary Idle8,22:55,23:08
+RALIHR_surgeon01_fps01_0009,Mesh placement3,23:08,24:38
+RALIHR_surgeon01_fps01_0009,Transitionary Idle9,24:38,25:10
+RALIHR_surgeon01_fps01_0010,Transitionary Idle1,00:00,00:32
+RALIHR_surgeon01_fps01_0010,Peritoneal scoring1,00:32,01:28
+RALIHR_surgeon01_fps01_0010,Preperitoneal dissection1,01:28,11:21
+RALIHR_surgeon01_fps01_0010,Reduction of hernia1,11:21,18:37
+RALIHR_surgeon01_fps01_0010,Transitionary Idle2,18:37,19:18
+RALIHR_surgeon01_fps01_0010,Peritoneal scoring2,19:18,20:22
+RALIHR_surgeon01_fps01_0010,Preperitoneal dissection2,20:22,31:55
+RALIHR_surgeon01_fps01_0010,Reduction of hernia2,31:55,34:45
+RALIHR_surgeon01_fps01_0010,Transitionary Idle3,34:45,35:15
+RALIHR_surgeon01_fps01_0010,Stationary Idle1,35:15,36:09
+RALIHR_surgeon01_fps01_0010,Transitionary Idle4,36:09,36:26
+RALIHR_surgeon01_fps01_0010,Stationary Idle2,36:26,37:27
+RALIHR_surgeon01_fps01_0010,Transitionary Idle5,37:27,39:34
+RALIHR_surgeon01_fps01_0010,Mesh Positioning1,39:34,40:30
+RALIHR_surgeon01_fps01_0010,Transitionary Idle6,40:30,40:41
+RALIHR_surgeon01_fps01_0010,Stationary Idle3,40:41,41:26
+RALIHR_surgeon01_fps01_0010,Mesh Positioning2,41:26,42:16
+RALIHR_surgeon01_fps01_0010,Transitionary Idle7,42:16,42:31
+RALIHR_surgeon01_fps01_0010,Positioning suture1,42:31,42:45
+RALIHR_surgeon01_fps01_0010,Transitionary Idle8,42:45,44:58
+RALIHR_surgeon01_fps01_0010,Positioning of suture2,44:58,45:03
+RALIHR_surgeon01_fps01_0010,Transitionary Idle9,45:03,46:41
+RALIHR_surgeon01_fps01_0010,Positioning of suture3,46:41,47:16
+RALIHR_surgeon01_fps01_0010,Transitionary Idle10,47:16,47:22
+RALIHR_surgeon01_fps01_0010,Mesh Placement1,47:22,49:51
+RALIHR_surgeon01_fps01_0010,Transitionary Idle11,49:51,50:10
+RALIHR_surgeon01_fps01_0010,Mesh Placement2,50:10,54:08
+RALIHR_surgeon01_fps01_0010,Transitionary Idle12,54:08,54:40
+RALIHR_surgeon01_fps01_0010,Catheter insertion,54:40,55:35
+RALIHR_surgeon01_fps01_0010,Transitionary Idle13,55:35,55:42
+RALIHR_surgeon01_fps01_0010,Positioning of suture4,55:42,55:47
+RALIHR_surgeon01_fps01_0010,Peritoneal closure1,55:47,58:57
+RALIHR_surgeon01_fps01_0010,Transitionary Idle14,58:57,59:26
+RALIHR_surgeon01_fps01_0010,Positioning of suture5,59:26,59:40
+RALIHR_surgeon01_fps01_0010,Peritoneal closure2,59:40,01:14:19
+RALIHR_surgeon01_fps01_0010,Positioning of suture6,01:14:19,01:14:39
+RALIHR_surgeon01_fps01_0010,Peritoneal closure3,01:14:39,01:16:08
+RALIHR_surgeon01_fps01_0011,Transitionary Idle1,00:00,00:13
+RALIHR_surgeon01_fps01_0011,Positioning of Suture1,00:13,00:39
+RALIHR_surgeon01_fps01_0011,Transitionary Idle1,00:39,00:44
+RALIHR_surgeon01_fps01_0011,Mesh positioning1,00:44,01:04
+RALIHR_surgeon01_fps01_0011,Transitionary Idle2,01:04,01:25
+RALIHR_surgeon01_fps01_0011,Peritoneal scoring1,01:25,02:15
+RALIHR_surgeon01_fps01_0011,Preperitoneal dissection1,02:15,05:52
+RALIHR_surgeon01_fps01_0011,Reduction of hernia1,05:52,12:52
+RALIHR_surgeon01_fps01_0011,Transitionary Idle3,12:52,13:02
+RALIHR_surgeon01_fps01_0011,Mesh positioning2,13:02,13:55
+RALIHR_surgeon01_fps01_0011,Positioning of Suture2,13:55,14:09
+RALIHR_surgeon01_fps01_0011,Mesh positioning3,14:09,15:00
+RALIHR_surgeon01_fps01_0011,Transitionary Idle4,15:00,15:12
+RALIHR_surgeon01_fps01_0011,Peritoneal scoring2,15:12,16:02
+RALIHR_surgeon01_fps01_0011,Prepreitoneal dissection2,16:02,16:25
+RALIHR_surgeon01_fps01_0011,Peritoneal scoring3,16:25,17:16
+RALIHR_surgeon01_fps01_0011,Prepreitoneal dissection3,17:16,18:47
+RALIHR_surgeon01_fps01_0011,Reduction of hernia2,18:47,26:58
+RALIHR_surgeon01_fps01_0011,Transitionary Idle5,26:58,27:04
+RALIHR_surgeon01_fps01_0011,Mesh positioning4,27:04,28:01
+RALIHR_surgeon01_fps01_0011,Transitionary Idle6,28:01,28:10
+RALIHR_surgeon01_fps01_0011,Positioning of suture3,28:10,28:44
+RALIHR_surgeon01_fps01_0011,Transitionary Idle7,28:44,28:50
+RALIHR_surgeon01_fps01_0011,Mesh placement1,28:50,33:40
+RALIHR_surgeon01_fps01_0011,Transitionary Idle8,33:40,33:49
+RALIHR_surgeon01_fps01_0011,Mesh placement2,33:49,37:37
+RALIHR_surgeon01_fps01_0011,Transitionary Idle8,37:37,40:31
+RALIHR_surgeon01_fps01_0011,Catheter insertion,40:31,40:55
+RALIHR_surgeon01_fps01_0011,Transitionary Idle9,40:55,41:03
+RALIHR_surgeon01_fps01_0011,Positioning of suture4,41:03,41:08
+RALIHR_surgeon01_fps01_0011,Peritoneal closure1,41:08,44:28
+RALIHR_surgeon01_fps01_0011,Positioning of suture5,44:28,44:36
+RALIHR_surgeon01_fps01_0011,Peritoneal closure2,44:36,45:28
+RALIHR_surgeon01_fps01_0011,Positioning of suture6,45:28,45:43
+RALIHR_surgeon01_fps01_0011,Peritoneal closure3,45:43,48:56
+RALIHR_surgeon01_fps01_0011,Positioning of suture7,48:56,50:08
+RALIHR_surgeon01_fps01_0011,Transitionary Idle10,50:08,50:21
+RALIHR_surgeon01_fps01_0011,Stationary Idle1,50:21,51:07
+RALIHR_surgeon01_fps01_0011,Transitionary Idle11,51:07,51:36
+RALIHR_surgeon01_fps01_0011,Positioning of suture8,51:36,51:51
+RALIHR_surgeon01_fps01_0011,Peritoneal closure4,51:51,52:59
+RALIHR_surgeon01_fps01_0011,Positioning of suture9,52:59,53:33
+RALIHR_surgeon01_fps01_0011,Transitionary Idle12,53:45,53:45
+RALIHR_surgeon01_fps01_0012,Transitionary Idle1,00:00,00:14
+RALIHR_surgeon01_fps01_0012,Mesh Positioning1,00:14,00:26
+RALIHR_surgeon01_fps01_0012,Positioning of suture1,00:26,01:30
+RALIHR_surgeon01_fps01_0012,Mesh Positioning2,01:30,01:34
+RALIHR_surgeon01_fps01_0012,Transitionary Idle2,01:34,01:53
+RALIHR_surgeon01_fps01_0012,Peritoneal scoring1,01:53,03:42
+RALIHR_surgeon01_fps01_0012,Preperitoneal dissection1,03:42,07:35
+RALIHR_surgeon01_fps01_0012,Reduction of hernia1,07:35,16:14
+RALIHR_surgeon01_fps01_0012,Transitionary Idle3,16:14,16:27
+RALIHR_surgeon01_fps01_0012,Mesh Placement1,16:27,18:21
+RALIHR_surgeon01_fps01_0012,Transitionary Idle4,18:21,18:31
+RALIHR_surgeon01_fps01_0012,Peritoneal scoring2,18:31,19:52
+RALIHR_surgeon01_fps01_0012,Preperitoneal dissection2,19:52,22:30
+RALIHR_surgeon01_fps01_0012,Reduction of hernia2,22:30,30:40
+RALIHR_surgeon01_fps01_0012,Transitionary Idle5,30:40,30:51
+RALIHR_surgeon01_fps01_0012,Mesh Placement2,30:51,31:46
+RALIHR_surgeon01_fps01_0012,Transitionary Idle6,31:46,32:46
+RALIHR_surgeon01_fps01_0012,Mesh Placement3,32:46,36:10
+RALIHR_surgeon01_fps01_0012,Transitionary Idle6,36:10,36:20
+RALIHR_surgeon01_fps01_0012,Mesh Placement4,36:20,42:52
+RALIHR_surgeon01_fps01_0012,Transitionary Idle7,42:52,43:08
+RALIHR_surgeon01_fps01_0012,Catheter insertion,43:08,43:36
+RALIHR_surgeon01_fps01_0012,Transitionary Idle8,43:36,43:51
+RALIHR_surgeon01_fps01_0012,Positioning of suture2,43:51,44:12
+RALIHR_surgeon01_fps01_0012,Peritoneal Closure1,44:12,48:29
+RALIHR_surgeon01_fps01_0012,Positioning of suture3,48:29,48:47
+RALIHR_surgeon01_fps01_0012,Peritoneal Closure2,48:47,50:33
+RALIHR_surgeon01_fps01_0012,Positioning of suture4,50:33,50:48
+RALIHR_surgeon01_fps01_0012,Transitionary Idle9,50:48,50:53
+RALIHR_surgeon01_fps01_0012,Positioning of suture5,50:53,51:14
+RALIHR_surgeon01_fps01_0012,Peritoneal Closure3,51:14,57:06
+RALIHR_surgeon01_fps01_0012,Positioning of suture6,57:06,58:30
+RALIHR_surgeon01_fps01_0012,Transitionary Idle10,58:30,58:41
+RALIHR_surgeon01_fps01_0013,Transitionary Idle1,00:00,00:15
+RALIHR_surgeon01_fps01_0013,Peritoneal scoring1,00:15,01:33
+RALIHR_surgeon01_fps01_0013,Prepetioneal dissection1,01:33,05:16
+RALIHR_surgeon01_fps01_0013,Reduction of hernia1,05:16,19:12
+RALIHR_surgeon01_fps01_0013,Transitionary Idle2,19:12,19:15
+RALIHR_surgeon01_fps01_0013,Mesh placement1,19:15,20:04
+RALIHR_surgeon01_fps01_0013,Transitionary Idle3,20:04,20:28
+RALIHR_surgeon01_fps01_0013,Mesh placement2,20:28,22:43
+RALIHR_surgeon01_fps01_0013,Transitionary Idle3,22:43,22:49
+RALIHR_surgeon01_fps01_0013,Positioning of suture1,22:49,23:16
+RALIHR_surgeon01_fps01_0013,Catheter insertion,23:16,23:37
+RALIHR_surgeon01_fps01_0013,Positioning of suture2,23:37,23:40
+RALIHR_surgeon01_fps01_0013,Peritoneal closure1,23:40,28:07
+RALIHR_surgeon01_fps01_0013,Positioning of suture3,28:07,28:36
+RALIHR_surgeon01_fps01_0013,Transitionary Idle4,28:36,29:34
+RALIHR_surgeon01_fps01_0014,Stationary Idle1,00:00,00:24
+RALIHR_surgeon01_fps01_0014,Transitionary Idle1,00:24,00:56
+RALIHR_surgeon01_fps01_0014,Positioning of suture1,00:56,01:07
+RALIHR_surgeon01_fps01_0014,Transitionary Idle2,01:07,01:21
+RALIHR_surgeon01_fps01_0014,Mesh Positioning1,01:21,01:26
+RALIHR_surgeon01_fps01_0014,Transitionary Idle3,01:26,01:43
+RALIHR_surgeon01_fps01_0014,Peritoneal scoring1,01:43,02:58
+RALIHR_surgeon01_fps01_0014,Preperitoneal dissection1,02:58,07:31
+RALIHR_surgeon01_fps01_0014,Reduction of Hernia1,07:31,14:54
+RALIHR_surgeon01_fps01_0014,Transitionary Idle4,14:54,15:06
+RALIHR_surgeon01_fps01_0014,Out of Body1,15:06,15:37
+RALIHR_surgeon01_fps01_0014,Stationary Idle1,15:37,15:42
+RALIHR_surgeon01_fps01_0014,Reduction of Hernia2,15:42,21:30
+RALIHR_surgeon01_fps01_0014,Transitionary Idle5,21:30,22:24
+RALIHR_surgeon01_fps01_0014,Reduction of Hernia3,22:24,27:16
+RALIHR_surgeon01_fps01_0014,Transitionary Idle6,27:16,27:53
+RALIHR_surgeon01_fps01_0014,Mesh placement1,27:53,31:47
+RALIHR_surgeon01_fps01_0014,Transitionary Idle6,31:47,32:54
+RALIHR_surgeon01_fps01_0014,Catheter Insertion,32:54,33:49
+RALIHR_surgeon01_fps01_0014,Transitionary Idle7,33:49,33:53
+RALIHR_surgeon01_fps01_0014,Positioning of suture2,33:53,34:02
+RALIHR_surgeon01_fps01_0014,Peritoneal closure1,34:02,34:48
+RALIHR_surgeon01_fps01_0014,Stationary Idle2,34:48,35:23
+RALIHR_surgeon01_fps01_0014,Transitionary Idle8,35:23,35:30
+RALIHR_surgeon01_fps01_0014,Peritoneal closure2,35:30,45:35
+RALIHR_surgeon01_fps01_0014,Positioning of suture3,45:35,46:38
+RALIHR_surgeon01_fps01_0014,Transitionary Idle9,46:38,46:48
+RALIHR_surgeon01_fps01_0015,Stationary Idle1,00:00,00:07
+RALIHR_surgeon01_fps01_0015,Mesh positioning1,00:07,00:13
+RALIHR_surgeon01_fps01_0015,Transitionary Idle1,00:13,00:23
+RALIHR_surgeon01_fps01_0015,Positioning suture1,00:23,01:00
+RALIHR_surgeon01_fps01_0015,Transitionary Idle2,01:00,01:34
+RALIHR_surgeon01_fps01_0015,Peritoneal scoring1,01:34,02:11
+RALIHR_surgeon01_fps01_0015,Preperitoneal dissection1,02:11,06:37
+RALIHR_surgeon01_fps01_0015,Reduction of Hernia1,06:37,14:40
+RALIHR_surgeon01_fps01_0015,Transitionary Idle3,14:40,14:53
+RALIHR_surgeon01_fps01_0015,Positioning suture2,14:53,15:00
+RALIHR_surgeon01_fps01_0015,Mesh placement1,15:00,18:53
+RALIHR_surgeon01_fps01_0015,Transitionary Idle4,18:53,19:40
+RALIHR_surgeon01_fps01_0015,Catheter insertion1,19:40,19:43
+RALIHR_surgeon01_fps01_0015,Transitionary Idle5,19:43,19:46
+RALIHR_surgeon01_fps01_0015,Positioning suture3,19:46,19:53
+RALIHR_surgeon01_fps01_0015,Peritoneal closure1,19:53,20:15
+RALIHR_surgeon01_fps01_0015,Catheter insertion2,20:15,20:26
+RALIHR_surgeon01_fps01_0015,Peritoneal closure2,20:26,23:20
+RALIHR_surgeon01_fps01_0015,Positioning suture4,23:20,23:31
+RALIHR_surgeon01_fps01_0015,Peritoneal closure3,23:31,25:21
+RALIHR_surgeon01_fps01_0015,Positioning suture5,25:21,26:00
+RALIHR_surgeon01_fps01_0015,Transitionary Idle6,26:00,26:20
+RALIHR_surgeon01_fps01_0015,Positioning suture6,26:20,26:22
+RALIHR_surgeon01_fps01_0015,Transitionary Idle7,26:22,26:48
+RALIHR_surgeon01_fps01_0016,Transitionary Idle1,00:00,00:14
+RALIHR_surgeon01_fps01_0016,Mesh positioning1,00:14,00:30
+RALIHR_surgeon01_fps01_0016,Transitionary Idle2,00:30,00:44
+RALIHR_surgeon01_fps01_0016,Peritoneal scoring1,00:44,02:24
+RALIHR_surgeon01_fps01_0016,Preperitoneal dissection1,02:24,07:04
+RALIHR_surgeon01_fps01_0016,Reduction of Hernia1,07:04,11:26
+RALIHR_surgeon01_fps01_0016,Transitionary Idle3,11:26,12:12
+RALIHR_surgeon01_fps01_0016,Positioning of suture1,12:12,13:17
+RALIHR_surgeon01_fps01_0016,Direct hernia repair,13:17,16:42
+RALIHR_surgeon01_fps01_0016,Positioning of suture2,16:42,16:57
+RALIHR_surgeon01_fps01_0016,Transitionary Idle4,16:57,17:02
+RALIHR_surgeon01_fps01_0016,Mesh placement1,17:02,18:07
+RALIHR_surgeon01_fps01_0016,Stationary Idle1,18:07,18:21
+RALIHR_surgeon01_fps01_0016,Transitionary Idle5,18:21,18:29
+RALIHR_surgeon01_fps01_0016,Mesh placement2,18:29,21:57
+RALIHR_surgeon01_fps01_0016,Transitionary Idle6,21:57,22:08
+RALIHR_surgeon01_fps01_0016,Catheter insertion,22:08,23:07
+RALIHR_surgeon01_fps01_0016,Transitionary Idle7,23:07,23:33
+RALIHR_surgeon01_fps01_0016,Positioning Suture2,23:33,24:18
+RALIHR_surgeon01_fps01_0016,Peritoneal closure1,24:18,35:14
+RALIHR_surgeon01_fps01_0016,Positioning Suture3,35:14,36:18
+RALIHR_surgeon01_fps01_0016,Transitionary Idle8,36:18,36:21
+RALIHR_surgeon01_fps01_0016,Positioning Suture4,36:21,36:44
+RALIHR_surgeon01_fps01_0016,Transitionary Idle9,36:44,37:15
+RALIHR_surgeon01_fps01_0017,Stationary Idle1,00:00,00:46
+RALIHR_surgeon01_fps01_0017,Transitionary Idle1,00:46,00:54
+RALIHR_surgeon01_fps01_0017,Mesh positioning1,00:54,00:56
+RALIHR_surgeon01_fps01_0017,Transitionary Idle2,00:56,01:09
+RALIHR_surgeon01_fps01_0017,Peritoneal scoring1,01:09,02:45
+RALIHR_surgeon01_fps01_0017,Preperitoneal dissection1,02:45,06:09
+RALIHR_surgeon01_fps01_0017,Reduction of Hernia1,06:09,17:10
+RALIHR_surgeon01_fps01_0017,Transitionary Idle3,17:10,18:29
+RALIHR_surgeon01_fps01_0017,Positioning suture1,18:29,18:57
+RALIHR_surgeon01_fps01_0017,Transitionary Idle4,18:57,25:23
+RALIHR_surgeon01_fps01_0017,Stationary Idle2,25:23,26:02
+RALIHR_surgeon01_fps01_0017,Transitionary Idle5,26:02,27:05
+RALIHR_surgeon01_fps01_0017,Mesh placement1,27:05,29:17
+RALIHR_surgeon01_fps01_0017,Transtionary Idle6,29:17,30:45
+RALIHR_surgeon01_fps01_0017,Catheter insertion,30:45,31:09
+RALIHR_surgeon01_fps01_0017,Transitionary Idle7,31:09,31:13
+RALIHR_surgeon01_fps01_0017,Positioning suture2,31:13,31:27
+RALIHR_surgeon01_fps01_0017,Peritoneal closure1,31:27,32:07
+RALIHR_surgeon01_fps01_0017,Transitionary Idle8,32:07,33:21
+RALIHR_surgeon01_fps01_0017,Positioning suture3,33:21,34:19
+RALIHR_surgeon01_fps01_0017,Peritoneal closure2,34:19,36:40
+RALIHR_surgeon01_fps01_0017,Stationary Idle3,36:40,37:05
+RALIHR_surgeon01_fps01_0017,Transitionary Idle8,37:05,37:16
+RALIHR_surgeon01_fps01_0017,Stationary Idle4,37:16,37:53
+RALIHR_surgeon01_fps01_0017,Positioning Suture4,37:53,38:20
+RALIHR_surgeon01_fps01_0017,Peritoneal closure3,38:20,50:19
+RALIHR_surgeon01_fps01_0017,Positioning Suture5,50:19,51:21
+RALIHR_surgeon01_fps01_0017,Transitionary Idle9,51:21,51:35
+RALIHR_surgeon01_fps01_0017,Stationary Idle5,51:35,51:49
+RALIHR_surgeon01_fps01_0018,Transitionary Idle1,00:00,00:12
+RALIHR_surgeon01_fps01_0018,Positioning Suture1,00:12,00:30
+RALIHR_surgeon01_fps01_0018,Transitionary Idle2,00:30,00:49
+RALIHR_surgeon01_fps01_0018,Peritoneal scoring1,00:49,02:08
+RALIHR_surgeon01_fps01_0018,Preperitoneal dissection1,02:08,06:10
+RALIHR_surgeon01_fps01_0018,Reduction of Hernia1,06:10,14:13
+RALIHR_surgeon01_fps01_0018,Transitionary Idle3,14:13,14:19
+RALIHR_surgeon01_fps01_0018,Mesh placement1,14:19,14:53
+RALIHR_surgeon01_fps01_0018,Transitionary Idle4,14:53,15:08
+RALIHR_surgeon01_fps01_0018,Peritoneal scoring2,15:08,17:13
+RALIHR_surgeon01_fps01_0018,Preperitoneal dissection2,17:13,20:25
+RALIHR_surgeon01_fps01_0018,Reduction of Hernia2,20:25,28:18
+RALIHR_surgeon01_fps01_0018,Transitionary Idle5,28:18,28:22
+RALIHR_surgeon01_fps01_0018,Mesh placement2,28:22,29:04
+RALIHR_surgeon01_fps01_0018,Transitionary Idle6,29:04,29:44
+RALIHR_surgeon01_fps01_0018,Mesh placement3,29:44,31:31
+RALIHR_surgeon01_fps01_0018,Transitionary Idle7,31:31,31:39
+RALIHR_surgeon01_fps01_0018,Mesh placement4,31:39,33:58
+RALIHR_surgeon01_fps01_0018,Transitionary Idle8,33:58,34:18
+RALIHR_surgeon01_fps01_0018,Catheter insertion,34:18,34:50
+RALIHR_surgeon01_fps01_0018,Transitionary Idle9,34:50,34:59
+RALIHR_surgeon01_fps01_0018,Mesh placement5,34:59,35:37
+RALIHR_surgeon01_fps01_0018,Transitionary Idle10,35:37,35:42
+RALIHR_surgeon01_fps01_0018,Positioning Suture2,35:42,35:49
+RALIHR_surgeon01_fps01_0018,Peritoneal closure1,35:49,48:02
+RALIHR_surgeon01_fps01_0018,Transitionary Idle11,48:02,48:11
+RALIHR_surgeon01_fps01_0018,Positioning Suture3,48:11,48:20
+RALIHR_surgeon01_fps01_0018,Peritoneal closure2,48:20,51:34
+RALIHR_surgeon01_fps01_0018,Positioning Suture4,51:34,53:48
+RALIHR_surgeon01_fps01_0018,Peritoneal closure3,53:48,55:44
+RALIHR_surgeon01_fps01_0018,Positioning Suture5,55:44,56:03
+RALIHR_surgeon01_fps01_0018,Peritoneal closure4,56:03,57:45
+RALIHR_surgeon01_fps01_0018,Positioning Suture6,57:45,58:17
+RALIHR_surgeon01_fps01_0018,Transitionary Idle12,58:17,58:42
+RALIHR_surgeon01_fps01_0019,Transitionary Idle1,00:00,00:09
+RALIHR_surgeon01_fps01_0019,Positioning suture1,00:09,00:13
+RALIHR_surgeon01_fps01_0019,Transitionary Idle2,00:13,00:28
+RALIHR_surgeon01_fps01_0019,Mesh positioning1,00:28,00:48
+RALIHR_surgeon01_fps01_0019,Transitionary Idle2,00:48,00:54
+RALIHR_surgeon01_fps01_0019,Peritoneal scoring,00:54,02:36
+RALIHR_surgeon01_fps01_0019,Preperitoneal dissection1,02:36,05:40
+RALIHR_surgeon01_fps01_0019,Reduction of Hernia1,05:40,15:18
+RALIHR_surgeon01_fps01_0019,Transitionary Idle3,15:18,15:29
+RALIHR_surgeon01_fps01_0019,Mesh positioning2,15:29,15:31
+RALIHR_surgeon01_fps01_0019,Transitionary Idle4,15:31,16:07
+RALIHR_surgeon01_fps01_0019,Mesh placement1,16:07,19:50
+RALIHR_surgeon01_fps01_0019,Transitionary Idle5,19:50,20:08
+RALIHR_surgeon01_fps01_0019,Catheter Insertion,20:08,20:47
+RALIHR_surgeon01_fps01_0019,Transitionary Idle6,20:47,20:53
+RALIHR_surgeon01_fps01_0019,Positioning suture2,20:53,21:05
+RALIHR_surgeon01_fps01_0019,Peritoneal closure1,21:05,25:35
+RALIHR_surgeon01_fps01_0019,Positioning suture3,25:35,25:54
+RALIHR_surgeon01_fps01_0019,Peritoneal closure2,25:54,26:45
+RALIHR_surgeon01_fps01_0019,Positioning suture4,26:45,27:29
+RALIHR_surgeon01_fps01_0019,Transitionary Idle7,27:29,28:09
+RALIHR_surgeon01_fps01_0019,Positioning suture5,28:09,28:42
+RALIHR_surgeon01_fps01_0019,Peritoneal closure3,28:42,33:37
+RALIHR_surgeon01_fps01_0019,Positioning suture6,33:37,34:22
+RALIHR_surgeon01_fps01_0019,Transitionary Idle8,34:22,34:42
+RALIHR_surgeon01_fps01_0020,Transitionary Idle1,00:00:00,00:00:22
+RALIHR_surgeon01_fps01_0020,Positioning Suture1,00:00:22,00:01:00
+RALIHR_surgeon01_fps01_0020,Transitionary Idle1,00:01:00,00:01:29
+RALIHR_surgeon01_fps01_0020,Peritoneal scoring1,00:01:29,00:04:05
+RALIHR_surgeon01_fps01_0020,Preperitoneal dissection1,00:04:05,00:06:24
+RALIHR_surgeon01_fps01_0020,Reduction of hernia1,00:06:24,00:09:49
+RALIHR_surgeon01_fps01_0020,Transitionary Idle2,00:09:49,00:10:14
+RALIHR_surgeon01_fps01_0020,Mesh Placement1,00:10:14,00:14:09
+RALIHR_surgeon01_fps01_0020,Transitionary Idle3,00:14:09,00:15:14
+RALIHR_surgeon01_fps01_0020,Catheter Insertion1,00:15:14,00:15:49
+RALIHR_surgeon01_fps01_0020,Transitionary Idle4,00:15:49,00:16:38
+RALIHR_surgeon01_fps01_0020,Positioning Suture2,00:16:38,00:16:54
+RALIHR_surgeon01_fps01_0020,Peritoneal closure1,00:16:54,00:21:27
+RALIHR_surgeon01_fps01_0020,Positioning Suture3,00:21:27,00:21:35
+RALIHR_surgeon01_fps01_0020,Peritoneal closure2,00:21:35,00:22:45
+RALIHR_surgeon01_fps01_0020,Positioning Suture4,00:22:45,00:23:23
+RALIHR_surgeon01_fps01_0020,Transitionary Idle5,00:23:23,00:24:58
+RALIHR_surgeon01_fps01_0020,Peritoneal scoring2,00:24:58,00:25:26
+RALIHR_surgeon01_fps01_0020,Transitionary Idle6,00:25:26,00:25:37
+RALIHR_surgeon01_fps01_0020,Out of Body1,00:25:37,00:25:56
+RALIHR_surgeon01_fps01_0020,Transitionary Idle7,00:25:56,00:26:17
+RALIHR_surgeon01_fps01_0020,Peritoneal scoring3,00:26:17,00:32:06
+RALIHR_surgeon01_fps01_0020,Preperitoneal dissection2,00:32:06,00:44:04
+RALIHR_surgeon01_fps01_0020,Reduction of Hernia2,00:44:04,00:56:47
+RALIHR_surgeon01_fps01_0020,Transitionary Idle8,00:56:47,00:57:05
+RALIHR_surgeon01_fps01_0020,Mesh Placement2,00:57:05,01:03:36
+RALIHR_surgeon01_fps01_0020,Stationary Idle1,01:03:36,01:04:05
+RALIHR_surgeon01_fps01_0020,Transitionary Idle9,01:04:05,01:04:14
+RALIHR_surgeon01_fps01_0020,Mesh Placement3,01:04:14,01:08:05
+RALIHR_surgeon01_fps01_0020,Transitionary Idle10,01:08:05,01:08:43
+RALIHR_surgeon01_fps01_0020,Positioning Suture5,01:08:43,01:09:11
+RALIHR_surgeon01_fps01_0020,Peritoneal closure3,01:09:11,01:17:14
+RALIHR_surgeon01_fps01_0020,Positioning Suture6,01:17:14,01:18:12
+RALIHR_surgeon01_fps01_0020,Stationary Idle2,01:18:12,01:18:31
+RALIHR_surgeon01_fps01_0020,Positioning Suture7,01:18:31,01:19:06
+RALIHR_surgeon01_fps01_0020,Out of Body2,01:19:06,01:19:32
+RALIHR_surgeon01_fps01_0020,Positioning Suture8,01:19:32,01:19:39
+RALIHR_surgeon01_fps01_0020,Peritoneal closure4,01:19:39,01:22:19
+RALIHR_surgeon01_fps01_0020,Positioning Suture9,01:22:19,01:22:57
+RALIHR_surgeon01_fps01_0020,Transitionary Idle11,01:22:57,01:23:07
+RALIHR_surgeon01_fps01_0021,Mesh positioning1,00:00,00:04
+RALIHR_surgeon01_fps01_0021,Transitionary Idle1,00:04,00:21
+RALIHR_surgeon01_fps01_0021,Peritoneal scoring1,00:21,01:17
+RALIHR_surgeon01_fps01_0021,Preperitoneal dissection1,01:17,06:22
+RALIHR_surgeon01_fps01_0021,Reduction of Hernia1,06:22,15:29
+RALIHR_surgeon01_fps01_0021,Transitionary Idle2,15:29,15:38
+RALIHR_surgeon01_fps01_0021,Mesh placement1,15:38,23:50
+RALIHR_surgeon01_fps01_0021,Transitionary Idle3,23:50,24:04
+RALIHR_surgeon01_fps01_0021,Positioning suture1,24:04,24:19
+RALIHR_surgeon01_fps01_0021,Peritoneal closure1,24:19,24:25
+RALIHR_surgeon01_fps01_0021,Catheter insertion,24:25,25:28
+RALIHR_surgeon01_fps01_0021,Transitionary Idle4,25:28,25:33
+RALIHR_surgeon01_fps01_0021,Positioning suture2,25:33,25:37
+RALIHR_surgeon01_fps01_0021,Peritoneal closure2,25:37,35:06
+RALIHR_surgeon01_fps01_0021,Positioning suture3,35:06,35:49
+RALIHR_surgeon01_fps01_0021,Transitionary Idle5,35:49,35:59
+RALIHR_surgeon01_fps01_0022,Transitionary Idle1,00:00,00:07
+RALIHR_surgeon01_fps01_0022,Adhesiolysis1,00:07,01:41
+RALIHR_surgeon01_fps01_0022,Transitionary Idle2,01:41,01:47
+RALIHR_surgeon01_fps01_0022,Positioning suture1,01:47,02:06
+RALIHR_surgeon01_fps01_0022,Transitionary Idle3,02:06,02:20
+RALIHR_surgeon01_fps01_0022,Peritoneal scoring1,02:20,03:44
+RALIHR_surgeon01_fps01_0022,Preperitoneal dissection1,03:44,06:32
+RALIHR_surgeon01_fps01_0022,Reduction of Hernia1,06:32,12:42
+RALIHR_surgeon01_fps01_0022,Transitionary Idle4,12:42,13:19
+RALIHR_surgeon01_fps01_0022,Mesh placement1,13:19,17:22
+RALIHR_surgeon01_fps01_0022,Transitionary Idle5,17:22,18:04
+RALIHR_surgeon01_fps01_0022,Catheter Insertion1,18:04,18:10
+RALIHR_surgeon01_fps01_0022,Transitionary Idle6,18:10,18:16
+RALIHR_surgeon01_fps01_0022,Positioning suture2,18:16,18:23
+RALIHR_surgeon01_fps01_0022,Catheter Insertion2,18:23,18:32
+RALIHR_surgeon01_fps01_0022,Positioning suture3,18:32,18:56
+RALIHR_surgeon01_fps01_0022,Peritoneal closure1,18:56,32:08
+RALIHR_surgeon01_fps01_0022,Positioning suture4,32:08,32:57
+RALIHR_surgeon01_fps01_0022,Transitionary Idle7,32:57,33:05
+RALIHR_surgeon01_fps01_0023,Transitionary Idle1,00:00:00,00:00:07
+RALIHR_surgeon01_fps01_0023,Peritoneal scoring1,00:00:07,00:05:10
+RALIHR_surgeon01_fps01_0023,Preperitoneal dissection1,00:05:10,00:08:23
+RALIHR_surgeon01_fps01_0023,Reduction of Hernia1,00:08:23,00:10:08
+RALIHR_surgeon01_fps01_0023,Preperitoneal dissection2,00:10:08,00:16:50
+RALIHR_surgeon01_fps01_0023,Reduction of Hernia2,00:16:50,00:26:09
+RALIHR_surgeon01_fps01_0023,Preperitoneal dissection3,00:26:09,00:27:06
+RALIHR_surgeon01_fps01_0023,Transitionary Idle2,00:27:06,00:27:20
+RALIHR_surgeon01_fps01_0023,Preperitoneal dissection4,00:27:20,00:29:27
+RALIHR_surgeon01_fps01_0023,Transitionary Idle3,00:29:27,00:29:37
+RALIHR_surgeon01_fps01_0023,Reduction of Hernia3,00:29:37,00:37:01
+RALIHR_surgeon01_fps01_0023,Transitionary Idle4,00:37:01,00:37:06
+RALIHR_surgeon01_fps01_0023,Mesh placement1,00:37:06,00:37:39
+RALIHR_surgeon01_fps01_0023,Transitionary Idle5,00:37:39,00:37:51
+RALIHR_surgeon01_fps01_0023,Positioning Suture1,00:37:51,00:38:04
+RALIHR_surgeon01_fps01_0023,Transitionary Idle6,00:38:04,00:38:50
+RALIHR_surgeon01_fps01_0023,Mesh placement2,00:38:50,00:43:21
+RALIHR_surgeon01_fps01_0023,Transitionary Idle7,00:43:21,00:45:04
+RALIHR_surgeon01_fps01_0023,Catheter insertion1,00:45:04,00:45:40
+RALIHR_surgeon01_fps01_0023,Transitionary Idle8,00:45:40,00:45:51
+RALIHR_surgeon01_fps01_0023,Positioning Suture2,00:45:51,00:46:00
+RALIHR_surgeon01_fps01_0023,Peritoneal closure1,00:46:00,00:52:07
+RALIHR_surgeon01_fps01_0023,Positioning Suture3,00:52:07,00:53:41
+RALIHR_surgeon01_fps01_0023,Peritoneal closure2,00:53:41,00:56:04
+RALIHR_surgeon01_fps01_0023,Positioning Suture4,00:56:04,00:58:40
+RALIHR_surgeon01_fps01_0023,Peritoneal closure3,00:58:40,01:00:27
+RALIHR_surgeon01_fps01_0023,Positioning Suture5,01:00:27,01:00:47
+RALIHR_surgeon01_fps01_0023,Peritoneal closure4,01:00:47,01:01:47
+RALIHR_surgeon01_fps01_0023,Positioning Suture6,01:01:47,01:02:20
+RALIHR_surgeon01_fps01_0023,Transitionary Idle9,01:02:20,01:02:35
+RALIHR_surgeon01_fps01_0024,Preperitoneal Dissection1,00:00,05:03
+RALIHR_surgeon01_fps01_0024,Transitionary Idle1,05:03,05:07
+RALIHR_surgeon01_fps01_0024,Positioning suture1,05:07,05:25
+RALIHR_surgeon01_fps01_0024,Transitionary Idle2,05:25,05:30
+RALIHR_surgeon01_fps01_0024,Mesh positioning1,05:30,05:35
+RALIHR_surgeon01_fps01_0024,Transitionary Idle3,05:35,05:42
+RALIHR_surgeon01_fps01_0024,Reduction of Hernia1,05:42,11:18
+RALIHR_surgeon01_fps01_0024,Transitionary Idle4,11:18,11:36
+RALIHR_surgeon01_fps01_0024,Reduction of Hernia2,11:36,18:29
+RALIHR_surgeon01_fps01_0024,Transitionary Idle5,18:29,19:34
+RALIHR_surgeon01_fps01_0024,Out of Body1,19:34,21:17
+RALIHR_surgeon01_fps01_0024,Transitionary Idle6,21:17,21:37
+RALIHR_surgeon01_fps01_0024,Out of Body2,21:37,22:07
+RALIHR_surgeon01_fps01_0024,Transitionary Idle7,22:07,22:29
+RALIHR_surgeon01_fps01_0024,Mesh placement1,22:29,26:05
+RALIHR_surgeon01_fps01_0024,Transitionary Idle8,26:05,27:33
+RALIHR_surgeon01_fps01_0024,Catheter insertion,27:33,28:09
+RALIHR_surgeon01_fps01_0024,Transitionary Idle9,28:09,28:19
+RALIHR_surgeon01_fps01_0024,Positioning suture2,28:19,28:33
+RALIHR_surgeon01_fps01_0024,Peritoneal Closure1,28:33,39:07
+RALIHR_surgeon01_fps01_0024,Positioning suture3,39:07,40:48
+RALIHR_surgeon01_fps01_0024,Peritoneal closure2,40:48,48:27
+RALIHR_surgeon01_fps01_0024,Positioning suture4,48:27,48:51
+RALIHR_surgeon01_fps01_0024,Transitionary Idle10,48:51,49:06
+RALIHR_surgeon01_fps01_0025,Transitionary Idle1,00:00:00,00:00:16
+RALIHR_surgeon01_fps01_0025,Positioning suture1,00:00:16,00:01:17
+RALIHR_surgeon01_fps01_0025,Transitionary Idle2,00:01:17,00:01:27
+RALIHR_surgeon01_fps01_0025,Mesh positioning1,00:01:27,00:01:39
+RALIHR_surgeon01_fps01_0025,Transitionary Idle3,00:01:39,00:01:48
+RALIHR_surgeon01_fps01_0025,Peritoneal scoring1,00:01:48,00:02:53
+RALIHR_surgeon01_fps01_0025,Preperitoneal dissection1,00:02:53,00:05:34
+RALIHR_surgeon01_fps01_0025,Reduction of Hernia1,00:05:34,00:09:37
+RALIHR_surgeon01_fps01_0025,Transitionary Idle4,00:09:37,00:09:42
+RALIHR_surgeon01_fps01_0025,Mesh placement1,00:09:42,00:12:36
+RALIHR_surgeon01_fps01_0025,Transitionary Idle5,00:12:36,00:13:03
+RALIHR_surgeon01_fps01_0025,Peritoneal scoring2,00:13:03,00:13:27
+RALIHR_surgeon01_fps01_0025,Transitionary Idle6,00:13:27,00:13:39
+RALIHR_surgeon01_fps01_0025,Stationary Idle1,00:13:39,00:14:05
+RALIHR_surgeon01_fps01_0025,Transitionary Idle6,00:14:05,00:14:29
+RALIHR_surgeon01_fps01_0025,Peritoneal scoring3,00:14:29,00:18:45
+RALIHR_surgeon01_fps01_0025,Preperitoneal dissection2,00:18:45,00:27:10
+RALIHR_surgeon01_fps01_0025,Reduction of Hernia2,00:27:10,00:37:35
+RALIHR_surgeon01_fps01_0025,Transitionary Idle7,00:37:35,00:38:23
+RALIHR_surgeon01_fps01_0025,Mesh Placement2,00:38:23,00:48:45
+RALIHR_surgeon01_fps01_0025,Transitionary Idle8,00:48:45,00:48:48
+RALIHR_surgeon01_fps01_0025,Catheter insertion,00:48:48,00:49:20
+RALIHR_surgeon01_fps01_0025,Transitionary Idle8,00:49:20,00:49:31
+RALIHR_surgeon01_fps01_0025,Positioning suture2,00:49:31,00:49:38
+RALIHR_surgeon01_fps01_0025,Peritoneal closure1,00:49:38,00:53:29
+RALIHR_surgeon01_fps01_0025,Positioning suture3,00:53:29,00:53:52
+RALIHR_surgeon01_fps01_0025,Peritoneal closure2,00:53:52,00:56:14
+RALIHR_surgeon01_fps01_0025,Positioning suture4,00:56:14,00:58:26
+RALIHR_surgeon01_fps01_0025,Peritoneal closure3,00:58:26,01:07:13
+RALIHR_surgeon01_fps01_0025,Positioning suture5,01:07:13,01:07:48
+RALIHR_surgeon01_fps01_0026,Transitionary Idle1,00:00:00,00:00:16
+RALIHR_surgeon01_fps01_0026,Positioning suture1,00:00:16,00:00:27
+RALIHR_surgeon01_fps01_0026,Transitionary Idle2,00:00:27,00:00:29
+RALIHR_surgeon01_fps01_0026,Mesh positioning1,00:00:29,00:00:47
+RALIHR_surgeon01_fps01_0026,Transitionary Idle3,00:00:47,00:01:02
+RALIHR_surgeon01_fps01_0026,Peritoneal scoring1,00:01:02,00:02:25
+RALIHR_surgeon01_fps01_0026,Preperitoneal dissection1,00:02:25,00:05:59
+RALIHR_surgeon01_fps01_0026,Reduction of Hernia1,00:05:59,00:33:05
+RALIHR_surgeon01_fps01_0026,Transitionary Idle4,00:33:05,00:33:15
+RALIHR_surgeon01_fps01_0026,Mesh placement1,00:33:15,00:33:57
+RALIHR_surgeon01_fps01_0026,Transitionary Idle5,00:33:57,00:34:04
+RALIHR_surgeon01_fps01_0026,Stationary Idle1,00:34:04,00:34:14
+RALIHR_surgeon01_fps01_0026,Out of Body1,00:34:14,00:34:46
+RALIHR_surgeon01_fps01_0026,Transitionary Idle6,00:34:46,00:35:05
+RALIHR_surgeon01_fps01_0026,Adhesiolysis1,00:35:05,00:35:44
+RALIHR_surgeon01_fps01_0026,Transitionary Idle7,00:35:44,00:36:06
+RALIHR_surgeon01_fps01_0026,Peritoneal scoring2,00:36:06,00:37:13
+RALIHR_surgeon01_fps01_0026,Preperitoneal dissection2,00:37:13,00:37:44
+RALIHR_surgeon01_fps01_0026,Out of Body2,00:37:44,00:38:10
+RALIHR_surgeon01_fps01_0026,Transitionary Idle8,00:38:10,00:38:17
+RALIHR_surgeon01_fps01_0026,Out of Body3,00:38:17,00:38:31
+RALIHR_surgeon01_fps01_0026,Transitionary Idle9,00:38:31,00:38:37
+RALIHR_surgeon01_fps01_0026,Peritoneal scoring3,00:38:37,00:38:56
+RALIHR_surgeon01_fps01_0026,Preperitoneal dissection3,00:38:56,00:46:24
+RALIHR_surgeon01_fps01_0026,Reduction of Hernia2,00:46:24,00:50:11
+RALIHR_surgeon01_fps01_0026,Transitionary Idle10,00:50:11,00:50:23
+RALIHR_surgeon01_fps01_0026,Reduction of Hernia3,00:50:23,00:51:02
+RALIHR_surgeon01_fps01_0026,Transitionary Idle11,00:51:02,00:51:19
+RALIHR_surgeon01_fps01_0026,Mesh placement2,00:51:19,00:51:38
+RALIHR_surgeon01_fps01_0026,Transitionary Idle12,00:51:38,00:51:41
+RALIHR_surgeon01_fps01_0026,Stationary Idle2,00:51:41,00:51:57
+RALIHR_surgeon01_fps01_0026,Transitionary Idle13,00:51:57,00:52:32
+RALIHR_surgeon01_fps01_0026,Mesh placement3,00:52:32,00:56:08
+RALIHR_surgeon01_fps01_0026,Transitionary Idle14,00:56:08,00:56:13
+RALIHR_surgeon01_fps01_0026,Mesh placement4,00:56:13,00:59:11
+RALIHR_surgeon01_fps01_0026,Transitionary Idle15,00:59:11,00:59:41
+RALIHR_surgeon01_fps01_0026,Positioining suture2,00:59:41,01:00:08
+RALIHR_surgeon01_fps01_0026,Peritoneal closure1,01:00:08,01:05:58
+RALIHR_surgeon01_fps01_0026,Positioining suture3,01:05:58,01:06:29
+RALIHR_surgeon01_fps01_0026,Peritoneal closure2,01:06:29,01:10:22
+RALIHR_surgeon01_fps01_0026,Positioining suture4,01:10:22,01:13:18
+RALIHR_surgeon01_fps01_0026,Peritoneal closure3,01:13:18,01:26:13
+RALIHR_surgeon01_fps01_0026,Positioining suture4,01:26:13,01:27:26
+RALIHR_surgeon01_fps01_0026,Peritoneal closure4,01:27:26,01:35:58
+RALIHR_surgeon01_fps01_0026,Positioning suture5,01:35:58,01:36:11
+RALIHR_surgeon01_fps01_0026,Transitionary Idle16,01:36:11,01:40:18
+RALIHR_surgeon01_fps01_0026,Catheter insertion,01:40:18,01:40:39
+RALIHR_surgeon01_fps01_0026,Transitionary Idle17,01:40:39,01:40:43
+RALIHR_surgeon01_fps01_0026,Positioning suture6,01:40:43,01:40:52
+RALIHR_surgeon01_fps01_0026,Peritoneal closure5,01:40:52,01:42:42
+RALIHR_surgeon01_fps01_0026,Positioning suture7,01:42:42,01:43:36
+RALIHR_surgeon01_fps01_0026,Transitionary Idle18,01:43:36,01:43:48
+RALIHR_surgeon01_fps01_0026,Stationary Idle3,01:43:48,01:44:08
+RALIHR_surgeon01_fps01_0027,Transitionary Idle1,00:00,00:17
+RALIHR_surgeon01_fps01_0027,Peritoneal scoring1,00:17,02:58
+RALIHR_surgeon01_fps01_0027,Preperitoneal dissection1,02:58,12:17
+RALIHR_surgeon01_fps01_0027,Reduction of Hernia1,12:17,14:51
+RALIHR_surgeon01_fps01_0027,Transitionary Idle2,14:51,14:55
+RALIHR_surgeon01_fps01_0027,Stationary Idle1,14:55,15:32
+RALIHR_surgeon01_fps01_0027,Transitionary Idle3,15:32,15:58
+RALIHR_surgeon01_fps01_0027,Reduction of Hernia2,15:58,18:24
+RALIHR_surgeon01_fps01_0027,Transitionary Idle4,18:24,18:45
+RALIHR_surgeon01_fps01_0027,Mesh positioning1,18:45,19:16
+RALIHR_surgeon01_fps01_0027,Transitionary Idle5,19:16,19:20
+RALIHR_surgeon01_fps01_0027,Stationary Idle2,19:20,19:30
+RALIHR_surgeon01_fps01_0027,Transitionary Idle6,19:30,19:35
+RALIHR_surgeon01_fps01_0027,Out of Body1,19:35,19:59
+RALIHR_surgeon01_fps01_0027,Transitionary Idle7,19:59,20:17
+RALIHR_surgeon01_fps01_0027,Mesh placement1,20:17,23:14
+RALIHR_surgeon01_fps01_0027,Transitionary Idle8,23:14,23:27
+RALIHR_surgeon01_fps01_0027,Positioning suture1,23:27,23:45
+RALIHR_surgeon01_fps01_0027,Peritoneal closure1,23:45,30:11
+RALIHR_surgeon01_fps01_0027,Positioning suture2,30:11,30:38
+RALIHR_surgeon01_fps01_0028,Transitionary Idle1,00:00,00:14
+RALIHR_surgeon01_fps01_0028,Mesh positioning1,00:14,00:25
+RALIHR_surgeon01_fps01_0028,Transitionary Idle2,00:25,00:28
+RALIHR_surgeon01_fps01_0028,Positioning suture1,00:28,00:46
+RALIHR_surgeon01_fps01_0028,Transitionary Idle3,00:46,01:00
+RALIHR_surgeon01_fps01_0028,Mesh positioning2,01:00,01:02
+RALIHR_surgeon01_fps01_0028,Transitionary Idle4,01:02,01:12
+RALIHR_surgeon01_fps01_0028,Peritoneal scoring1,01:12,02:42
+RALIHR_surgeon01_fps01_0028,Preperitoneal dissection1,02:42,05:57
+RALIHR_surgeon01_fps01_0028,Blurry1,05:57,06:18
+RALIHR_surgeon01_fps01_0028,Out of Body1,06:18,07:04
+RALIHR_surgeon01_fps01_0028,Transitionary Idle5,07:04,07:17
+RALIHR_surgeon01_fps01_0028,Preperitoneal dissection2,07:17,10:31
+RALIHR_surgeon01_fps01_0028,Reduction of Hernia1,10:31,13:09
+RALIHR_surgeon01_fps01_0028,Transitionary Idle6,13:09,13:26
+RALIHR_surgeon01_fps01_0028,Mesh placement1,13:26,16:25
+RALIHR_surgeon01_fps01_0028,Transitionary Idle7,16:25,16:30
+RALIHR_surgeon01_fps01_0028,Catheter insertion,16:30,16:59
+RALIHR_surgeon01_fps01_0028,Transitionary Idle8,16:59,17:47
+RALIHR_surgeon01_fps01_0028,Stationary Idle1,17:47,18:16
+RALIHR_surgeon01_fps01_0028,Transitionary Idle9,18:16,18:22
+RALIHR_surgeon01_fps01_0028,Peritoneal scoring2,18:22,20:46
+RALIHR_surgeon01_fps01_0028,Prepertioneal dissection3,20:46,31:24
+RALIHR_surgeon01_fps01_0028,Reduction of Hernia2,31:24,35:25
+RALIHR_surgeon01_fps01_0028,Transitionary Idle10,35:25,35:58
+RALIHR_surgeon01_fps01_0028,Stationary Idle2,35:58,36:24
+RALIHR_surgeon01_fps01_0028,Transitionary Idle11,36:24,36:44
+RALIHR_surgeon01_fps01_0028,Mesh placement2,36:44,41:04
+RALIHR_surgeon01_fps01_0028,Transitionary Idle12,41:04,41:25
+RALIHR_surgeon01_fps01_0028,Mesh placement3,41:25,42:23
+RALIHR_surgeon01_fps01_0028,Transitionary Idle13,42:23,42:34
+RALIHR_surgeon01_fps01_0028,Positioning suture2,42:34,42:48
+RALIHR_surgeon01_fps01_0028,Peritoneal closure1,42:48,49:05
+RALIHR_surgeon01_fps01_0028,Positioning suture3,49:05,49:59
+RALIHR_surgeon01_fps01_0028,Peritoneal closure2,49:59,56:43
+RALIHR_surgeon01_fps01_0028,Positioning suture4,56:43,57:18
+RALIHR_surgeon01_fps01_0029,Transitionary Idle1,00:00,00:10
+RALIHR_surgeon01_fps01_0029,Mesh positioning1,00:10,00:12
+RALIHR_surgeon01_fps01_0029,Transitionary Idle2,00:12,00:17
+RALIHR_surgeon01_fps01_0029,Positioning suture1,00:17,00:25
+RALIHR_surgeon01_fps01_0029,Transitionary Idle3,00:25,01:16
+RALIHR_surgeon01_fps01_0029,Peritoneal scoring1,01:16,02:03
+RALIHR_surgeon01_fps01_0029,Preperitoneal dissection1,02:03,03:30
+RALIHR_surgeon01_fps01_0029,Peritoneal scoring2,03:30,03:41
+RALIHR_surgeon01_fps01_0029,Preperitoneal dissection2,03:41,06:33
+RALIHR_surgeon01_fps01_0029,Reduction of Hernia1,06:33,18:17
+RALIHR_surgeon01_fps01_0029,Transitionary Idle4,18:17,18:21
+RALIHR_surgeon01_fps01_0029,Stationary Idle1,18:21,18:33
+RALIHR_surgeon01_fps01_0029,Transitionary Idle5,18:33,18:38
+RALIHR_surgeon01_fps01_0029,Mesh placement1,18:38,18:51
+RALIHR_surgeon01_fps01_0029,Transitionary Idle6,18:51,19:59
+RALIHR_surgeon01_fps01_0029,Mesh placement2,19:59,24:09
+RALIHR_surgeon01_fps01_0029,Transitionary Idle7,24:09,24:41
+RALIHR_surgeon01_fps01_0029,Positioning suture2,24:41,24:46
+RALIHR_surgeon01_fps01_0029,Peritoneal closure1,24:46,25:52
+RALIHR_surgeon01_fps01_0029,Cathter insertion,25:52,26:33
+RALIHR_surgeon01_fps01_0029,Peritoneal closure2,26:33,30:29
+RALIHR_surgeon01_fps01_0029,Positioning suture3,30:29,33:47
+RALIHR_surgeon01_fps01_0029,Peritoneal closure2,33:47,50:33
+RALIHR_surgeon01_fps01_0029,Positioning suture4,50:33,51:46
+RALIHR_surgeon01_fps01_0029,Transitionary Idle8,51:46,52:00
+RALIHR_surgeon01_fps01_0030,Transitionary Idle1,00:00,00:08
+RALIHR_surgeon01_fps01_0030,Positioning suture1,00:08,00:16
+RALIHR_surgeon01_fps01_0030,Transitionary Idle2,00:16,00:23
+RALIHR_surgeon01_fps01_0030,Mesh positioning1,00:23,00:33
+RALIHR_surgeon01_fps01_0030,Transitionary Idle3,00:33,00:50
+RALIHR_surgeon01_fps01_0030,Peritoneal scoring1,00:50,01:50
+RALIHR_surgeon01_fps01_0030,Preperitoneal dissection1,01:50,05:06
+RALIHR_surgeon01_fps01_0030,Reduction of Hernia1,05:06,15:03
+RALIHR_surgeon01_fps01_0030,Transitionary Idle4,15:03,15:14
+RALIHR_surgeon01_fps01_0030,Mesh placement1,15:14,16:31
+RALIHR_surgeon01_fps01_0030,Transitionary Idle5,16:31,16:34
+RALIHR_surgeon01_fps01_0030,Stationary Idle1,16:34,16:44
+RALIHR_surgeon01_fps01_0030,Transitionary Idle6,16:44,16:47
+RALIHR_surgeon01_fps01_0030,Stationary Idle2,16:47,17:08
+RALIHR_surgeon01_fps01_0030,Transitionary Idle7,17:08,17:36
+RALIHR_surgeon01_fps01_0030,Mesh placement2,17:36,27:25
+RALIHR_surgeon01_fps01_0030,Transitionary Idle8,27:25,27:33
+RALIHR_surgeon01_fps01_0030,Positioning suture2,27:33,27:50
+RALIHR_surgeon01_fps01_0030,Peritoneal closure1,27:50,28:45
+RALIHR_surgeon01_fps01_0030,Transitionary Idle9,28:45,29:05
+RALIHR_surgeon01_fps01_0030,Catheter insertion,29:05,29:38
+RALIHR_surgeon01_fps01_0030,Positioning suture3,29:38,30:03
+RALIHR_surgeon01_fps01_0030,Peritoneal closure2,30:03,41:07
+RALIHR_surgeon01_fps01_0030,Positioning suture4,41:07,42:25
+RALIHR_surgeon01_fps01_0030,Peritoneal closure3,42:25,44:46
+RALIHR_surgeon01_fps01_0030,Positioning suture5,44:46,45:53
+RALIHR_surgeon01_fps01_0030,Transitionary Idle10,45:53,46:05
+RALIHR_surgeon01_fps01_0031,Transitionary Idle1,00:00:00,00:00:12
+RALIHR_surgeon01_fps01_0031,Positioning suture1,00:00:12,00:00:49
+RALIHR_surgeon01_fps01_0031,Transitionary Idle2,00:00:49,00:00:52
+RALIHR_surgeon01_fps01_0031,Mesh positioning1,00:00:52,00:01:47
+RALIHR_surgeon01_fps01_0031,Transitionary Idle3,00:01:47,00:02:02
+RALIHR_surgeon01_fps01_0031,Peritoneal scoring1,00:02:02,00:04:17
+RALIHR_surgeon01_fps01_0031,Preperitoneal dissection1,00:04:17,00:06:59
+RALIHR_surgeon01_fps01_0031,Reduction of Hernia1,00:06:59,00:10:47
+RALIHR_surgeon01_fps01_0031,Transitionary Idle4,00:10:47,00:10:52
+RALIHR_surgeon01_fps01_0031,Mesh placement1,00:10:52,00:11:29
+RALIHR_surgeon01_fps01_0031,Transitionary Idle5,00:11:29,00:12:09
+RALIHR_surgeon01_fps01_0031,Peritoneal scoring2,00:12:09,00:14:05
+RALIHR_surgeon01_fps01_0031,Preperitoneal dissection2,00:14:05,00:18:04
+RALIHR_surgeon01_fps01_0031,Reduction of Hernia2,00:18:04,00:19:57
+RALIHR_surgeon01_fps01_0031,Transitionary Idle6,00:19:57,00:20:36
+RALIHR_surgeon01_fps01_0031,Out of Body1,00:20:36,00:20:58
+RALIHR_surgeon01_fps01_0031,Transitionary Idle7,00:20:58,00:21:10
+RALIHR_surgeon01_fps01_0031,Out of Body2,00:21:10,00:21:35
+RALIHR_surgeon01_fps01_0031,Stationary Idle1,00:21:35,00:21:50
+RALIHR_surgeon01_fps01_0031,Out of Body3,00:21:50,00:22:22
+RALIHR_surgeon01_fps01_0031,Transitionary Idle8,00:22:22,00:22:29
+RALIHR_surgeon01_fps01_0031,Mesh placement2,00:22:29,00:26:16
+RALIHR_surgeon01_fps01_0031,Transitionary Idle9,00:26:16,00:26:34
+RALIHR_surgeon01_fps01_0031,Mesh placement3,00:26:34,00:29:38
+RALIHR_surgeon01_fps01_0031,Transitionary Idle10,00:29:38,00:29:41
+RALIHR_surgeon01_fps01_0031,Positioning suture2,00:29:41,00:29:51
+RALIHR_surgeon01_fps01_0031,Peritoneal closure1,00:29:51,00:30:00
+RALIHR_surgeon01_fps01_0031,Catheter insertion,00:30:00,00:30:53
+RALIHR_surgeon01_fps01_0031,Peritoneal closure2,00:30:53,00:44:22
+RALIHR_surgeon01_fps01_0031,Positioning suture3,00:44:22,00:46:04
+RALIHR_surgeon01_fps01_0031,Peritoneal closure3,00:46:04,00:54:20
+RALIHR_surgeon01_fps01_0031,Positioning suture4,00:54:20,00:56:36
+RALIHR_surgeon01_fps01_0031,Peritoneal closure4,00:56:36,00:58:01
+RALIHR_surgeon01_fps01_0031,Positioning suture5,00:58:01,00:58:55
+RALIHR_surgeon01_fps01_0031,Peritoneal closure5,00:58:55,00:59:36
+RALIHR_surgeon01_fps01_0031,Transitionary Idle11,00:59:36,00:59:58
+RALIHR_surgeon01_fps01_0031,Positioning suture6,00:59:58,01:00:37
+RALIHR_surgeon01_fps01_0031,Peritoneal closure6,01:00:37,01:05:48
+RALIHR_surgeon01_fps01_0031,Positioning suture7,01:05:48,01:06:05
+RALIHR_surgeon01_fps01_0031,Peritoneal closure7,01:06:05,01:07:00
+RALIHR_surgeon01_fps01_0031,Positioning suture8,01:07:00,01:08:03
+RALIHR_surgeon01_fps01_0031,Transitionary Idle12,01:08:03,01:08:19
+RALIHR_surgeon01_fps01_0032,Transitionary Idle1,00:00,00:09
+RALIHR_surgeon01_fps01_0032,Mesh positioning1,00:09,01:40
+RALIHR_surgeon01_fps01_0032,Positioning suture1,01:40,02:09
+RALIHR_surgeon01_fps01_0032,Transitionary Idle2,02:09,02:38
+RALIHR_surgeon01_fps01_0032,Reduction of Hernia1,02:38,04:38
+RALIHR_surgeon01_fps01_0032,Transitionary Idle3,04:38,05:18
+RALIHR_surgeon01_fps01_0032,Peritoneal scoring1,05:18,07:46
+RALIHR_surgeon01_fps01_0032,Preperitoneal dissection1,07:46,11:07
+RALIHR_surgeon01_fps01_0032,Reduction of Hernia2,11:07,26:49
+RALIHR_surgeon01_fps01_0032,Transitionary Idle4,26:49,28:19
+RALIHR_surgeon01_fps01_0032,Mesh placement1,28:19,34:06
+RALIHR_surgeon01_fps01_0032,Transitionary Idle5,34:06,34:19
+RALIHR_surgeon01_fps01_0032,Mesh placement2,34:19,37:19
+RALIHR_surgeon01_fps01_0032,Transitionary Idle6,37:19,37:47
+RALIHR_surgeon01_fps01_0032,Catheter insertion,37:47,38:32
+RALIHR_surgeon01_fps01_0032,Transtiionary Idle7,38:32,38:44
+RALIHR_surgeon01_fps01_0032,Positioning suture2,38:44,39:00
+RALIHR_surgeon01_fps01_0032,Peritoneal closure1,39:00,42:46
+RALIHR_surgeon01_fps01_0032,Positioning suture3,42:46,43:39
+RALIHR_surgeon01_fps01_0032,Peritoneal closure2,43:39,53:49
+RALIHR_surgeon01_fps01_0032,Positioning suture3,53:49,54:03
+RALIHR_surgeon01_fps01_0033,Transitionary Idle1,00:00,00:08
+RALIHR_surgeon01_fps01_0033,Positioning suture1,00:08,00:12
+RALIHR_surgeon01_fps01_0033,Transitionary Idle2,00:12,00:29
+RALIHR_surgeon01_fps01_0033,Reduction of Hernia1,00:29,05:01
+RALIHR_surgeon01_fps01_0033,Transitionary Idle3,05:01,05:15
+RALIHR_surgeon01_fps01_0033,Peritoneal scoring1,05:15,06:13
+RALIHR_surgeon01_fps01_0033,Preperitoneal dissection1,06:13,09:39
+RALIHR_surgeon01_fps01_0033,Reduction of Hernia2,09:39,25:05
+RALIHR_surgeon01_fps01_0033,Transitionary Idle4,25:05,25:14
+RALIHR_surgeon01_fps01_0033,Reduction of Hernia3,25:14,25:45
+RALIHR_surgeon01_fps01_0033,Transitionary Idle5,25:45,26:15
+RALIHR_surgeon01_fps01_0033,Mesh positioning1,26:15,26:28
+RALIHR_surgeon01_fps01_0033,Transitionary Idle6,26:28,27:15
+RALIHR_surgeon01_fps01_0033,Mesh placement1,27:15,31:04
+RALIHR_surgeon01_fps01_0033,Transitionary Idle7,31:04,32:51
+RALIHR_surgeon01_fps01_0033,Catheter insertion,32:51,33:48
+RALIHR_surgeon01_fps01_0033,Transitionary Idle8,33:48,33:56
+RALIHR_surgeon01_fps01_0033,Positioning suture2,33:56,34:14
+RALIHR_surgeon01_fps01_0033,Peritoneal closure1,34:14,39:42
+RALIHR_surgeon01_fps01_0033,Positioning suture3,39:42,42:19
+RALIHR_surgeon01_fps01_0033,Peritoneal closure2,42:19,48:23
+RALIHR_surgeon01_fps01_0033,Positioning suture4,48:23,49:18
+RALIHR_surgeon01_fps01_0033,Transitionary Idle9,49:18,49:48
+RALIHR_surgeon01_fps01_0034,Transitionary Idle1,00:00:00,00:00:08
+RALIHR_surgeon01_fps01_0034,Positioning suture1,00:00:08,00:00:27
+RALIHR_surgeon01_fps01_0034,Transitionary Idle2,00:00:27,00:00:29
+RALIHR_surgeon01_fps01_0034,Mesh positioning 1,00:00:29,00:00:36
+RALIHR_surgeon01_fps01_0034,Transitionary Idle3,00:00:36,00:00:56
+RALIHR_surgeon01_fps01_0034,Peritoneal scoring1,00:00:56,00:02:39
+RALIHR_surgeon01_fps01_0034,Preperitoneal dissection1,00:02:39,00:06:18
+RALIHR_surgeon01_fps01_0034,Reduction of Hernia1,00:06:18,00:11:34
+RALIHR_surgeon01_fps01_0034,Transitionary Idle4,00:11:34,00:11:40
+RALIHR_surgeon01_fps01_0034,Mesh placement1,00:11:40,00:14:44
+RALIHR_surgeon01_fps01_0034,Transitionary Idle5,00:14:44,00:15:18
+RALIHR_surgeon01_fps01_0034,Peritoneal scoring2,00:15:18,00:17:27
+RALIHR_surgeon01_fps01_0034,Preperitoneal dissection2,00:17:27,00:18:30
+RALIHR_surgeon01_fps01_0034,Reduction of Hernia2,00:18:30,00:23:30
+RALIHR_surgeon01_fps01_0034,Transitionary Idle6,00:23:30,00:23:42
+RALIHR_surgeon01_fps01_0034,Mesh placement2,00:23:42,00:24:02
+RALIHR_surgeon01_fps01_0034,Transitionary Idle7,00:24:02,00:25:16
+RALIHR_surgeon01_fps01_0034,Positioning suture2,00:25:16,00:25:25
+RALIHR_surgeon01_fps01_0034,Peritoneal closure1,00:25:25,00:27:28
+RALIHR_surgeon01_fps01_0034,Catheter insertion,00:27:28,00:28:10
+RALIHR_surgeon01_fps01_0034,Peritoneal closure2,00:28:10,00:32:23
+RALIHR_surgeon01_fps01_0034,Positioning suture3,00:32:23,00:35:27
+RALIHR_surgeon01_fps01_0034,Transitioning Idle8,00:35:27,00:35:34
+RALIHR_surgeon01_fps01_0034,Mesh placement3,00:35:34,00:38:42
+RALIHR_surgeon01_fps01_0034,Stationary Idle1,00:38:42,00:39:20
+RALIHR_surgeon01_fps01_0034,Mesh placement4,00:39:20,00:39:53
+RALIHR_surgeon01_fps01_0034,Transitioning Idle9,00:39:53,00:39:58
+RALIHR_surgeon01_fps01_0034,Positioning suture4,00:39:58,00:40:06
+RALIHR_surgeon01_fps01_0034,Peritoneal closure3,00:40:06,00:41:48
+RALIHR_surgeon01_fps01_0034,Positioning suture5,00:41:48,00:46:23
+RALIHR_surgeon01_fps01_0034,Peritoneal closure4,00:46:23,00:55:26
+RALIHR_surgeon01_fps01_0034,Positioning suture6,00:55:26,00:57:34
+RALIHR_surgeon01_fps01_0034,Peritoneal closure5,00:57:34,00:58:48
+RALIHR_surgeon01_fps01_0034,Positioning suture7,00:58:48,00:59:55
+RALIHR_surgeon01_fps01_0034,Transitionary Idle10,00:59:55,01:00:15
+RALIHR_surgeon01_fps01_0035,Transitionary Idle1,00:00:00,00:00:17
+RALIHR_surgeon01_fps01_0035,Positioning suture1,00:00:17,00:00:31
+RALIHR_surgeon01_fps01_0035,Transitionary Idle2,00:00:31,00:00:38
+RALIHR_surgeon01_fps01_0035,Mesh positioning1,00:00:38,00:00:55
+RALIHR_surgeon01_fps01_0035,Transitionary Idle3,00:00:55,00:01:22
+RALIHR_surgeon01_fps01_0035,Peritoneal scoring1,00:01:22,00:02:23
+RALIHR_surgeon01_fps01_0035,Preperitoneal dissection1,00:02:23,00:05:17
+RALIHR_surgeon01_fps01_0035,Reduction of Hernia1,00:05:17,00:19:35
+RALIHR_surgeon01_fps01_0035,Transitionary Idle4,00:19:35,00:20:40
+RALIHR_surgeon01_fps01_0035,Reduction of Hernia2,00:20:40,00:28:29
+RALIHR_surgeon01_fps01_0035,Transitionary Idle5,00:28:29,00:28:39
+RALIHR_surgeon01_fps01_0035,Mesh placement1,00:28:39,00:29:10
+RALIHR_surgeon01_fps01_0035,Transitionary Idle6,00:29:10,00:29:25
+RALIHR_surgeon01_fps01_0035,Peritoneal scoring2,00:29:25,00:30:40
+RALIHR_surgeon01_fps01_0035,Preperitoneal dissection2,00:30:40,00:33:06
+RALIHR_surgeon01_fps01_0035,Reduction of Hernia3,00:33:06,00:38:05
+RALIHR_surgeon01_fps01_0035,Transitionary Idle7,00:38:05,00:38:12
+RALIHR_surgeon01_fps01_0035,Mesh placement2,00:38:12,00:38:50
+RALIHR_surgeon01_fps01_0035,Transitionary Idle8,00:38:50,00:39:30
+RALIHR_surgeon01_fps01_0035,Mesh placement3,00:39:30,00:42:24
+RALIHR_surgeon01_fps01_0035,Transitionary Idle9,00:42:24,00:42:38
+RALIHR_surgeon01_fps01_0035,Mesh placement4,00:42:38,00:46:23
+RALIHR_surgeon01_fps01_0035,Transitionary Idle10,00:46:23,00:47:03
+RALIHR_surgeon01_fps01_0035,Catheter insertion1,00:47:03,00:47:05
+RALIHR_surgeon01_fps01_0035,Transitionary Idle11,00:47:05,00:47:11
+RALIHR_surgeon01_fps01_0035,Positioning suture2,00:47:11,00:47:21
+RALIHR_surgeon01_fps01_0035,Catheter insertion2,00:47:21,00:47:31
+RALIHR_surgeon01_fps01_0035,Peritoneal closure1,00:47:31,00:48:08
+RALIHR_surgeon01_fps01_0035,Out of Body1,00:48:08,00:49:07
+RALIHR_surgeon01_fps01_0035,Transitionary Idle12,00:49:07,00:49:22
+RALIHR_surgeon01_fps01_0035,Positioning suture3,00:49:22,00:49:30
+RALIHR_surgeon01_fps01_0035,Peritoneal closure2,00:49:30,00:52:46
+RALIHR_surgeon01_fps01_0035,Positioning suture4,00:52:46,00:53:20
+RALIHR_surgeon01_fps01_0035,Peritoneal closure3,00:53:20,00:53:47
+RALIHR_surgeon01_fps01_0035,Positioning suture5,00:53:47,00:56:25
+RALIHR_surgeon01_fps01_0035,Peritoneal closure4,00:56:25,00:59:21
+RALIHR_surgeon01_fps01_0035,Positioning suture6,00:59:21,00:59:28
+RALIHR_surgeon01_fps01_0035,Peritoneal closure5,00:59:28,01:00:55
+RALIHR_surgeon01_fps01_0035,Positioning suture7,01:00:55,01:03:24
+RALIHR_surgeon01_fps01_0035,Peritoneal closure6,01:03:24,01:07:06
+RALIHR_surgeon01_fps01_0035,Positioning suture8,01:07:06,01:08:01
+RALIHR_surgeon01_fps01_0035,Transitionary Idle13,01:08:01,01:08:38
+RALIHR_surgeon01_fps01_0036,Transitionary Idle1,00:00,00:09
+RALIHR_surgeon01_fps01_0036,Positioning suture1,00:09,00:25
+RALIHR_surgeon01_fps01_0036,Transitionary Idle2,00:25,01:00
+RALIHR_surgeon01_fps01_0036,Peritoneal scoring1,01:00,02:40
+RALIHR_surgeon01_fps01_0036,Preperitoneal dissection1,02:40,04:53
+RALIHR_surgeon01_fps01_0036,Reduction of Hernia1,04:53,10:40
+RALIHR_surgeon01_fps01_0036,Transitionary Idle3,10:40,10:45
+RALIHR_surgeon01_fps01_0036,Mesh placement1,10:45,11:29
+RALIHR_surgeon01_fps01_0036,Transitionary Idle4,11:29,11:36
+RALIHR_surgeon01_fps01_0036,Peritoneal scoring2,11:36,13:31
+RALIHR_surgeon01_fps01_0036,Preperitoneal dissection2,13:31,15:46
+RALIHR_surgeon01_fps01_0036,Reduction of Hernia2,15:46,19:31
+RALIHR_surgeon01_fps01_0036,Transitionary Idle5,19:31,19:39
+RALIHR_surgeon01_fps01_0036,Mesh placement2,19:39,20:19
+RALIHR_surgeon01_fps01_0036,Transitionary Idle6,20:19,20:22
+RALIHR_surgeon01_fps01_0036,Stationary Idle1,20:22,20:52
+RALIHR_surgeon01_fps01_0036,Transitionary Idle7,20:52,21:24
+RALIHR_surgeon01_fps01_0036,Mesh placement3,21:24,27:02
+RALIHR_surgeon01_fps01_0036,Transitionary Idle,27:02,27:05
+RALIHR_surgeon01_fps01_0036,Positioning suture2,27:05,27:14
+RALIHR_surgeon01_fps01_0036,Peritoneal closure1,27:14,27:49
+RALIHR_surgeon01_fps01_0036,Catheter insertion,27:49,28:36
+RALIHR_surgeon01_fps01_0036,Transitionary Idle8,28:36,28:39
+RALIHR_surgeon01_fps01_0036,Peritoneal closure2,28:39,31:49
+RALIHR_surgeon01_fps01_0036,Positioning suture3,31:49,31:57
+RALIHR_surgeon01_fps01_0036,Transitionary Idle9,31:57,32:08
+RALIHR_surgeon01_fps01_0036,Mesh placement4,32:08,35:33
+RALIHR_surgeon01_fps01_0036,Transitionary Idle10,35:33,35:41
+RALIHR_surgeon01_fps01_0036,Positioning suture4,35:41,36:03
+RALIHR_surgeon01_fps01_0036,Peritoneal closure3,36:03,39:43
+RALIHR_surgeon01_fps01_0036,Positioning suture5,39:43,40:40
+RALIHR_surgeon01_fps01_0036,Transitionary Idle11,40:40,41:06
+RALIHR_surgeon01_fps01_0037,Transitionary Idle1,00:00,00:40
+RALIHR_surgeon01_fps01_0037,Peritoneal scoring1,00:40,01:48
+RALIHR_surgeon01_fps01_0037,Preperitoneal dissection1,01:48,04:02
+RALIHR_surgeon01_fps01_0037,Peritoneal scoring2,04:02,04:50
+RALIHR_surgeon01_fps01_0037,Preperitoneal dissection2,04:50,11:54
+RALIHR_surgeon01_fps01_0037,Reduction of Hernia1,11:54,19:54
+RALIHR_surgeon01_fps01_0037,Transitionary Idle2,19:54,20:09
+RALIHR_surgeon01_fps01_0037,Mesh placement1,20:09,26:46
+RALIHR_surgeon01_fps01_0037,Transitionary Idle3,26:46,28:26
+RALIHR_surgeon01_fps01_0037,Catheter insertion,28:26,29:12
+RALIHR_surgeon01_fps01_0037,Transitionary Idle4,29:12,29:24
+RALIHR_surgeon01_fps01_0037,Positioning suture1,29:24,29:37
+RALIHR_surgeon01_fps01_0037,Peritoneal closure1,29:37,33:59
+RALIHR_surgeon01_fps01_0037,Positioning suture2,33:59,34:11
+RALIHR_surgeon01_fps01_0037,Peritoneal closure2,34:11,35:37
+RALIHR_surgeon01_fps01_0037,Positioning suture3,35:37,36:45
+RALIHR_surgeon01_fps01_0037,Transitionary Idle5,36:45,37:00
+RALIHR_surgeon01_fps01_0037,Stationary Idle1,37:00,37:10
+RALIHR_surgeon01_fps01_0038,Transitionary Idle1,00:00,00:13
+RALIHR_surgeon01_fps01_0038,Positioning suture1,00:13,00:38
+RALIHR_surgeon01_fps01_0038,Transitionary Idle2,00:38,00:46
+RALIHR_surgeon01_fps01_0038,Mesh positioning1,00:46,00:52
+RALIHR_surgeon01_fps01_0038,Transitionary Idle3,00:52,01:03
+RALIHR_surgeon01_fps01_0038,Peritoneal scoring1,01:03,02:56
+RALIHR_surgeon01_fps01_0038,Preperitoneal dissection1,02:56,05:21
+RALIHR_surgeon01_fps01_0038,Reduction of Hernia1,05:21,10:33
+RALIHR_surgeon01_fps01_0038,Transitionary Idle4,10:33,10:39
+RALIHR_surgeon01_fps01_0038,Mesh placement1,10:39,11:06
+RALIHR_surgeon01_fps01_0038,Transitionary Idle5,11:06,11:17
+RALIHR_surgeon01_fps01_0038,Peritoneal scoring2,11:17,13:08
+RALIHR_surgeon01_fps01_0038,Preperitoneal dissection2,13:08,18:20
+RALIHR_surgeon01_fps01_0038,Reduction of Hernia2,18:20,21:03
+RALIHR_surgeon01_fps01_0038,Transitionary Idle6,21:03,21:09
+RALIHR_surgeon01_fps01_0038,Mesh placement2,21:09,21:36
+RALIHR_surgeon01_fps01_0038,Transitionary Idle7,21:36,22:17
+RALIHR_surgeon01_fps01_0038,Reduction of Hernia3,22:17,22:33
+RALIHR_surgeon01_fps01_0038,Transitionary Idle8,22:33,22:37
+RALIHR_surgeon01_fps01_0038,Mesh placement3,22:37,25:43
+RALIHR_surgeon01_fps01_0038,Transitionary Idle9,25:43,25:51
+RALIHR_surgeon01_fps01_0038,Mesh placement4,25:51,28:53
+RALIHR_surgeon01_fps01_0038,Transitionary Idle10,28:53,29:24
+RALIHR_surgeon01_fps01_0038,Catheter insertion,29:24,30:28
+RALIHR_surgeon01_fps01_0038,Transitionary Idle11,30:28,30:39
+RALIHR_surgeon01_fps01_0038,Positioning suture2,30:39,31:00
+RALIHR_surgeon01_fps01_0038,Peritoneal closure1,31:00,35:17
+RALIHR_surgeon01_fps01_0038,Positioning suture3,35:17,35:44
+RALIHR_surgeon01_fps01_0038,Peritoneal closure2,35:44,49:22
+RALIHR_surgeon01_fps01_0038,Positioning suture4,49:22,51:06
+RALIHR_surgeon01_fps01_0038,Transitionary Idle12,51:06,52:02
+RALIHR_surgeon01_fps01_0038,Positioning suture5,52:02,53:08
+RALIHR_surgeon01_fps01_0038,Transitionary Idle13,53:08,53:16
+RALIHR_surgeon01_fps01_0038,Stationary Idle1,53:16,53:34
+RALIHR_surgeon01_fps01_0039,Transitionary Idle1,00:00,00:08
+RALIHR_surgeon01_fps01_0039,Reduction of Hernia1,00:08,00:28
+RALIHR_surgeon01_fps01_0039,Transitionary Idle2,00:28,00:34
+RALIHR_surgeon01_fps01_0039,Peritoneal scoring1,00:34,02:12
+RALIHR_surgeon01_fps01_0039,Preperitoneal dissection1,02:12,05:45
+RALIHR_surgeon01_fps01_0039,Reduction of Hernia1,05:45,29:18
+RALIHR_surgeon01_fps01_0039,Transitionary Idle3,29:18,29:44
+RALIHR_surgeon01_fps01_0039,Mesh placement1,29:44,30:08
+RALIHR_surgeon01_fps01_0039,Transitionary Idle4,30:08,30:47
+RALIHR_surgeon01_fps01_0039,Positioning suture1,30:47,31:46
+RALIHR_surgeon01_fps01_0039,Primary Hernia Repair1,31:46,34:15
+RALIHR_surgeon01_fps01_0039,Positioning suture2,34:15,34:32
+RALIHR_surgeon01_fps01_0039,Transitionary Idle5,34:32,34:40
+RALIHR_surgeon01_fps01_0039,Mesh placement2,34:40,37:08
+RALIHR_surgeon01_fps01_0039,Transitionary Idle6,37:08,37:33
+RALIHR_surgeon01_fps01_0039,Positioning suture3,37:33,37:51
+RALIHR_surgeon01_fps01_0039,Peritoneal closure1,37:51,40:08
+RALIHR_surgeon01_fps01_0039,Catheter insertion,40:08,40:37
+RALIHR_surgeon01_fps01_0039,Peritoneal closure2,40:37,43:18
+RALIHR_surgeon01_fps01_0039,Positioning suture4,43:18,45:43
+RALIHR_surgeon01_fps01_0039,Peritoneal closure3,45:43,48:17
+RALIHR_surgeon01_fps01_0039,Positioning suture5,48:17,48:30
+RALIHR_surgeon01_fps01_0039,Peritoneal closure4,48:30,49:21
+RALIHR_surgeon01_fps01_0039,Positioning suture6,49:21,49:29
+RALIHR_surgeon01_fps01_0039,Peritoneal closure5,49:29,50:55
+RALIHR_surgeon01_fps01_0039,Positioning suture7,50:55,51:17
+RALIHR_surgeon01_fps01_0039,Transitionary Idle6,51:17,51:46
+RALIHR_surgeon01_fps01_0040,Transitionary Idle1,00:00,00:09
+RALIHR_surgeon01_fps01_0040,Positioning suture1,00:09,00:33
+RALIHR_surgeon01_fps01_0040,Transitionary Idle2,00:33,00:37
+RALIHR_surgeon01_fps01_0040,Mesh positioning1,00:37,00:51
+RALIHR_surgeon01_fps01_0040,Transitionary Idle3,00:51,01:02
+RALIHR_surgeon01_fps01_0040,Peritoneal scoring1,01:02,02:30
+RALIHR_surgeon01_fps01_0040,Preperitoneal dissection1,02:30,08:01
+RALIHR_surgeon01_fps01_0040,Reduction of Hernia1,08:01,11:17
+RALIHR_surgeon01_fps01_0040,Transitionary Idle4,11:17,11:25
+RALIHR_surgeon01_fps01_0040,Mesh placement1,11:25,12:02
+RALIHR_surgeon01_fps01_0040,Preperitoneal dissection2,12:02,12:33
+RALIHR_surgeon01_fps01_0040,Transitionary Idle5,12:33,12:46
+RALIHR_surgeon01_fps01_0040,Peritoneal scoring2,12:46,14:29
+RALIHR_surgeon01_fps01_0040,Preperitoneal dissection3,14:29,18:19
+RALIHR_surgeon01_fps01_0040,Reduction of Hernia2,18:19,21:30
+RALIHR_surgeon01_fps01_0040,Transitionary Idle6,21:30,21:39
+RALIHR_surgeon01_fps01_0040,Mesh placement2,21:39,22:16
+RALIHR_surgeon01_fps01_0040,Transitionary Idle7,22:16,23:18
+RALIHR_surgeon01_fps01_0040,Mesh placement3,23:18,26:33
+RALIHR_surgeon01_fps01_0040,Transitionary Idle8,26:33,26:42
+RALIHR_surgeon01_fps01_0040,Mesh placement4,26:42,29:13
+RALIHR_surgeon01_fps01_0040,Transitionary Idle9,29:13,29:40
+RALIHR_surgeon01_fps01_0040,Positioning suture2,29:40,30:37
+RALIHR_surgeon01_fps01_0040,Catheter insertion,30:37,31:25
+RALIHR_surgeon01_fps01_0040,Positioning suture3,31:25,31:27
+RALIHR_surgeon01_fps01_0040,Peritoneal closure1,31:27,36:39
+RALIHR_surgeon01_fps01_0040,Positioning suture4,36:39,37:06
+RALIHR_surgeon01_fps01_0040,Peritoneal closure2,37:06,41:48
+RALIHR_surgeon01_fps01_0040,Positioning suture5,41:48,42:09
+RALIHR_surgeon01_fps01_0040,Peritoneal closure3,42:09,43:55
+RALIHR_surgeon01_fps01_0040,Positioning suture6,43:55,44:53
+RALIHR_surgeon01_fps01_0040,Transitionary Idle10,44:53,45:00
+RALIHR_surgeon01_fps01_0041,Transitionary Idle1,00:00,00:13
+RALIHR_surgeon01_fps01_0041,Peritoneal scoring1,00:13,02:10
+RALIHR_surgeon01_fps01_0041,Preperitoneal dissection1,02:10,06:21
+RALIHR_surgeon01_fps01_0041,Reduction of Hernia1,06:21,24:23
+RALIHR_surgeon01_fps01_0041,Transitionary Idle2,24:23,24:54
+RALIHR_surgeon01_fps01_0041,Out of Body1,24:54,25:53
+RALIHR_surgeon01_fps01_0041,Transitionary Idle3,25:53,26:09
+RALIHR_surgeon01_fps01_0041,Out of Body2,26:09,26:46
+RALIHR_surgeon01_fps01_0041,Transitionary Idle4,26:46,27:15
+RALIHR_surgeon01_fps01_0041,Out of body3,27:15,27:41
+RALIHR_surgeon01_fps01_0041,Transtiionary Idle5,27:41,27:46
+RALIHR_surgeon01_fps01_0041,Out of body4,27:46,28:04
+RALIHR_surgeon01_fps01_0041,Transitionary Idle6,28:04,28:16
+RALIHR_surgeon01_fps01_0041,Mesh placement1,28:16,34:48
+RALIHR_surgeon01_fps01_0041,Transitionary Idle7,34:48,34:59
+RALIHR_surgeon01_fps01_0041,Catheter insertion,34:59,35:47
+RALIHR_surgeon01_fps01_0041,Transtiionary Idle8,35:47,35:55
+RALIHR_surgeon01_fps01_0041,Positioning Suture1,35:55,35:59
+RALIHR_surgeon01_fps01_0041,Peritoneal closure1,35:59,40:54
+RALIHR_surgeon01_fps01_0041,Positioning Suture2,40:54,41:31
+RALIHR_surgeon01_fps01_0041,Transtiionary Idle9,41:31,41:54
+RALIHR_surgeon01_fps01_0042,Stationary Idle1,00:00,00:23
+RALIHR_surgeon01_fps01_0042,Transitionary Idle1,00:23,00:29
+RALIHR_surgeon01_fps01_0042,Mesh positioning1,00:29,00:38
+RALIHR_surgeon01_fps01_0042,Transitionary Idle2,00:38,00:41
+RALIHR_surgeon01_fps01_0042,Reduction of Hernia1,00:41,01:54
+RALIHR_surgeon01_fps01_0042,Mesh positioning2,01:54,02:01
+RALIHR_surgeon01_fps01_0042,Transitionary Idle3,02:01,02:12
+RALIHR_surgeon01_fps01_0042,Reduction of Hernia2,02:12,02:31
+RALIHR_surgeon01_fps01_0042,Transitionary Idle4,02:31,02:38
+RALIHR_surgeon01_fps01_0042,Peritoneal scoring1,02:38,06:33
+RALIHR_surgeon01_fps01_0042,Preperitoneal dissection1,06:33,11:22
+RALIHR_surgeon01_fps01_0042,Reduction of Hernia3,11:22,22:58
+RALIHR_surgeon01_fps01_0042,Transitionary Idle5,22:58,23:27
+RALIHR_surgeon01_fps01_0042,Out of body1,23:27,23:54
+RALIHR_surgeon01_fps01_0042,Transitionary Idle6,23:54,24:00
+RALIHR_surgeon01_fps01_0042,Reduction of Hernia4,24:00,29:13
+RALIHR_surgeon01_fps01_0042,Transitionary Idle7,29:13,30:14
+RALIHR_surgeon01_fps01_0042,Mesh placement1,30:14,34:05
+RALIHR_surgeon01_fps01_0042,Transitionary Idle8,34:05,34:15
+RALIHR_surgeon01_fps01_0042,Positioning suture1,34:15,34:35
+RALIHR_surgeon01_fps01_0042,Peritoneal closure1,34:35,35:59
+RALIHR_surgeon01_fps01_0042,Catheter insertion,35:59,37:47
+RALIHR_surgeon01_fps01_0042,Peritoneal closure2,37:47,44:08
+RALIHR_surgeon01_fps01_0042,Positioning suture2,44:08,46:16
+RALIHR_surgeon01_fps01_0042,Out of body2,46:16,46:44
+RALIHR_surgeon01_fps01_0042,Positioning suture3,46:44,46:53
+RALIHR_surgeon01_fps01_0042,Out of body3,46:53,47:50
+RALIHR_surgeon01_fps01_0042,Positioning suture4,47:50,47:54
+RALIHR_surgeon01_fps01_0042,Peritoneal closure3,47:54,51:25
+RALIHR_surgeon01_fps01_0042,Positioning suture5,51:25,52:09
+RALIHR_surgeon01_fps01_0042,Transitionary Idle9,52:09,52:32
+RALIHR_surgeon01_fps01_0043,Transitionary Idle1,00:00:00,00:00:05
+RALIHR_surgeon01_fps01_0043,Mesh positioning1,00:00:05,00:00:21
+RALIHR_surgeon01_fps01_0043,Transitionary Idle2,00:00:21,00:00:24
+RALIHR_surgeon01_fps01_0043,Positioning suture1,00:00:24,00:00:54
+RALIHR_surgeon01_fps01_0043,Transitionary Idle3,00:00:54,00:01:02
+RALIHR_surgeon01_fps01_0043,Mesh positioning2,00:01:02,00:01:27
+RALIHR_surgeon01_fps01_0043,Transitionary Idle4,00:01:27,00:02:25
+RALIHR_surgeon01_fps01_0043,Peritoneal scoring1,00:02:25,00:04:39
+RALIHR_surgeon01_fps01_0043,Preperitoneal dissection1,00:04:39,00:09:42
+RALIHR_surgeon01_fps01_0043,Reduction of Hernia1,00:09:42,00:20:11
+RALIHR_surgeon01_fps01_0043,Transitionary Idle5,00:20:11,00:20:30
+RALIHR_surgeon01_fps01_0043,Mesh placement1,00:20:30,00:25:02
+RALIHR_surgeon01_fps01_0043,Transitionary Idle6,00:25:02,00:25:20
+RALIHR_surgeon01_fps01_0043,Peritoneal scoring2,00:25:20,00:31:49
+RALIHR_surgeon01_fps01_0043,Preperitoneal dissection2,00:31:49,00:43:12
+RALIHR_surgeon01_fps01_0043,Reduction of Hernia2,00:43:12,00:50:55
+RALIHR_surgeon01_fps01_0043,Transitionary Idle7,00:50:55,00:51:01
+RALIHR_surgeon01_fps01_0043,Mesh placement2,00:51:01,01:00:20
+RALIHR_surgeon01_fps01_0043,Transitionary Idle8,01:00:20,01:00:28
+RALIHR_surgeon01_fps01_0043,Positioning suture2,01:00:28,01:01:39
+RALIHR_surgeon01_fps01_0043,Catheter insertion,01:01:39,01:02:10
+RALIHR_surgeon01_fps01_0043,Positioning suture3,01:02:10,01:02:17
+RALIHR_surgeon01_fps01_0043,Peritoneal closure1,01:02:17,01:03:30
+RALIHR_surgeon01_fps01_0043,Positioning suture4,01:03:30,01:04:50
+RALIHR_surgeon01_fps01_0043,Peritoneal closure2,01:04:50,01:07:58
+RALIHR_surgeon01_fps01_0043,Positioning suture5,01:07:58,01:08:32
+RALIHR_surgeon01_fps01_0043,Peritoneal closure3,01:08:32,01:17:29
+RALIHR_surgeon01_fps01_0043,Positioning suture6,01:17:29,01:18:19
+RALIHR_surgeon01_fps01_0043,Transitionary Idle9,01:18:19,01:18:35
+RALIHR_surgeon01_fps01_0043,Positioning suture7,01:18:35,01:18:43
+RALIHR_surgeon01_fps01_0043,Transitionary Idle10,01:18:43,01:18:49
+RALIHR_surgeon01_fps01_0044,Transitionary Idle1,00:00,00:15
+RALIHR_surgeon01_fps01_0044,Mesh positioning1,00:15,00:19
+RALIHR_surgeon01_fps01_0044,Transtionary Idle2,00:19,00:23
+RALIHR_surgeon01_fps01_0044,Positioning suture1,00:23,00:38
+RALIHR_surgeon01_fps01_0044,Transtionary Idle3,00:38,00:53
+RALIHR_surgeon01_fps01_0044,Peritoneal scoring1,00:53,02:15
+RALIHR_surgeon01_fps01_0044,Preperitoneal dissection1,02:15,07:28
+RALIHR_surgeon01_fps01_0044,Reduction of Hernia1,07:28,14:42
+RALIHR_surgeon01_fps01_0044,Transitionary Idle4,14:42,15:05
+RALIHR_surgeon01_fps01_0044,Mesh placement1,15:05,17:52
+RALIHR_surgeon01_fps01_0044,Transitionary Idle5,17:52,18:04
+RALIHR_surgeon01_fps01_0044,Positioning suture2,18:04,18:27
+RALIHR_surgeon01_fps01_0044,Peritoneal closure1,18:27,22:34
+RALIHR_surgeon01_fps01_0044,Positioning suture3,22:34,24:01
+RALIHR_surgeon01_fps01_0044,Peritoneal closure2,24:01,25:26
+RALIHR_surgeon01_fps01_0044,Transitionary Idle6,25:26,27:08
+RALIHR_surgeon01_fps01_0044,Peritoneal closure3,27:08,28:57
+RALIHR_surgeon01_fps01_0044,Positioning suture4,28:57,30:39
+RALIHR_surgeon01_fps01_0044,Peritoneal closure4,30:39,33:15
+RALIHR_surgeon01_fps01_0044,Positioning suture5,33:15,33:19
+RALIHR_surgeon01_fps01_0044,Peritoneal closure5,33:19,34:15
+RALIHR_surgeon01_fps01_0044,Positioning suture6,34:15,34:52
+RALIHR_surgeon01_fps01_0044,Transitionary Idle7,34:52,36:35
+RALIHR_surgeon01_fps01_0044,Adhesiolysis1,36:35,38:18
+RALIHR_surgeon01_fps01_0044,Transitionary Idle8,38:18,39:57
+RALIHR_surgeon01_fps01_0044,Stationary Idle1,39:57,40:53
+RALIHR_surgeon01_fps01_0045,Stationary Idle1,00:00,00:24
+RALIHR_surgeon01_fps01_0045,Transitionary Idle1,00:24,01:25
+RALIHR_surgeon01_fps01_0045,Peritoneal scoring1,01:25,02:52
+RALIHR_surgeon01_fps01_0045,Preperitoneal dissection1,02:52,09:52
+RALIHR_surgeon01_fps01_0045,Reduction of Hernia1,09:52,15:47
+RALIHR_surgeon01_fps01_0045,Transitionary Idle2,15:47,15:55
+RALIHR_surgeon01_fps01_0045,Stationary Idle2,15:55,16:08
+RALIHR_surgeon01_fps01_0045,Transitionary Idle2,16:08,16:09
+RALIHR_surgeon01_fps01_0045,Stationary Idle2,16:09,16:54
+RALIHR_surgeon01_fps01_0045,Transitionary Idle3,16:54,17:09
+RALIHR_surgeon01_fps01_0045,Mesh placement1,17:09,22:09
+RALIHR_surgeon01_fps01_0045,Transitionary Idle4,22:09,22:35
+RALIHR_surgeon01_fps01_0045,Catheter insertion,22:35,24:27
+RALIHR_surgeon01_fps01_0045,Transitionary Idle5,24:27,24:39
+RALIHR_surgeon01_fps01_0045,Positioning suture1,24:39,25:00
+RALIHR_surgeon01_fps01_0045,Peritoneal closure1,25:00,27:38
+RALIHR_surgeon01_fps01_0045,Positioning suture2,27:38,30:24
+RALIHR_surgeon01_fps01_0045,Peritoneal closure2,30:24,41:34
+RALIHR_surgeon01_fps01_0045,Positioning suture3,41:34,42:24
+RALIHR_surgeon01_fps01_0045,Transitionary Idle,42:24,43:19
+RALIHR_surgeon01_fps01_0046,Transitionary Idle1,00:00,00:12
+RALIHR_surgeon01_fps01_0046,Mesh positioning1,00:12,00:34
+RALIHR_surgeon01_fps01_0046,Transitionary Idle2,00:34,00:39
+RALIHR_surgeon01_fps01_0046,Positioning suture1,00:39,00:58
+RALIHR_surgeon01_fps01_0046,Transitionary Idle3,00:58,01:35
+RALIHR_surgeon01_fps01_0046,Peritoneal scoring1,01:35,03:07
+RALIHR_surgeon01_fps01_0046,Preperitoneal dissection1,03:07,06:58
+RALIHR_surgeon01_fps01_0046,Reduction of Hernia1,06:58,13:35
+RALIHR_surgeon01_fps01_0046,Transitionary Idle4,13:35,13:38
+RALIHR_surgeon01_fps01_0046,Mesh placement1,13:38,16:21
+RALIHR_surgeon01_fps01_0046,Transitionary Idle5,16:21,16:45
+RALIHR_surgeon01_fps01_0046,Peritoneal scoring2,16:45,18:53
+RALIHR_surgeon01_fps01_0046,Preperitoneal dissection2,18:53,21:15
+RALIHR_surgeon01_fps01_0046,Reduction of Hernia2,21:15,26:10
+RALIHR_surgeon01_fps01_0046,Transitionary Idle6,26:10,26:19
+RALIHR_surgeon01_fps01_0046,Mesh placement2,26:19,27:04
+RALIHR_surgeon01_fps01_0046,Transitionary Idle7,27:04,28:11
+RALIHR_surgeon01_fps01_0046,Positioning suture2,28:11,28:24
+RALIHR_surgeon01_fps01_0046,Peritoneal closure1,28:24,28:49
+RALIHR_surgeon01_fps01_0046,Catheter insertion,28:49,29:33
+RALIHR_surgeon01_fps01_0046,Peritoneal closure2,29:33,31:54
+RALIHR_surgeon01_fps01_0046,Positioning suture3,31:54,32:09
+RALIHR_surgeon01_fps01_0046,Transitionary Idle8,32:09,32:18
+RALIHR_surgeon01_fps01_0046,Stationary Idle1,32:18,32:28
+RALIHR_surgeon01_fps01_0046,Out of Body1,32:28,32:52
+RALIHR_surgeon01_fps01_0046,Stationary Idle2,32:52,33:16
+RALIHR_surgeon01_fps01_0046,Transitionary Idle9,33:16,34:09
+RALIHR_surgeon01_fps01_0046,Mesh placement3,34:09,39:19
+RALIHR_surgeon01_fps01_0046,Transitiionary Idle10,39:19,39:24
+RALIHR_surgeon01_fps01_0046,Stationary Idle3,39:24,39:40
+RALIHR_surgeon01_fps01_0046,Transitionary Idle11,39:40,39:45
+RALIHR_surgeon01_fps01_0046,Positioning suture4,39:45,40:17
+RALIHR_surgeon01_fps01_0046,Peritoneal closure3,40:17,54:19
+RALIHR_surgeon01_fps01_0046,Positioning suture5,54:19,57:15
+RALIHR_surgeon01_fps01_0046,Transitionary Idle12,57:15,57:30
+RALIHR_surgeon01_fps01_0047,Transitionary Idle1,00:00,00:30
+RALIHR_surgeon01_fps01_0047,Positioning suture1,00:30,00:35
+RALIHR_surgeon01_fps01_0047,Transitionary Idle2,00:35,00:53
+RALIHR_surgeon01_fps01_0047,Peritoneal scoring1,00:53,02:36
+RALIHR_surgeon01_fps01_0047,Preperitoneal dissection1,02:36,09:26
+RALIHR_surgeon01_fps01_0047,Reduction of Hernia1,09:26,14:27
+RALIHR_surgeon01_fps01_0047,Transitionary Idle3,14:27,16:03
+RALIHR_surgeon01_fps01_0047,Positioning suture2,16:03,16:08
+RALIHR_surgeon01_fps01_0047,Transitionary Idle4,16:08,18:09
+RALIHR_surgeon01_fps01_0047,Positioning suture3,18:09,18:22
+RALIHR_surgeon01_fps01_0047,Primary Hernia repair1,18:22,20:10
+RALIHR_surgeon01_fps01_0047,Positioning suture4,20:10,20:25
+RALIHR_surgeon01_fps01_0047,Transitionary Idle5,20:25,21:12
+RALIHR_surgeon01_fps01_0047,Mesh placement1,21:12,28:18
+RALIHR_surgeon01_fps01_0047,Transitionary idle6,28:18,28:28
+RALIHR_surgeon01_fps01_0047,Catheter insertion1,28:28,29:22
+RALIHR_surgeon01_fps01_0047,Transitionary idle7,29:22,29:53
+RALIHR_surgeon01_fps01_0047,Positioning suture5,29:53,30:49
+RALIHR_surgeon01_fps01_0047,Peritoneal closure1,30:49,31:04
+RALIHR_surgeon01_fps01_0047,Positioning suture6,31:04,31:24
+RALIHR_surgeon01_fps01_0047,Peritoneal closure2,31:24,32:18
+RALIHR_surgeon01_fps01_0047,Positioning suture7,32:18,33:14
+RALIHR_surgeon01_fps01_0047,Peritoneal closure3,33:14,41:15
+RALIHR_surgeon01_fps01_0047,Positioning suture8,41:15,42:07
+RALIHR_surgeon01_fps01_0047,Transitionary idle8,42:07,42:25
+RALIHR_surgeon01_fps01_0048,Transitionary Idle1,00:00,00:10
+RALIHR_surgeon01_fps01_0048,Positioning suture1,00:10,00:17
+RALIHR_surgeon01_fps01_0048,Transitionary Idle2,00:17,00:28
+RALIHR_surgeon01_fps01_0048,Peritoneal scoring1,00:28,02:11
+RALIHR_surgeon01_fps01_0048,Preperitoneal dissection1,02:11,06:09
+RALIHR_surgeon01_fps01_0048,Reduction of Hernia1,06:09,15:00
+RALIHR_surgeon01_fps01_0048,Transitionary Idle3,15:00,15:20
+RALIHR_surgeon01_fps01_0048,Stationary Idle1,15:20,15:39
+RALIHR_surgeon01_fps01_0048,Transitionary Idle4,15:39,15:48
+RALIHR_surgeon01_fps01_0048,Mesh placement1,15:48,26:25
+RALIHR_surgeon01_fps01_0048,Transtitionary Idle5,26:25,27:13
+RALIHR_surgeon01_fps01_0048,Catheter insertion1,27:13,28:12
+RALIHR_surgeon01_fps01_0048,Transitionary Idle6,28:12,28:26
+RALIHR_surgeon01_fps01_0048,Positioning suture2,28:26,28:51
+RALIHR_surgeon01_fps01_0048,Peritoneal closure1,28:51,33:21
+RALIHR_surgeon01_fps01_0048,Positioning suture3,33:21,34:15
+RALIHR_surgeon01_fps01_0048,Transitionary Idle7,34:15,34:32
+RALIHR_surgeon01_fps01_0049,Transitionary Idle1,00:00:00,00:00:11
+RALIHR_surgeon01_fps01_0049,Peritoneal scoring1,00:00:11,00:02:19
+RALIHR_surgeon01_fps01_0049,Preperitoneal dissection1,00:02:19,00:06:50
+RALIHR_surgeon01_fps01_0049,Reduction of Hernia1,00:06:50,00:13:00
+RALIHR_surgeon01_fps01_0049,Transitionary Idle2,00:13:00,00:13:04
+RALIHR_surgeon01_fps01_0049,Mesh placement1,00:13:04,00:19:30
+RALIHR_surgeon01_fps01_0049,Transitionary Idle3,00:19:30,00:19:39
+RALIHR_surgeon01_fps01_0049,Mesh positioning1,00:19:39,00:19:47
+RALIHR_surgeon01_fps01_0049,Transitionary Idle4,00:19:47,00:19:50
+RALIHR_surgeon01_fps01_0049,Positioning suture1,00:19:50,00:20:11
+RALIHR_surgeon01_fps01_0049,Transitionary Idle5,00:20:11,00:20:23
+RALIHR_surgeon01_fps01_0049,Peritoneal scoring2,00:20:23,00:22:01
+RALIHR_surgeon01_fps01_0049,Preperitoneal dissection2,00:22:01,00:26:23
+RALIHR_surgeon01_fps01_0049,Reduction of Hernia2,00:26:23,00:34:34
+RALIHR_surgeon01_fps01_0049,Transitionary Idle6,00:34:34,00:34:39
+RALIHR_surgeon01_fps01_0049,Mesh placement2,00:34:39,00:44:00
+RALIHR_surgeon01_fps01_0049,Transitionary Idle7,00:44:00,00:44:22
+RALIHR_surgeon01_fps01_0049,Positioning suture2,00:44:22,00:44:54
+RALIHR_surgeon01_fps01_0049,Catheter insertion1,00:44:54,00:45:33
+RALIHR_surgeon01_fps01_0049,Positioning suture3,00:45:33,00:45:36
+RALIHR_surgeon01_fps01_0049,Peritoneal closure1,00:45:36,00:48:20
+RALIHR_surgeon01_fps01_0049,Positioning suture4,00:48:20,00:48:48
+RALIHR_surgeon01_fps01_0049,Peritoneal closure2,00:48:48,00:59:19
+RALIHR_surgeon01_fps01_0049,Positioning suture5,00:59:19,01:01:05
+RALIHR_surgeon01_fps01_0049,Transitionary Idle8,01:01:05,01:01:15
+RALIHR_surgeon01_fps01_0050,Transitionary Idle1,00:00,00:26
+RALIHR_surgeon01_fps01_0050,Peritoneal scoring1,00:26,06:04
+RALIHR_surgeon01_fps01_0050,Preperitoneal dissection1,06:04,14:48
+RALIHR_surgeon01_fps01_0050,Reduction of Hernia1,14:48,23:57
+RALIHR_surgeon01_fps01_0050,Transitionary Idle2,23:57,24:05
+RALIHR_surgeon01_fps01_0050,Mesh placement1,24:05,30:29
+RALIHR_surgeon01_fps01_0050,Transitionary Idle3,30:29,31:19
+RALIHR_surgeon01_fps01_0050,Catheter insertion,31:19,32:00
+RALIHR_surgeon01_fps01_0050,Transitionary Idle4,32:00,32:27
+RALIHR_surgeon01_fps01_0050,Positioning suture1,32:27,32:52
+RALIHR_surgeon01_fps01_0050,Peritoneal closure1,32:52,40:39
+RALIHR_surgeon01_fps01_0050,Positioning suture2,40:39,41:15
+RALIHR_surgeon01_fps01_0050,Transitionary Idle5,41:15,41:39
+RALIHR_surgeon01_fps01_0051,Transitionary Idle1,00:00:00,00:00:09
+RALIHR_surgeon01_fps01_0051,Mesh positioning1,00:00:09,00:00:18
+RALIHR_surgeon01_fps01_0051,Transitionary Idle2,00:00:18,00:00:21
+RALIHR_surgeon01_fps01_0051,Positioning suture1,00:00:21,00:00:39
+RALIHR_surgeon01_fps01_0051,Transitionary Idle3,00:00:39,00:01:05
+RALIHR_surgeon01_fps01_0051,Peritoneal scoring1,00:01:05,00:02:07
+RALIHR_surgeon01_fps01_0051,Preperitoneal dissection1,00:02:07,00:06:41
+RALIHR_surgeon01_fps01_0051,Reduction of Hernia1,00:06:41,00:10:59
+RALIHR_surgeon01_fps01_0051,Transitionary Idle4,00:10:59,00:11:06
+RALIHR_surgeon01_fps01_0051,Mesh placement1,00:11:06,00:16:18
+RALIHR_surgeon01_fps01_0051,Transitionary Idle5,00:16:18,00:16:31
+RALIHR_surgeon01_fps01_0051,Peritoneal scoring2,00:16:31,00:18:21
+RALIHR_surgeon01_fps01_0051,Preperitoneal dissection2,00:18:21,00:21:11
+RALIHR_surgeon01_fps01_0051,Reduction of Hernia2,00:21:11,00:27:03
+RALIHR_surgeon01_fps01_0051,Transitionary Idle6,00:27:03,00:27:12
+RALIHR_surgeon01_fps01_0051,Mesh placement2,00:27:12,00:27:54
+RALIHR_surgeon01_fps01_0051,Transitionary Idle7,00:27:54,00:28:40
+RALIHR_surgeon01_fps01_0051,Mesh placement3,00:28:40,00:31:23
+RALIHR_surgeon01_fps01_0051,Transitionary Idle8,00:31:23,00:31:34
+RALIHR_surgeon01_fps01_0051,Mesh placement4,00:31:34,00:32:27
+RALIHR_surgeon01_fps01_0051,Transitionary Idle9,00:32:27,00:32:57
+RALIHR_surgeon01_fps01_0051,Catheter insertion,00:32:57,00:34:20
+RALIHR_surgeon01_fps01_0051,Transitionary Idle10,00:34:20,00:34:29
+RALIHR_surgeon01_fps01_0051,Positioning suture1,00:34:29,00:34:32
+RALIHR_surgeon01_fps01_0051,Peritoneal closure1,00:34:32,00:46:43
+RALIHR_surgeon01_fps01_0051,Positioning suture2,00:46:43,00:49:29
+RALIHR_surgeon01_fps01_0051,Peritoneal closure2,00:49:29,01:00:43
+RALIHR_surgeon01_fps01_0051,Positioning suture3,01:00:43,01:01:16
+RALIHR_surgeon01_fps01_0051,Peritoneal closure3,01:01:16,01:02:19
+RALIHR_surgeon01_fps01_0051,Positioning suture4,01:02:19,01:04:22
+RALIHR_surgeon01_fps01_0051,Transitionary Idle11,01:04:22,01:04:29
+RALIHR_surgeon01_fps01_0052,Transitionary Idle1,00:00:00,00:00:16
+RALIHR_surgeon01_fps01_0052,Positioning suture1,00:00:16,00:00:30
+RALIHR_surgeon01_fps01_0052,Transitionary Idle2,00:00:30,00:02:13
+RALIHR_surgeon01_fps01_0052,Peritoneal scoring1,00:02:13,00:05:07
+RALIHR_surgeon01_fps01_0052,Preperitoneal dissection1,00:05:07,00:16:10
+RALIHR_surgeon01_fps01_0052,Reduction of Hernia1,00:16:10,00:17:03
+RALIHR_surgeon01_fps01_0052,Transitionary Idle3,00:17:03,00:17:16
+RALIHR_surgeon01_fps01_0052,Reduction of Hernia1,00:17:16,00:31:59
+RALIHR_surgeon01_fps01_0052,Transitionary Idle4,00:31:59,00:32:05
+RALIHR_surgeon01_fps01_0052,Out of body1,00:32:05,00:32:44
+RALIHR_surgeon01_fps01_0052,Transitionary Idle5,00:32:44,00:32:57
+RALIHR_surgeon01_fps01_0052,Reduction of Hernia2,00:32:57,00:45:34
+RALIHR_surgeon01_fps01_0052,Transitionary Idle6,00:45:34,00:47:55
+RALIHR_surgeon01_fps01_0052,Mesh placement1,00:47:55,00:51:32
+RALIHR_surgeon01_fps01_0052,Transitionary Idle7,00:51:32,00:51:37
+RALIHR_surgeon01_fps01_0052,Positioning suture2,00:51:37,00:51:44
+RALIHR_surgeon01_fps01_0052,Transitionary Idle8,00:51:44,00:52:26
+RALIHR_surgeon01_fps01_0052,Catheter insertion,00:52:26,00:53:06
+RALIHR_surgeon01_fps01_0052,Transitionary Idle9,00:53:06,00:53:10
+RALIHR_surgeon01_fps01_0052,Positioning suture3,00:53:10,00:53:26
+RALIHR_surgeon01_fps01_0052,Peritoneal closure1,00:53:26,01:03:47
+RALIHR_surgeon01_fps01_0052,Positioning suture2,01:03:47,01:04:46
+RALIHR_surgeon01_fps01_0052,Transitionary Idle10,01:04:46,01:05:35
+RALIHR_surgeon01_fps01_0052,Positioning suture3,01:05:35,01:06:13
+RALIHR_surgeon01_fps01_0052,Peritoneal closure2,01:06:13,01:07:40
+RALIHR_surgeon01_fps01_0052,Positioning suture4,01:07:40,01:08:27
+RALIHR_surgeon01_fps01_0052,Transitionary Idle11,01:08:27,01:08:40
+RALIHR_surgeon01_fps01_0052,Stationary Idle1,01:08:40,01:09:17
+RALIHR_surgeon01_fps01_0052,Transitionary Idle12,01:09:17,01:09:31
+RALIHR_surgeon01_fps01_0053,Transitionary Idle1,00:00,00:36
+RALIHR_surgeon01_fps01_0053,Mesh positioning1,00:36,00:55
+RALIHR_surgeon01_fps01_0053,Positioning suture1,00:55,01:15
+RALIHR_surgeon01_fps01_0053,Transitionary Idle2,01:15,02:26
+RALIHR_surgeon01_fps01_0053,Peritoneal scoring1,02:26,03:49
+RALIHR_surgeon01_fps01_0053,Preperitoneal dissection1,03:49,08:01
+RALIHR_surgeon01_fps01_0053,Reduction of Hernia1,08:01,13:40
+RALIHR_surgeon01_fps01_0053,Transitionary Idle3,13:40,13:49
+RALIHR_surgeon01_fps01_0053,Mesh placement1,13:49,18:32
+RALIHR_surgeon01_fps01_0053,Transitionary Idle4,18:32,19:05
+RALIHR_surgeon01_fps01_0053,Catheter insertion1,19:05,19:36
+RALIHR_surgeon01_fps01_0053,Transitionary Idle5,19:36,19:44
+RALIHR_surgeon01_fps01_0053,Positioning suture2,19:44,19:46
+RALIHR_surgeon01_fps01_0053,Peritoneal closure1,19:46,37:51
+RALIHR_surgeon01_fps01_0053,Positioning suture3,37:51,38:31
+RALIHR_surgeon01_fps01_0053,Transitionary Idle6,38:31,38:53
+RALIHR_surgeon01_fps01_0054,Transitionary Idle1,00:00,00:08
+RALIHR_surgeon01_fps01_0054,Positioning suture1,00:08,00:30
+RALIHR_surgeon01_fps01_0054,Transitionary Idle2,00:30,00:39
+RALIHR_surgeon01_fps01_0054,Peritoneal scoring1,00:39,02:01
+RALIHR_surgeon01_fps01_0054,Preperitoneal dissection1,02:01,06:41
+RALIHR_surgeon01_fps01_0054,Reduction of Hernia1,06:41,14:21
+RALIHR_surgeon01_fps01_0054,Blurry1,14:21,14:36
+RALIHR_surgeon01_fps01_0054,Out of body1,14:36,15:01
+RALIHR_surgeon01_fps01_0054,Transitionary Idle3,15:01,15:08
+RALIHR_surgeon01_fps01_0054,Adhesiolysis1,15:08,15:14
+RALIHR_surgeon01_fps01_0054,Transitionary Idle4,15:14,15:23
+RALIHR_surgeon01_fps01_0054,Stationary Idle1,15:23,15:37
+RALIHR_surgeon01_fps01_0054,Out of body2,15:37,15:57
+RALIHR_surgeon01_fps01_0054,Transitionary Idle5,15:57,16:38
+RALIHR_surgeon01_fps01_0054,Out of body3,16:38,17:07
+RALIHR_surgeon01_fps01_0054,Transitionary Idle6,17:07,17:24
+RALIHR_surgeon01_fps01_0054,Reduction of Hernia2,17:24,19:24
+RALIHR_surgeon01_fps01_0054,Transitionary Idle7,19:24,19:27
+RALIHR_surgeon01_fps01_0054,Mesh placement1,19:27,25:20
+RALIHR_surgeon01_fps01_0054,Transitionary Idle8,25:20,25:24
+RALIHR_surgeon01_fps01_0054,Stationary Idle2,25:24,25:50
+RALIHR_surgeon01_fps01_0054,Transitionary Idle9,25:50,27:06
+RALIHR_surgeon01_fps01_0054,Catheter insertion1,27:06,27:58
+RALIHR_surgeon01_fps01_0054,Transitionary Idle10,27:58,28:07
+RALIHR_surgeon01_fps01_0054,Positioning suture2,28:07,28:20
+RALIHR_surgeon01_fps01_0054,Peritoneal closure1,28:20,35:53
+RALIHR_surgeon01_fps01_0054,Positioning suture3,35:53,37:06
+RALIHR_surgeon01_fps01_0054,Peritoneal closure2,37:06,38:26
+RALIHR_surgeon01_fps01_0054,Positioning suture4,38:26,38:44
+RALIHR_surgeon01_fps01_0054,Peritoneal closure3,38:44,39:46
+RALIHR_surgeon01_fps01_0054,Positioning suture5,39:46,40:01
+RALIHR_surgeon01_fps01_0054,Peritoneal closure4,40:01,42:56
+RALIHR_surgeon01_fps01_0054,Positioning suture6,42:56,43:39
+RALIHR_surgeon01_fps01_0054,Transitionary Idle11,43:39,43:54
+RALIHR_surgeon01_fps01_0055,Transitionary Idle1,00:00:00,00:00:10
+RALIHR_surgeon01_fps01_0055,Positioning suture1,00:00:10,00:00:27
+RALIHR_surgeon01_fps01_0055,Transitionary Idle2,00:00:27,00:00:38
+RALIHR_surgeon01_fps01_0055,Mesh positioning1,00:00:38,00:01:12
+RALIHR_surgeon01_fps01_0055,Transitionary Idle3,00:01:12,00:01:28
+RALIHR_surgeon01_fps01_0055,Peritoneal scoring1,00:01:28,00:04:10
+RALIHR_surgeon01_fps01_0055,Preperitoneal dissection1,00:04:10,00:07:49
+RALIHR_surgeon01_fps01_0055,Reduction of Hernia1,00:07:49,00:26:54
+RALIHR_surgeon01_fps01_0055,Transitionary Idle4,00:26:54,00:27:05
+RALIHR_surgeon01_fps01_0055,Mesh placement1,00:27:05,00:29:10
+RALIHR_surgeon01_fps01_0055,Transitionary Idle5,00:29:10,00:29:27
+RALIHR_surgeon01_fps01_0055,Peritoneal scoring2,00:29:27,00:31:15
+RALIHR_surgeon01_fps01_0055,Preperitoneal dissection2,00:31:15,00:34:10
+RALIHR_surgeon01_fps01_0055,Reduction of Hernia2,00:34:10,00:38:29
+RALIHR_surgeon01_fps01_0055,Transitionary Idle6,00:38:29,00:38:38
+RALIHR_surgeon01_fps01_0055,Mesh placement2,00:38:38,00:41:41
+RALIHR_surgeon01_fps01_0055,Transitionary Idle7,00:41:41,00:41:47
+RALIHR_surgeon01_fps01_0055,Mesh placement3,00:41:47,00:41:49
+RALIHR_surgeon01_fps01_0055,Transitionary Idle8,00:41:49,00:41:54
+RALIHR_surgeon01_fps01_0055,Positioning suture2,00:41:54,00:42:05
+RALIHR_surgeon01_fps01_0055,Peritoneal closure1,00:42:05,00:42:57
+RALIHR_surgeon01_fps01_0055,Catheter insertion1,00:42:57,00:43:41
+RALIHR_surgeon01_fps01_0055,Peritoneal closure2,00:43:41,00:46:24
+RALIHR_surgeon01_fps01_0055,Positioning suture3,00:46:24,00:46:48
+RALIHR_surgeon01_fps01_0055,Peritoneal closure3,00:46:48,00:51:45
+RALIHR_surgeon01_fps01_0055,Positioning suture4,00:51:45,00:53:13
+RALIHR_surgeon01_fps01_0055,Peritoneal closure4,00:53:13,00:55:25
+RALIHR_surgeon01_fps01_0055,Positioning suture5,00:55:25,00:55:49
+RALIHR_surgeon01_fps01_0055,Peritoneal closure5,00:55:49,00:56:01
+RALIHR_surgeon01_fps01_0055,Positioning suture6,00:56:01,00:56:45
+RALIHR_surgeon01_fps01_0055,Peritoneal closure6,00:56:45,00:57:22
+RALIHR_surgeon01_fps01_0055,Positioning suture7,00:57:22,00:57:35
+RALIHR_surgeon01_fps01_0055,Peritoneal closure7,00:57:35,00:58:42
+RALIHR_surgeon01_fps01_0055,Positioning suture8,00:58:42,01:00:11
+RALIHR_surgeon01_fps01_0055,Peritoneal closure8,01:00:11,01:04:38
+RALIHR_surgeon01_fps01_0055,Positioning suture9,01:04:38,01:04:53
+RALIHR_surgeon01_fps01_0055,Peritoneal closure9,01:04:53,01:06:59
+RALIHR_surgeon01_fps01_0055,Positioning suture10,01:06:59,01:07:43
+RALIHR_surgeon01_fps01_0055,Transitionary Idle9,01:07:43,01:07:47
+RALIHR_surgeon01_fps01_0055,Stationary Idle1,01:07:47,01:08:07
+RALIHR_surgeon01_fps01_0056,Transitionary Idle1,00:00:00,00:00:25
+RALIHR_surgeon01_fps01_0056,Mesh positioning1,00:00:25,00:00:29
+RALIHR_surgeon01_fps01_0056,Transitionary Idle2,00:00:29,00:00:35
+RALIHR_surgeon01_fps01_0056,Positioning suture1,00:00:35,00:00:42
+RALIHR_surgeon01_fps01_0056,Transitionary Idle3,00:00:42,00:00:46
+RALIHR_surgeon01_fps01_0056,Reduction of Hernia1,00:00:46,00:06:27
+RALIHR_surgeon01_fps01_0056,Transitionary Idle4,00:06:27,00:07:20
+RALIHR_surgeon01_fps01_0056,Peritoneal scoring1,00:07:20,00:08:51
+RALIHR_surgeon01_fps01_0056,Preperitoneal dissection1,00:08:51,00:13:42
+RALIHR_surgeon01_fps01_0056,Reduction of Hernia2,00:13:42,00:36:13
+RALIHR_surgeon01_fps01_0056,Transitionary Idle5,00:36:13,00:46:48
+RALIHR_surgeon01_fps01_0056,Positioning suture2,00:46:48,00:47:17
+RALIHR_surgeon01_fps01_0056,Primary Hernia repair1,00:47:17,00:50:11
+RALIHR_surgeon01_fps01_0056,Positioning suture3,00:50:11,00:50:25
+RALIHR_surgeon01_fps01_0056,Transitionary Idle6,00:50:25,00:51:14
+RALIHR_surgeon01_fps01_0056,Mesh placement1,00:51:14,00:53:30
+RALIHR_surgeon01_fps01_0056,Transitionary Idle7,00:53:30,00:55:22
+RALIHR_surgeon01_fps01_0056,Out of Body1,00:55:22,00:55:49
+RALIHR_surgeon01_fps01_0056,Transitionary Idle8,00:55:49,00:55:56
+RALIHR_surgeon01_fps01_0056,Out of Body2,00:55:56,00:56:36
+RALIHR_surgeon01_fps01_0056,Transitionary Idle9,00:56:36,00:57:53
+RALIHR_surgeon01_fps01_0056,Positioning suture4,00:57:53,00:58:00
+RALIHR_surgeon01_fps01_0056,Peritoneal closure1,00:58:00,01:10:42
+RALIHR_surgeon01_fps01_0056,Positioning suture5,01:10:42,01:14:52
+RALIHR_surgeon01_fps01_0056,Peritoneal closure2,01:14:52,01:16:56
+RALIHR_surgeon01_fps01_0056,Catheter insertion1,01:16:56,01:17:08
+RALIHR_surgeon01_fps01_0056,Transitionary Idle10,01:17:08,01:17:10
+RALIHR_surgeon01_fps01_0056,Positioning suture6,01:17:10,01:17:25
+RALIHR_surgeon01_fps01_0056,Peritoneal closure3,01:17:25,01:32:25
+RALIHR_surgeon01_fps01_0056,Positioning suture7,01:32:25,01:33:05
+RALIHR_surgeon01_fps01_0056,Transitionary Idle11,01:33:05,01:33:19
+RALIHR_surgeon01_fps01_0056,Stationary Idle1,01:33:19,01:33:29
+RALIHR_surgeon01_fps01_0056,Transitionary Idle12,01:33:29,01:33:34
+RALIHR_surgeon01_fps01_0057,Transitionary Idle1,00:00:00,00:00:17
+RALIHR_surgeon01_fps01_0057,Positioning suture1,00:00:17,00:00:40
+RALIHR_surgeon01_fps01_0057,Transitionary Idle2,00:00:40,00:00:49
+RALIHR_surgeon01_fps01_0057,Mesh positioning1,00:00:49,00:01:12
+RALIHR_surgeon01_fps01_0057,Transitionary Idle3,00:01:12,00:01:16
+RALIHR_surgeon01_fps01_0057,Peritoneal scoring1,00:01:16,00:02:19
+RALIHR_surgeon01_fps01_0057,Preperitoneal dissection1,00:02:19,00:07:29
+RALIHR_surgeon01_fps01_0057,Reduction of Hernia1,00:07:29,00:18:11
+RALIHR_surgeon01_fps01_0057,Transitionary Idle4,00:18:11,00:18:16
+RALIHR_surgeon01_fps01_0057,Mesh placement1,00:18:16,00:18:48
+RALIHR_surgeon01_fps01_0057,Transitionary Idle5,00:18:48,00:19:07
+RALIHR_surgeon01_fps01_0057,Peritoneal scoring2,00:19:07,00:20:09
+RALIHR_surgeon01_fps01_0057,Preperitoneal dissection2,00:20:09,00:23:58
+RALIHR_surgeon01_fps01_0057,Reduction of Hernia2,00:23:58,00:29:08
+RALIHR_surgeon01_fps01_0057,Transitionary Idle6,00:29:08,00:29:17
+RALIHR_surgeon01_fps01_0057,Mesh placement2,00:29:17,00:30:29
+RALIHR_surgeon01_fps01_0057,Transitionary Idle7,00:30:29,00:31:24
+RALIHR_surgeon01_fps01_0057,Mesh placement3,00:31:24,00:35:29
+RALIHR_surgeon01_fps01_0057,Transitionary Idle7,00:35:29,00:35:46
+RALIHR_surgeon01_fps01_0057,Mesh placement4,00:35:46,00:39:11
+RALIHR_surgeon01_fps01_0057,Transitionary Idle8,00:39:11,00:39:21
+RALIHR_surgeon01_fps01_0057,Mesh placement5,00:39:21,00:39:30
+RALIHR_surgeon01_fps01_0057,Transitionary Idle9,00:39:30,00:39:34
+RALIHR_surgeon01_fps01_0057,Positioning suture2,00:39:34,00:40:30
+RALIHR_surgeon01_fps01_0057,Catheter insertion1,00:40:30,00:41:08
+RALIHR_surgeon01_fps01_0057,Peritoneal closure1,00:41:08,00:46:05
+RALIHR_surgeon01_fps01_0057,Positioning suture3,00:46:05,00:46:31
+RALIHR_surgeon01_fps01_0057,Peritoneal closure2,00:46:31,00:47:15
+RALIHR_surgeon01_fps01_0057,Positioning suture4,00:47:15,00:47:38
+RALIHR_surgeon01_fps01_0057,Peritoneal closure3,00:47:38,00:50:40
+RALIHR_surgeon01_fps01_0057,Positioning suture5,00:50:40,00:53:02
+RALIHR_surgeon01_fps01_0057,Stationary Idle1,00:53:02,00:53:41
+RALIHR_surgeon01_fps01_0057,Positioning suture6,00:53:41,00:54:43
+RALIHR_surgeon01_fps01_0057,Peritoneal closure4,00:54:43,01:06:17
+RALIHR_surgeon01_fps01_0057,Positioning suture7,01:06:17,01:07:14
+RALIHR_surgeon01_fps01_0057,Stationary Idle2,01:07:14,01:07:20
+RALIHR_surgeon01_fps01_0058,Transitionary Idle1,00:00,00:07
+RALIHR_surgeon01_fps01_0058,Peritoneal scoring1,00:07,01:26
+RALIHR_surgeon01_fps01_0058,Stationary Idle1,01:26,03:13
+RALIHR_surgeon01_fps01_0058,Transitionary Idle2,03:13,03:31
+RALIHR_surgeon01_fps01_0058,Positioning suture1,03:31,03:44
+RALIHR_surgeon01_fps01_0058,Transitionary Idle3,03:44,03:58
+RALIHR_surgeon01_fps01_0058,Peritoneal scoring2,03:58,04:24
+RALIHR_surgeon01_fps01_0058,Preperitoneal dissection1,04:24,06:58
+RALIHR_surgeon01_fps01_0058,Reduction of Hernia1,06:58,15:09
+RALIHR_surgeon01_fps01_0058,Transitionary Idle4,15:09,15:24
+RALIHR_surgeon01_fps01_0058,Mesh placement1,15:24,18:27
+RALIHR_surgeon01_fps01_0058,Transitionary Idle5,18:27,18:37
+RALIHR_surgeon01_fps01_0058,Positioning suture2,18:37,18:41
+RALIHR_surgeon01_fps01_0058,Peritoneal closure1,18:41,19:46
+RALIHR_surgeon01_fps01_0058,Catheter insertion1,19:46,20:28
+RALIHR_surgeon01_fps01_0058,Peritoneal closure2,20:28,24:45
+RALIHR_surgeon01_fps01_0058,Positioning suture3,24:45,25:27
+RALIHR_surgeon01_fps01_0059,Transitionary Idle1,00:00:00,00:00:10
+RALIHR_surgeon01_fps01_0059,Adhesiolysis1,00:00:10,00:00:20
+RALIHR_surgeon01_fps01_0059,Transitionary Idle2,00:00:20,00:00:32
+RALIHR_surgeon01_fps01_0059,Positioning suture1,00:00:32,00:00:43
+RALIHR_surgeon01_fps01_0059,Transitionary Idle3,00:00:43,00:00:48
+RALIHR_surgeon01_fps01_0059,Mesh positioning1,00:00:48,00:01:06
+RALIHR_surgeon01_fps01_0059,Transitionary Idle4,00:01:06,00:01:42
+RALIHR_surgeon01_fps01_0059,Peritoneal scoring1,00:01:42,00:03:24
+RALIHR_surgeon01_fps01_0059,Preperitoneal dissection1 ,00:03:24,00:11:20
+RALIHR_surgeon01_fps01_0059,Reduction of Hernia1,00:11:20,00:16:06
+RALIHR_surgeon01_fps01_0059,Transitionary Idle5,00:16:06,00:16:23
+RALIHR_surgeon01_fps01_0059,Mesh placement1,00:16:23,00:17:11
+RALIHR_surgeon01_fps01_0059,Transitionary Idle6,00:17:11,00:17:27
+RALIHR_surgeon01_fps01_0059,Peritoneal scoring2,00:17:27,00:19:22
+RALIHR_surgeon01_fps01_0059,Preperitoneal dissection2,00:19:22,00:24:09
+RALIHR_surgeon01_fps01_0059,Reduction of Hernia2,00:24:09,00:29:29
+RALIHR_surgeon01_fps01_0059,Transitionary Idle6,00:29:29,00:30:31
+RALIHR_surgeon01_fps01_0059,Out of Body1,00:30:31,00:30:59
+RALIHR_surgeon01_fps01_0059,Transitionary Idle7,00:30:59,00:31:13
+RALIHR_surgeon01_fps01_0059,Mesh placement2,00:31:13,00:31:56
+RALIHR_surgeon01_fps01_0059,Transitionary Idle8,00:31:56,00:32:00
+RALIHR_surgeon01_fps01_0059,Out of Body2,00:32:00,00:32:38
+RALIHR_surgeon01_fps01_0059,Stationary Idle1,00:32:38,00:32:39
+RALIHR_surgeon01_fps01_0059,Out of Body3,00:32:39,00:32:55
+RALIHR_surgeon01_fps01_0059,Stationary Idle2,00:32:55,00:33:00
+RALIHR_surgeon01_fps01_0059,Out of Body4,00:33:00,00:33:26
+RALIHR_surgeon01_fps01_0059,Transitionary Idle9,00:33:26,00:33:34
+RALIHR_surgeon01_fps01_0059,Mesh placement3,00:33:34,00:37:05
+RALIHR_surgeon01_fps01_0059,Transitionary Idle10,00:37:05,00:37:43
+RALIHR_surgeon01_fps01_0059,Positioning Suture2,00:37:43,00:37:51
+RALIHR_surgeon01_fps01_0059,Transitionary Idle11,00:37:51,00:38:03
+RALIHR_surgeon01_fps01_0059,Mesh placement4,00:38:03,00:45:30
+RALIHR_surgeon01_fps01_0059,Transitionary Idle12,00:45:30,00:46:09
+RALIHR_surgeon01_fps01_0059,Catheter insertion1,00:46:09,00:46:52
+RALIHR_surgeon01_fps01_0059,Transitionary Idle13,00:46:52,00:47:04
+RALIHR_surgeon01_fps01_0059,Positioning suture2,00:47:04,00:47:16
+RALIHR_surgeon01_fps01_0059,Peritoneal closure1,00:47:16,00:50:45
+RALIHR_surgeon01_fps01_0059,Positioning suture3,00:50:45,00:51:05
+RALIHR_surgeon01_fps01_0059,Peritoneal closure2,00:51:05,00:54:31
+RALIHR_surgeon01_fps01_0059,Positioning suture4,00:54:31,00:55:10
+RALIHR_surgeon01_fps01_0059,Peritoneal closure3,00:55:10,00:59:47
+RALIHR_surgeon01_fps01_0059,Positioning suture5,00:59:47,00:59:57
+RALIHR_surgeon01_fps01_0059,Peritoneal closure3,00:59:57,01:01:54
+RALIHR_surgeon01_fps01_0059,Positioning suture6,01:01:54,01:02:55
+RALIHR_surgeon01_fps01_0059,Transitionary Idle14,01:02:55,01:03:01
+RALIHR_surgeon01_fps01_0059,Stationary Idle3,01:03:01,01:03:18
+RALIHR_surgeon01_fps01_0060,Transitionary Idle1,00:00,00:10
+RALIHR_surgeon01_fps01_0060,Positioning suture1,00:10,00:39
+RALIHR_surgeon01_fps01_0060,Transitionary Idle2,00:39,01:02
+RALIHR_surgeon01_fps01_0060,Peritoneal scoring1,01:02,02:35
+RALIHR_surgeon01_fps01_0060,Preperitoneal dissection1,02:35,05:00
+RALIHR_surgeon01_fps01_0060,Reduction of Hernia1,05:00,08:50
+RALIHR_surgeon01_fps01_0060,Preperitoneal dissection2,08:50,10:38
+RALIHR_surgeon01_fps01_0060,Reduction of Hernia2,10:38,14:00
+RALIHR_surgeon01_fps01_0060,Transitionary Idle3,14:00,14:34
+RALIHR_surgeon01_fps01_0060,Mesh placement1,14:34,20:09
+RALIHR_surgeon01_fps01_0060,Catheter insertion1,20:09,20:42
+RALIHR_surgeon01_fps01_0060,Transitionary Idle4,20:42,20:54
+RALIHR_surgeon01_fps01_0060,Positioning suture2,20:54,21:00
+RALIHR_surgeon01_fps01_0060,Peritoneal closure1,21:00,28:18
+RALIHR_surgeon01_fps01_0060,Positioning suture3,28:18,28:42
+RALIHR_surgeon01_fps01_0060,Peritoneal closure2,28:42,30:04
+RALIHR_surgeon01_fps01_0060,Positioning suture4,30:04,30:28
+RALIHR_surgeon01_fps01_0060,Transitionary Idle5,30:28,30:58
+RALIHR_surgeon01_fps01_0061,Transitionary Idle1,00:00:00,00:00:16
+RALIHR_surgeon01_fps01_0061,Positioning suture1,00:00:16,00:00:28
+RALIHR_surgeon01_fps01_0061,Transitionary Idle2,00:00:28,00:00:42
+RALIHR_surgeon01_fps01_0061,Mesh positioning1,00:00:42,00:00:47
+RALIHR_surgeon01_fps01_0061,Transitionary Idle3,00:00:47,00:00:59
+RALIHR_surgeon01_fps01_0061,Peritoneal scoring1,00:00:59,00:02:26
+RALIHR_surgeon01_fps01_0061,Preperitoneal dissection1,00:02:26,00:10:27
+RALIHR_surgeon01_fps01_0061,Reduction of Hernia1,00:10:27,00:35:40
+RALIHR_surgeon01_fps01_0061,Transitionary Idle4,00:35:40,00:38:25
+RALIHR_surgeon01_fps01_0061,Mesh placement1,00:38:25,00:45:29
+RALIHR_surgeon01_fps01_0061,Transitionary Idle5,00:45:29,00:48:18
+RALIHR_surgeon01_fps01_0061,Positioning suture2,00:48:18,00:48:34
+RALIHR_surgeon01_fps01_0061,Peritoneal closure1,00:48:34,00:48:41
+RALIHR_surgeon01_fps01_0061,Positioning suture3,00:48:41,00:51:06
+RALIHR_surgeon01_fps01_0061,Out of Body1,00:51:06,00:51:38
+RALIHR_surgeon01_fps01_0061,Positioning suture4,00:51:38,00:51:50
+RALIHR_surgeon01_fps01_0061,Out of Body2,00:51:50,00:52:15
+RALIHR_surgeon01_fps01_0061,Positioning suture5,00:52:15,00:52:20
+RALIHR_surgeon01_fps01_0061,Out of Body3,00:52:20,00:52:56
+RALIHR_surgeon01_fps01_0061,Transitionary Idle6,00:52:56,00:53:10
+RALIHR_surgeon01_fps01_0061,Positioning suture6,00:53:10,00:53:28
+RALIHR_surgeon01_fps01_0061,Peritoneal closure2,00:53:28,00:54:49
+RALIHR_surgeon01_fps01_0061,Catheter insertion1,00:54:49,00:55:25
+RALIHR_surgeon01_fps01_0061,Peritoneal closure3,00:55:25,00:58:42
+RALIHR_surgeon01_fps01_0061,Positioning suture7,00:58:42,01:00:16
+RALIHR_surgeon01_fps01_0061,Peritoneal closure4,01:00:16,01:02:43
+RALIHR_surgeon01_fps01_0061,Positioning suture8,01:02:43,01:03:24
+RALIHR_surgeon01_fps01_0061,Transitionary Idle7,01:03:24,01:03:30
+RALIHR_surgeon01_fps01_0061,Stationary Idle1,01:03:30,01:03:52
+RALIHR_surgeon01_fps01_0062,Positioning suture1,00:00,00:05
+RALIHR_surgeon01_fps01_0062,Transitionary Idle1,00:05,00:23
+RALIHR_surgeon01_fps01_0062,Mesh positioning1,00:23,00:26
+RALIHR_surgeon01_fps01_0062,Transitionary Idle2,00:26,00:34
+RALIHR_surgeon01_fps01_0062,Reduction of Hernia1,00:34,00:37
+RALIHR_surgeon01_fps01_0062,Transitionary Idle3,00:37,00:49
+RALIHR_surgeon01_fps01_0062,Peritoneal scoring1,00:49,02:48
+RALIHR_surgeon01_fps01_0062,Perperitoneal dissection1,02:48,06:22
+RALIHR_surgeon01_fps01_0062,Reduction of Hernia2,06:22,20:02
+RALIHR_surgeon01_fps01_0062,Transitionary Idle4,20:02,20:12
+RALIHR_surgeon01_fps01_0062,Mesh placement1,20:12,20:44
+RALIHR_surgeon01_fps01_0062,Transitionary Idle5,20:44,20:58
+RALIHR_surgeon01_fps01_0062,Peritoneal scoring2,20:58,22:42
+RALIHR_surgeon01_fps01_0062,Perperitoneal dissection2,22:42,26:08
+RALIHR_surgeon01_fps01_0062,Reduction of Hernia3,26:08,30:26
+RALIHR_surgeon01_fps01_0062,Transitionary Idle6,30:26,30:36
+RALIHR_surgeon01_fps01_0062,Mesh placement2,30:36,34:54
+RALIHR_surgeon01_fps01_0062,Transitionary Idle7,34:54,35:10
+RALIHR_surgeon01_fps01_0062,Mesh placement3,35:10,36:45
+RALIHR_surgeon01_fps01_0062,Transitionary Idle8,36:45,37:33
+RALIHR_surgeon01_fps01_0062,Catheter insertion1,37:33,38:33
+RALIHR_surgeon01_fps01_0062,Transitionary Idle8,38:33,38:40
+RALIHR_surgeon01_fps01_0062,Positioning suture2,38:40,38:49
+RALIHR_surgeon01_fps01_0062,Peritoneal closure1,38:49,42:51
+RALIHR_surgeon01_fps01_0062,Positioning suture3,42:51,43:35
+RALIHR_surgeon01_fps01_0062,Peritoneal closure2,43:35,48:43
+RALIHR_surgeon01_fps01_0062,Positioning suture4,48:43,48:55
+RALIHR_surgeon01_fps01_0062,Stationary Idle1,48:55,49:35
+RALIHR_surgeon01_fps01_0062,Positioning suture5,49:35,50:44
+RALIHR_surgeon01_fps01_0062,Transitionary Idle9,50:44,51:00
+RALIHR_surgeon01_fps01_0063,Transitionary Idle1,00:00:00,00:00:39
+RALIHR_surgeon01_fps01_0063,Peritoneal scoring1,00:00:39,00:01:54
+RALIHR_surgeon01_fps01_0063,Preperitoneal dissection1,00:01:54,00:04:52
+RALIHR_surgeon01_fps01_0063,Reduction of Hernia1,00:04:52,00:11:03
+RALIHR_surgeon01_fps01_0063,Transitionary Idle2,00:11:03,00:11:06
+RALIHR_surgeon01_fps01_0063,Mesh placement1,00:11:06,00:12:03
+RALIHR_surgeon01_fps01_0063,Transitionary Idle3,00:12:03,00:12:15
+RALIHR_surgeon01_fps01_0063,Positioning suture1,00:12:15,00:12:46
+RALIHR_surgeon01_fps01_0063,Transitionary Idle4,00:12:46,00:13:13
+RALIHR_surgeon01_fps01_0063,Peritoneal scoring2,00:13:13,00:14:10
+RALIHR_surgeon01_fps01_0063,Preperitoneal dissection2,00:14:10,00:17:08
+RALIHR_surgeon01_fps01_0063,Reduction of Hernia2,00:17:08,00:22:41
+RALIHR_surgeon01_fps01_0063,Transitionary Idle4,00:22:41,00:31:42
+RALIHR_surgeon01_fps01_0063,Mesh placement2,00:31:42,00:34:31
+RALIHR_surgeon01_fps01_0063,Transitionary Idle5,00:34:31,00:34:40
+RALIHR_surgeon01_fps01_0063,Mesh placement3,00:34:40,00:37:04
+RALIHR_surgeon01_fps01_0063,Transitionary Idle6,00:37:04,00:37:29
+RALIHR_surgeon01_fps01_0063,Catheter insertion1,00:37:29,00:38:09
+RALIHR_surgeon01_fps01_0063,Transitionary Idle7,00:38:09,00:38:21
+RALIHR_surgeon01_fps01_0063,Positioning suture2,00:38:21,00:38:39
+RALIHR_surgeon01_fps01_0063,Peritoneal closure1,00:38:39,00:39:48
+RALIHR_surgeon01_fps01_0063,Positioning suture3,00:39:48,00:40:07
+RALIHR_surgeon01_fps01_0063,Peritoneal closure2,00:40:07,00:42:56
+RALIHR_surgeon01_fps01_0063,Out of Body1,00:42:56,00:43:33
+RALIHR_surgeon01_fps01_0063,Peritoneal closure3,00:43:33,00:49:37
+RALIHR_surgeon01_fps01_0063,Transitionary Idle8,00:49:37,00:50:41
+RALIHR_surgeon01_fps01_0063,Peritoneal closure4,00:50:41,01:00:49
+RALIHR_surgeon01_fps01_0063,Positioning suture4,01:00:49,01:01:50
+RALIHR_surgeon01_fps01_0063,Peritoneal closure5,01:01:50,01:03:33
+RALIHR_surgeon01_fps01_0063,Positioning suture5,01:03:33,01:05:34
+RALIHR_surgeon01_fps01_0063,Transitionary Idle9,01:05:34,01:08:31
+RALIHR_surgeon01_fps01_0064,Transitionary Idle1,00:00,00:09
+RALIHR_surgeon01_fps01_0064,Positioning suture1,00:09,00:16
+RALIHR_surgeon01_fps01_0064,Transitionary Idle2,00:16,00:26
+RALIHR_surgeon01_fps01_0064,Mesh positioning1,00:26,00:42
+RALIHR_surgeon01_fps01_0064,Transitionary Idle3,00:42,01:08
+RALIHR_surgeon01_fps01_0064,Peritoneal scoring1,01:08,03:26
+RALIHR_surgeon01_fps01_0064,Preperitoneal dissection1,03:26,05:44
+RALIHR_surgeon01_fps01_0064,Reduction of Hernia1,05:44,11:53
+RALIHR_surgeon01_fps01_0064,Transitionary Idle4,11:53,12:13
+RALIHR_surgeon01_fps01_0064,Mesh placement1,12:13,21:55
+RALIHR_surgeon01_fps01_0064,Transitionary Idle5,21:55,22:44
+RALIHR_surgeon01_fps01_0064,Catheter insertion1,22:44,23:24
+RALIHR_surgeon01_fps01_0064,Transitionary Idle6,23:24,23:33
+RALIHR_surgeon01_fps01_0064,Positioning suture2,23:33,23:40
+RALIHR_surgeon01_fps01_0064,Peritoneal closure1,23:40,32:39
+RALIHR_surgeon01_fps01_0064,Positioning suture3,32:39,33:25
+RALIHR_surgeon01_fps01_0064,Transitionary Idle7,33:25,35:28
+RALIHR_surgeon01_fps01_0064,Positioning suture4,35:28,36:09
+RALIHR_surgeon01_fps01_0064,Peritoneal closure2,36:09,43:07
+RALIHR_surgeon01_fps01_0064,Positioning suture5,43:07,43:18
+RALIHR_surgeon01_fps01_0065,Transitionary Idle1,00:00:00,00:00:09
+RALIHR_surgeon01_fps01_0065,Mesh positioning1,00:00:09,00:00:14
+RALIHR_surgeon01_fps01_0065,Transitionary Idle2,00:00:14,00:00:20
+RALIHR_surgeon01_fps01_0065,Reduction of Hernia1,00:00:20,00:00:50
+RALIHR_surgeon01_fps01_0065,Transitionary Idle3,00:00:50,00:01:01
+RALIHR_surgeon01_fps01_0065,Peritoneal scoring1,00:01:01,00:02:20
+RALIHR_surgeon01_fps01_0065,Preperitoneal dissection1,00:02:20,00:07:03
+RALIHR_surgeon01_fps01_0065,Reduction of Hernia2,00:07:03,00:17:46
+RALIHR_surgeon01_fps01_0065,Transitionary Idle4,00:17:46,00:18:08
+RALIHR_surgeon01_fps01_0065,Mesh placement1,00:18:08,00:20:14
+RALIHR_surgeon01_fps01_0065,Transitionary Idle5,00:20:14,00:20:26
+RALIHR_surgeon01_fps01_0065,Mesh placement2,00:20:26,00:20:50
+RALIHR_surgeon01_fps01_0065,Peritoneal scoring2,00:20:50,00:21:35
+RALIHR_surgeon01_fps01_0065,Preperitoneal dissection2,00:21:35,00:24:42
+RALIHR_surgeon01_fps01_0065,Reduction of Hernia3,00:24:42,00:30:40
+RALIHR_surgeon01_fps01_0065,Transitionary Idle6,00:30:40,00:30:47
+RALIHR_surgeon01_fps01_0065,Mesh placement3,00:30:47,00:35:06
+RALIHR_surgeon01_fps01_0065,Transitionary Idle7,00:35:06,00:35:17
+RALIHR_surgeon01_fps01_0065,Positioning suture1,00:35:17,00:35:40
+RALIHR_surgeon01_fps01_0065,Transitionary Idle8,00:35:40,00:36:08
+RALIHR_surgeon01_fps01_0065,Catheter insertion1,00:36:08,00:36:59
+RALIHR_surgeon01_fps01_0065,Transitionary Idle9,00:36:59,00:37:14
+RALIHR_surgeon01_fps01_0065,Positioning suture2,00:37:14,00:37:25
+RALIHR_surgeon01_fps01_0065,Peritoneal closure1,00:37:25,00:42:41
+RALIHR_surgeon01_fps01_0065,Positioning suture3,00:42:41,00:42:50
+RALIHR_surgeon01_fps01_0065,Peritoneal closure2,00:42:50,00:43:04
+RALIHR_surgeon01_fps01_0065,Positioning suture4,00:43:04,00:43:12
+RALIHR_surgeon01_fps01_0065,Transitionary Idle10,00:43:12,00:43:31
+RALIHR_surgeon01_fps01_0065,Positioning suture4,00:43:31,00:43:37
+RALIHR_surgeon01_fps01_0065,Stationary Idle1,00:43:37,00:44:46
+RALIHR_surgeon01_fps01_0065,Peritoneal closure3,00:44:46,01:00:55
+RALIHR_surgeon01_fps01_0065,Positioning suture5,01:00:55,01:03:37
+RALIHR_surgeon01_fps01_0065,Transitionary Idle11,01:03:37,01:03:56
+RALIHR_surgeon01_fps01_0065,Positioning suture6,01:03:56,01:04:30
+RALIHR_surgeon01_fps01_0065,Stationary Idle2,01:04:30,01:04:57
+RALIHR_surgeon01_fps01_0065,Positioning suture7,01:04:57,01:05:14
+RALIHR_surgeon01_fps01_0065,Peritoneal closure4,01:05:14,01:06:21
+RALIHR_surgeon01_fps01_0065,Positioning suture8,01:06:21,01:06:38
+RALIHR_surgeon01_fps01_0065,Peritoneal closure5,01:06:38,01:08:28
+RALIHR_surgeon01_fps01_0065,Positioning suture9,01:08:28,01:09:20
+RALIHR_surgeon01_fps01_0065,Transitionary Idle12,01:09:20,01:09:50
+RALIHR_surgeon01_fps01_0066,Transitionary Idle1,00:00:00,00:00:12
+RALIHR_surgeon01_fps01_0066,Adhesiolysis1,00:00:12,00:00:55
+RALIHR_surgeon01_fps01_0066,Transitionary Idle2,00:00:55,00:01:06
+RALIHR_surgeon01_fps01_0066,Positioning suture1,00:01:06,00:01:36
+RALIHR_surgeon01_fps01_0066,Transitionary Idle3,00:01:36,00:02:03
+RALIHR_surgeon01_fps01_0066,Peritoneal scoring1,00:02:03,00:03:45
+RALIHR_surgeon01_fps01_0066,Preperitoneal dissection1,00:03:45,00:07:50
+RALIHR_surgeon01_fps01_0066,Reduction of Hernia1,00:07:50,00:16:36
+RALIHR_surgeon01_fps01_0066,Transitionary Idle4,00:16:36,00:16:40
+RALIHR_surgeon01_fps01_0066,Mesh placement1,00:16:40,00:19:35
+RALIHR_surgeon01_fps01_0066,Transitionary Idle5,00:19:35,00:19:51
+RALIHR_surgeon01_fps01_0066,Peritoneal scoring2,00:19:51,00:20:31
+RALIHR_surgeon01_fps01_0066,Stationary Idle1,00:20:31,00:20:47
+RALIHR_surgeon01_fps01_0066,Transitionary Idle6,00:20:47,00:21:11
+RALIHR_surgeon01_fps01_0066,Peritoneal scoring3,00:21:11,00:29:45
+RALIHR_surgeon01_fps01_0066,Preperitoneal dissection2,00:29:45,00:38:21
+RALIHR_surgeon01_fps01_0066,Reduction of Hernia2,00:38:21,00:53:55
+RALIHR_surgeon01_fps01_0066,Transitionary Idle7,00:53:55,00:54:02
+RALIHR_surgeon01_fps01_0066,Mesh placement2,00:54:02,00:55:24
+RALIHR_surgeon01_fps01_0066,Transitionary Idle8,00:55:24,00:55:30
+RALIHR_surgeon01_fps01_0066,Stationary Idle2,00:55:30,00:55:46
+RALIHR_surgeon01_fps01_0066,Out of Body1,00:55:46,00:56:23
+RALIHR_surgeon01_fps01_0066,Stationary Idle3,00:56:23,00:56:29
+RALIHR_surgeon01_fps01_0066,Out of Body2,00:56:29,00:57:53
+RALIHR_surgeon01_fps01_0066,Transitionary Idle9,00:57:53,00:58:25
+RALIHR_surgeon01_fps01_0066,Mesh placement3,00:58:25,01:03:39
+RALIHR_surgeon01_fps01_0066,Transitionary Idle10,01:03:39,01:04:07
+RALIHR_surgeon01_fps01_0066,Positioning suture2,01:04:07,01:05:10
+RALIHR_surgeon01_fps01_0066,Catheter insertion1,01:05:10,01:06:12
+RALIHR_surgeon01_fps01_0066,Positioning suture3,01:06:12,01:06:28
+RALIHR_surgeon01_fps01_0066,Peritoneal closure1,01:06:28,01:13:24
+RALIHR_surgeon01_fps01_0066,Positioning suture4,01:13:24,01:16:01
+RALIHR_surgeon01_fps01_0066,Peritoneal closure2,01:16:01,01:20:18
+RALIHR_surgeon01_fps01_0066,Positioning suture5,01:20:18,01:20:36
+RALIHR_surgeon01_fps01_0066,Out of Body3,01:20:36,01:21:08
+RALIHR_surgeon01_fps01_0066,Transitionary Idle11,01:21:08,01:21:22
+RALIHR_surgeon01_fps01_0066,Positioning suture6,01:21:22,01:21:44
+RALIHR_surgeon01_fps01_0066,Peritoneal closure3,01:21:44,01:23:57
+RALIHR_surgeon01_fps01_0066,Positioning suture7,01:23:57,01:24:12
+RALIHR_surgeon01_fps01_0066,Peritoneal closure4,01:24:12,01:24:50
+RALIHR_surgeon01_fps01_0066,Positioning suture8,01:24:50,01:25:43
+RALIHR_surgeon01_fps01_0066,Transitionary Idle12,01:25:43,01:25:52
+RALIHR_surgeon01_fps01_0066,Out of Body4,01:25:52,01:26:12
+RALIHR_surgeon01_fps01_0066,Transitionary Idle13,01:26:12,01:26:33
+RALIHR_surgeon01_fps01_0066,Positioning suture9,01:26:33,01:27:06
+RALIHR_surgeon01_fps01_0066,Peritoneal closure5,01:27:06,01:28:47
+RALIHR_surgeon01_fps01_0066,Positioning suture10,01:28:47,01:29:06
+RALIHR_surgeon01_fps01_0066,Peritoneal closure6,01:29:06,01:30:16
+RALIHR_surgeon01_fps01_0066,Positioning suture11,01:30:16,01:30:44
+RALIHR_surgeon01_fps01_0066,Transitionary Idle14,01:30:44,01:31:04
+RALIHR_surgeon01_fps01_0067,Transitionary Idle1,00:00,00:13
+RALIHR_surgeon01_fps01_0067,Positioning suture1,00:13,00:19
+RALIHR_surgeon01_fps01_0067,Transitionary Idle2,00:19,00:40
+RALIHR_surgeon01_fps01_0067,Mesh positioning1,00:40,00:42
+RALIHR_surgeon01_fps01_0067,Transitionary Idle3,00:42,00:54
+RALIHR_surgeon01_fps01_0067,Peritoneal scoring1,00:54,03:47
+RALIHR_surgeon01_fps01_0067,Preperitoneal dissection1,03:47,09:54
+RALIHR_surgeon01_fps01_0067,Reduction of Hernia1,09:54,19:34
+RALIHR_surgeon01_fps01_0067,Transitionary Idle4,19:34,19:42
+RALIHR_surgeon01_fps01_0067,Mesh placement1,19:42,24:33
+RALIHR_surgeon01_fps01_0067,Stationary Idle1,24:33,25:02
+RALIHR_surgeon01_fps01_0067,Transitionary Idle5,25:02,25:27
+RALIHR_surgeon01_fps01_0067,Catheter insertion1,25:27,26:08
+RALIHR_surgeon01_fps01_0067,Transitionary Idle6,26:08,26:30
+RALIHR_surgeon01_fps01_0067,Positioning suture2,26:30,26:43
+RALIHR_surgeon01_fps01_0067,Transitionary Idle7,26:43,27:18
+RALIHR_surgeon01_fps01_0067,Positioning suture3,27:18,27:49
+RALIHR_surgeon01_fps01_0067,Peritoneal closure1,27:49,49:38
+RALIHR_surgeon01_fps01_0067,Positioning suture4,49:38,52:14
+RALIHR_surgeon01_fps01_0067,Peritoneal closure2,52:14,53:40
+RALIHR_surgeon01_fps01_0067,Positioning suture5,53:40,54:01
+RALIHR_surgeon01_fps01_0067,Peritoneal closure3,54:01,56:36
+RALIHR_surgeon01_fps01_0067,Positioning suture6,56:36,57:27
+RALIHR_surgeon01_fps01_0067,Transitionary Idle8,57:27,57:56
+RALIHR_surgeon01_fps01_0068,Transitionary Idle1,00:00,00:08
+RALIHR_surgeon01_fps01_0068,Positioning suture1,00:08,00:25
+RALIHR_surgeon01_fps01_0068,Transitionary Idle2,00:25,01:07
+RALIHR_surgeon01_fps01_0068,Peritoneal scoring1,01:07,04:15
+RALIHR_surgeon01_fps01_0068,Preperitoneal dissection1,04:15,05:28
+RALIHR_surgeon01_fps01_0068,Reduction of Hernia1,05:28,17:26
+RALIHR_surgeon01_fps01_0068,Transitionary Idle3,17:26,17:38
+RALIHR_surgeon01_fps01_0068,Stationary Idle1,17:38,17:55
+RALIHR_surgeon01_fps01_0068,Transitionary Idle4,17:55,17:56
+RALIHR_surgeon01_fps01_0068,Stationary Idle2,17:56,18:49
+RALIHR_surgeon01_fps01_0068,Transitionary Idle5,18:49,19:17
+RALIHR_surgeon01_fps01_0068,Positioning suture2,19:17,20:12
+RALIHR_surgeon01_fps01_0068,Primary Hernia Repair1,20:12,23:48
+RALIHR_surgeon01_fps01_0068,Positioning suture3,23:48,24:10
+RALIHR_surgeon01_fps01_0068,Transitionary Idle6,24:10,24:15
+RALIHR_surgeon01_fps01_0068,Mesh positioning1,24:15,24:20
+RALIHR_surgeon01_fps01_0068,Transitionary Idle7,24:20,24:25
+RALIHR_surgeon01_fps01_0068,Reduction of Hernia2,24:25,26:20
+RALIHR_surgeon01_fps01_0068,Transitionary Idle8,26:20,26:25
+RALIHR_surgeon01_fps01_0068,Mesh placement1,26:25,37:16
+RALIHR_surgeon01_fps01_0068,Transitionary Idle9,37:16,38:44
+RALIHR_surgeon01_fps01_0068,Catheter insertion1,38:44,39:18
+RALIHR_surgeon01_fps01_0068,Transitionary Idle10,39:18,39:22
+RALIHR_surgeon01_fps01_0068,Positioning suture3,39:22,39:32
+RALIHR_surgeon01_fps01_0068,Peritoneal closure1,39:32,49:16
+RALIHR_surgeon01_fps01_0068,Positioning suture4,49:16,50:12
+RALIHR_surgeon01_fps01_0068,Transitionary Idle11,50:12,50:51
+RALIHR_surgeon01_fps01_0068,Positioning suture5,50:51,51:00
+RALIHR_surgeon01_fps01_0068,Peritoneal closure2,51:00,58:49
+RALIHR_surgeon01_fps01_0068,Positioning suture6,58:49,59:23
+RALIHR_surgeon01_fps01_0068,Transitionary Idle12,59:23,59:42
+RALIHR_surgeon01_fps01_0069,Transitionary Idle1,00:00:00,00:00:11
+RALIHR_surgeon01_fps01_0069,Peritoneal scoring1,00:00:11,00:02:09
+RALIHR_surgeon01_fps01_0069,Preperitoneal dissection1,00:02:09,00:08:37
+RALIHR_surgeon01_fps01_0069,Reduction of Hernia1,00:08:37,00:10:25
+RALIHR_surgeon01_fps01_0069,Transitionary Idle2,00:10:25,00:10:32
+RALIHR_surgeon01_fps01_0069,Mesh placement1,00:10:32,00:11:08
+RALIHR_surgeon01_fps01_0069,Transitionary Idle3,00:11:08,00:11:26
+RALIHR_surgeon01_fps01_0069,Peritoneal scoring2,00:11:26,00:12:07
+RALIHR_surgeon01_fps01_0069,Transitionary Idle4,00:12:07,00:12:29
+RALIHR_surgeon01_fps01_0069,Peritoneal scoring3,00:12:29,00:14:18
+RALIHR_surgeon01_fps01_0069,Preperitoneal dissection2,00:14:18,00:19:46
+RALIHR_surgeon01_fps01_0069,Reduction of Hernia2,00:19:46,00:27:23
+RALIHR_surgeon01_fps01_0069,Transitionary Idle5,00:27:23,00:27:28
+RALIHR_surgeon01_fps01_0069,Mesh placement2,00:27:28,00:28:56
+RALIHR_surgeon01_fps01_0069,Transitionary Idle6,00:28:56,00:29:39
+RALIHR_surgeon01_fps01_0069,Mesh placement3,00:29:39,00:32:10
+RALIHR_surgeon01_fps01_0069,Transitionary Idle7,00:32:10,00:32:20
+RALIHR_surgeon01_fps01_0069,Mesh placement4,00:32:20,00:36:24
+RALIHR_surgeon01_fps01_0069,Transitionary Idle8,00:36:24,00:37:13
+RALIHR_surgeon01_fps01_0069,Catheter insertion1,00:37:13,00:38:09
+RALIHR_surgeon01_fps01_0069,Transitionary Idle8,00:38:09,00:38:20
+RALIHR_surgeon01_fps01_0069,Positioning suture1,00:38:20,00:38:56
+RALIHR_surgeon01_fps01_0069,Peritoneal closure1,00:38:56,00:44:41
+RALIHR_surgeon01_fps01_0069,Positioning suture2,00:44:41,00:44:47
+RALIHR_surgeon01_fps01_0069,Peritoneal closure2,00:44:47,00:44:56
+RALIHR_surgeon01_fps01_0069,Positioning suture3,00:44:56,00:46:50
+RALIHR_surgeon01_fps01_0069,Peritoneal closure3,00:46:50,01:00:34
+RALIHR_surgeon01_fps01_0069,Positioning suture4,01:00:34,01:03:05
+RALIHR_surgeon01_fps01_0069,Peritoneal closure4,01:03:05,01:04:28
+RALIHR_surgeon01_fps01_0069,Positioning suture5,01:04:28,01:04:57
+RALIHR_surgeon01_fps01_0069,Peritoneal closure5,01:04:57,01:06:53
+RALIHR_surgeon01_fps01_0069,Positioning suture6,01:06:53,01:07:29
+RALIHR_surgeon01_fps01_0069,Transitionary Idle9,01:07:29,01:07:52
+RALIHR_surgeon01_fps01_0070,Transitionary Idle1,00:00,00:08
+RALIHR_surgeon01_fps01_0070,Positioning suture1,00:08,00:27
+RALIHR_surgeon01_fps01_0070,Transitionary Idle2,00:27,00:43
+RALIHR_surgeon01_fps01_0070,Peritoneal scoring1,00:43,02:34
+RALIHR_surgeon01_fps01_0070,Preperitoneal dissection1,02:34,05:21
+RALIHR_surgeon01_fps01_0070,Reduction of Hernia1,05:21,07:54
+RALIHR_surgeon01_fps01_0070,Transitionary Idle3,07:54,08:03
+RALIHR_surgeon01_fps01_0070,Mesh placement1,08:03,08:25
+RALIHR_surgeon01_fps01_0070,Transitionary Idle4,08:25,08:34
+RALIHR_surgeon01_fps01_0070,Mesh positioning1,08:34,08:38
+RALIHR_surgeon01_fps01_0070,Transitionary Idle5,08:38,08:49
+RALIHR_surgeon01_fps01_0070,Peritoneal scoring2,08:49,10:45
+RALIHR_surgeon01_fps01_0070,Preperitoneal dissection2,10:45,12:45
+RALIHR_surgeon01_fps01_0070,Reduction of Hernia2,12:45,15:42
+RALIHR_surgeon01_fps01_0070,Transitionary Idle6,15:42,15:52
+RALIHR_surgeon01_fps01_0070,Mesh placement2,15:52,16:07
+RALIHR_surgeon01_fps01_0070,Transitionary Idle7,16:07,16:40
+RALIHR_surgeon01_fps01_0070,Positioning suture2,16:40,17:10
+RALIHR_surgeon01_fps01_0070,Primary Hernia Repair1,17:10,19:34
+RALIHR_surgeon01_fps01_0070,Positioning suture3,19:34,19:50
+RALIHR_surgeon01_fps01_0070,Transitionary Idle8,19:50,19:58
+RALIHR_surgeon01_fps01_0070,Mesh placement3,19:58,22:39
+RALIHR_surgeon01_fps01_0070,Transitionary Idle9,22:39,22:58
+RALIHR_surgeon01_fps01_0070,Mesh placement4,22:58,24:54
+RALIHR_surgeon01_fps01_0070,Transitionary Idle10,24:54,25:17
+RALIHR_surgeon01_fps01_0070,Positioning suture4,25:17,25:27
+RALIHR_surgeon01_fps01_0070,Peritoneal closure1,25:27,25:59
+RALIHR_surgeon01_fps01_0070,Catheter insertion1,25:59,26:27
+RALIHR_surgeon01_fps01_0070,Peritoneal closure2,26:27,30:21
+RALIHR_surgeon01_fps01_0070,Positioning suture5,30:21,30:39
+RALIHR_surgeon01_fps01_0070,Peritoneal closure3,30:39,32:19
+RALIHR_surgeon01_fps01_0070,Positioning suture6,32:19,32:24
+RALIHR_surgeon01_fps01_0070,Peritoneal closure4,32:24,33:09
+RALIHR_surgeon01_fps01_0070,Positioning suture7,33:09,33:22
+RALIHR_surgeon01_fps01_0070,Peritoneal closure5,33:22,35:26
+RALIHR_surgeon01_fps01_0070,Positioning suture8,35:26,35:53
+RALIHR_surgeon01_fps01_0070,Peritoneal closure6,35:53,45:35
+RALIHR_surgeon01_fps01_0070,Positioning suture9,45:35,48:34
+RALIHR_surgeon01_fps01_0070,Peritoneal closure7,48:34,51:10
+RALIHR_surgeon01_fps01_0070,Positioning suture10,51:10,51:24
+RALIHR_surgeon01_fps01_0070,Peritoneal closure8,51:24,52:23
+RALIHR_surgeon01_fps01_0070,Positioning suture11,52:23,54:08
+RALIHR_surgeon01_fps01_0070,Peritoneal closure9,54:08,57:27
+RALIHR_surgeon01_fps01_0070,Positioning suture12,57:27,57:55
+RALIHR_surgeon01_fps01_0070,Transitionary Idle11,57:55,58:18
