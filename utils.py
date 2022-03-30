@@ -14,10 +14,13 @@ videos_path = os.path.join(os.getcwd(), 'surgery.videos.hernitia')
 csv_path = os.path.join(os.getcwd(), 'video.phase.trainingData.clean.StudentVersion.csv')
 labels_path = os.path.join(os.getcwd(), 'labels/labels.pkl')
 
+# memorize number of classes
+num_classes = pd.read_pickle(labels_path).label.unique().size
+
 # setting device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-def transforms(resize):
+def transforms(resize, mean, std):
     """
     Description
     -------------
@@ -26,17 +29,26 @@ def transforms(resize):
     Parameters
     -------------
     resize : tuple, shape of the resized frame
+    mean   : mean values to normalize the frame (ex = [0.485, 0.456, 0.406])
+    std    : standard deviation values to normalize the frame (ex = [0.229, 0.224, 0.225])
     
     Returns
     -------------
     torchvision.transforms.transforms.Compose object, the composed transformations.
     """
-    return T.Compose([T.ToPILImage(),
+    if mean and std:
+        return T.Compose([T.ToPILImage(),
+                T.Resize(resize),
+                T.ToTensor(),
+                T.Normalize(mean=mean, std=std)])
+    
+    else:
+        return T.Compose([T.ToPILImage(),
                 T.Resize(resize),
                 T.ToTensor()])
 
 
-def get_frames(videoname, resize):
+def get_frames(videoname, resize, mean, std):
     """
     Description
     -------------
@@ -46,6 +58,8 @@ def get_frames(videoname, resize):
     -------------
     videoname   : name of the video file without the extension (.mp4 or .mov)
     resize      : tuple, shape of the resized frame
+    mean        : mean values to normalize the frame (ex = [0.485, 0.456, 0.406])
+    std         : standard deviation values to normalize the frame (ex = [0.229, 0.224, 0.225])
 
     Returns
     -------------
@@ -66,7 +80,7 @@ def get_frames(videoname, resize):
         # brg -> rgb
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         # send tensor image to device
-        image = transforms(resize)(image)
+        image = transforms(resize, mean, std)(image)
         # save the frame to the list of frames
         frames.append(image)
         # function extract frames
@@ -157,10 +171,10 @@ def get_train_test_video_names(videos_path = videos_path, labels_path = labels_p
 
     return train_names, test_names
 
-class TrainHernitiaDataset(Dataset):
-    """Training Hernitia dataset."""
+class HernitiaDataset(Dataset):
+    """Hernitia dataset composed of a specified list of videonames."""
 
-    def __init__(self, resize = (60,80)):
+    def __init__(self, videonames, resize = (224,224), mean = None, std = None):
         """
         Description
         -------------
@@ -168,20 +182,26 @@ class TrainHernitiaDataset(Dataset):
 
         Parameters
         -------------
-        resize         : tuple, shape of the resized frame (default = (60,80))
+        videonames     : list of names of the video to include in the dataset
+        resize         : tuple, shape of the resized frame (default = (224,224))
+        mean           : mean values to normalize the frame (ex = [0.485, 0.456, 0.406])
+        std            : standard deviation values to normalize the frame (ex = [0.229, 0.224, 0.225])
 
         Returns
         -------------
         Torch Dataset for the training set
         """
-        self.train_names = get_train_test_video_names()[0]
+        self.videonames = videonames
         self.resize = resize
+        self.mean = mean
+        self.std = std
+        self.num_classes = num_classes
 
     def __len__(self):
-        return len(self.train_names)
+        return len(self.videonames)
 
     def __getitem__(self, index):
-        videoname = self.train_names[index]
-        frames = get_frames(videoname, self.resize)
+        videoname = self.videonames[index]
+        frames = get_frames(videoname, self.resize, self.mean, self.std)
         labels = get_labels(videoname)
         return frames, labels
