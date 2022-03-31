@@ -7,7 +7,7 @@ import pickle
 import torch
 from torch.utils.data import Dataset, DataLoader
 import torchvision.transforms as T
-from tqdm import tqdm
+import torch.nn.functional as F
 
 # memorize all paths
 videos_path = os.path.join(os.getcwd(), 'surgery.videos.hernitia')
@@ -76,7 +76,7 @@ def get_frames(videoname, resize, mean, std):
     success, image = video.read()
     # count frames of video
     number_frames = count_frames(videoname=videoname)
-    for _ in tqdm(range(number_frames)):
+    for _ in range(number_frames):
         # brg -> rgb
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         # send tensor image to device
@@ -132,6 +132,7 @@ def get_labels(videoname):
     all_labels = pd.read_pickle(labels_path)
     # recover labels of the video
     labels = torch.tensor(all_labels.loc[all_labels['videoName'] == videoname]['label'].tolist())
+    labels = F.one_hot(labels, num_classes=num_classes).to(device)
     return labels
 
 def get_train_test_video_names(videos_path = videos_path, labels_path = labels_path):
