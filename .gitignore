@@ -1,6 +1,5 @@
 __pycache__/
 surgery.videos.hernitia/
 labels/
-checkpoint/
 images/
-images-vu/
+weights/

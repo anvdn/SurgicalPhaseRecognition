@@ -4,6 +4,7 @@ import numpy as np
 import os
 import pandas as pd
 import pickle
+import re
 import torch
 from torch.utils.data import Dataset, DataLoader
 import torchvision.transforms as T
@@ -12,8 +13,11 @@ import torch.nn.functional as F
 # memorize all paths
 videos_path = os.path.join(os.getcwd(), 'surgery.videos.hernitia')
 csv_path = os.path.join(os.getcwd(), 'video.phase.trainingData.clean.StudentVersion.csv')
-labels_path = os.path.join(os.getcwd(), 'dfs/labels.pkl')
+dfs_path = os.path.join(os.getcwd(), 'dfs')
+labels_path = dfs_path + '/labels.pkl'
 images_path = os.path.join(os.getcwd(), 'images')
+weights_path = os.path.join(os.getcwd(), 'weights')
+predictions_path = os.path.join(os.getcwd(), 'predictions')
 
 # memorize number of classes
 num_classes = pd.read_pickle(labels_path).label.unique().size
@@ -218,7 +222,7 @@ def get_train_test_video_names(videos_path = videos_path, labels_path = labels_p
 class HernitiaDataset(Dataset):
     """Hernitia dataset defined by annotation df."""
 
-    def __init__(self, annotation_path, transform = None):
+    def __init__(self, annotation_path, transform = None, test_mode = False):
         """
         Description
         -------------
@@ -227,6 +231,8 @@ class HernitiaDataset(Dataset):
         Parameters
         -------------
         annotation_path   : path to annotation df
+        transform         : transforms to be applied to the frame (eg. data augmentation)
+        test_mode         : boolean, if true there are no label in the annotation df and in the output of __getitem__
 
         Returns
         -------------
@@ -234,6 +240,7 @@ class HernitiaDataset(Dataset):
         """
         self.annotation = pd.read_pickle(annotation_path)
         self.transform = transform
+        self.test_mode = test_mode
         self.num_classes = num_classes
 
     def __len__(self):
@@ -243,12 +250,46 @@ class HernitiaDataset(Dataset):
         # recover frame info
         videoname = self.annotation.iloc[index]['videoname']
         frame_idx = self.annotation.iloc[index]['frame']
-        label = self.annotation.iloc[index]['label']
+        if not self.test_mode: label = self.annotation.iloc[index]['label']
         # load frame
         frame_path = images_path + '/' + videoname + '/' + str(frame_idx) + '.jpg'
         frame = cv2.imread(frame_path)
         # transform
         if self.transform:
             frame = self.transform(frame)
+        if self.test_mode: return frame
+        else: return frame, label
 
-        return frame, label
+def save_testing_df(dfs_path = dfs_path):
+    """
+    Description
+    -------------
+    Creates and saves testing dataframe ('videoname', 'frame') for kaggle prediction.
+
+    Parameters
+    -------------
+    dfs_path      : path where all dataframes for training are stored
+    """
+    if os.path.exists(dfs_path + '/testing.pkl'): return 'testing dataframe already in storage'
+
+    # list names of all videos in the test set
+    surgeon1_test_videonames = ['RALIHR_surgeon01_fps01_' + str(x).zfill(4) for x in range(71,126)]
+    surgeon2_test_videonames = ['RALIHR_surgeon02_fps01_' + str(x).zfill(4) for x in range(1,5)]
+    surgeon3_test_videonames = ['RALIHR_surgeon03_fps01_0001']
+    all_test_videonames = surgeon1_test_videonames + surgeon2_test_videonames + surgeon3_test_videonames
+
+    # generate df with all frames of these videos
+    videonames = []
+    frames = []
+    Ids = [] # id list for kaggle prediction
+    for videoname in all_test_videonames:
+        video_id = re.sub('[^0-9]', '',  videoname)
+        video_id = video_id[0:2].zfill(3) + '-' + video_id[-4:] + '-'
+        for frame in range(count_frames(videoname)):
+            videonames.append(videoname)
+            frames.append(frame)
+            Ids.append(video_id + str(frame).zfill(5))
+    testing_df = pd.DataFrame({'videoname' : videonames, 'frame' : frames, 'Id': Ids})
+
+    # save df
+    testing_df.to_pickle(dfs_path + '/testing.pkl')
