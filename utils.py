@@ -1,3 +1,5 @@
+from barbar import Bar
+import copy
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
@@ -5,6 +7,7 @@ import os
 import pandas as pd
 import pickle
 import re
+import time
 import torch
 from torch.utils.data import Dataset, DataLoader
 import torchvision.transforms as T
@@ -18,6 +21,7 @@ labels_path = dfs_path + '/labels.pkl'
 images_path = os.path.join(os.getcwd(), 'images')
 weights_path = os.path.join(os.getcwd(), 'weights')
 predictions_path = os.path.join(os.getcwd(), 'predictions')
+kaggle_template_path = os.path.join(os.getcwd(), 'predictions')
 
 # memorize number of classes
 num_classes = pd.read_pickle(labels_path).label.unique().size
@@ -186,7 +190,7 @@ def get_train_test_video_names(videos_path = videos_path, labels_path = labels_p
     """
     Description
     -------------
-    List of names of train and test videos
+    List names of train and test videos
 
     Parameters
     -------------
@@ -288,8 +292,161 @@ def save_testing_df(dfs_path = dfs_path):
         for frame in range(count_frames(videoname)):
             videonames.append(videoname)
             frames.append(frame)
-            Ids.append(video_id + str(frame).zfill(5))
+            Ids.append(video_id + str(frame + 1).zfill(5))
     testing_df = pd.DataFrame({'videoname' : videonames, 'frame' : frames, 'Id': Ids})
 
     # save df
     testing_df.to_pickle(dfs_path + '/testing.pkl')
+
+def predict_kaggle(model, model_name, transform, weights_path = weights_path, predictions_path = predictions_path, 
+                kaggle_template_path = kaggle_template_path, batch_size = 128, predictions_name = 'kaggle_prediction'):
+    """
+    Description
+    -------------
+    Makes and save predictions on the testing set.
+
+    Parameters
+    -------------
+    model               : model
+    model_name          : name of the model from which to load the weights within weights/
+    transform           : transforms to be applied to the frame (eg. data augmentation)
+    weights_path        : path to model weights
+    predictions_path    : path to make predictions to
+    kaggle_template_path: path to the kaggle template for submissions
+    batch_size          : batch size to use to make predictions
+    predictions_name    : name of the csv file to which the predictions are saved
+    """
+
+    if os.path.exists(predictions_path + '/' + predictions_name + '.csv'): return 'predictions already exist under this file name'
+
+    # create dictionary for all phases
+    phase_to_label = {
+    'adhesiolysis' : 0,
+    'blurry' : 1,
+    'catheter insertion' : 2,
+    'mesh placement' : 3,
+    'mesh positioning' : 4,
+    'out of body' : 5,
+    'peritoneal closure' : 6,
+    'peritoneal scoring' : 7,
+    'positioning suture' : 8,
+    'preperioneal dissection' : 9,
+    'primary hernia repair' : 10,
+    'reduction of hernia' : 11,
+    'stationary idle' : 12,
+    'transitionary idle' : 13,
+    }
+
+    label_to_phase = {v: k for k, v in phase_to_label.items()}
+
+    # load kaggle template
+    kaggle_template_df = pd.read_csv(predictions_path + '/kaggle_template.csv')
+
+    model.load_state_dict(torch.load(weights_path + '/' + model_name + '.pkl'))
+    model.eval()
+
+    # create pytorch dataset
+    testing_dataset = HernitiaDataset(dfs_path + '/testing.pkl', transform, test_mode=True)
+
+    # instantiate data loader
+    testing_dataloader = DataLoader(dataset=testing_dataset, batch_size=128, shuffle=False)
+
+    # load testing df
+    testing_df = testing_dataset.annotation
+
+    Id = testing_df['Id'].tolist()
+    Predicted = []
+
+    # iterate over testing data to make predictions
+    for batch_idx, inputs in enumerate(Bar(testing_dataloader)):
+        inputs = inputs.to(device)
+        outputs = model(inputs)
+        _, preds = torch.max(outputs, 1)
+        Predicted += preds.tolist()
+    
+    # save predictions
+    Predicted = [label_to_phase[prediction] for prediction in Predicted]
+    predictions_df = pd.DataFrame({'Id' : Id, 'Predicted' : Predicted})
+    predictions_df = pd.merge(predictions_df, kaggle_template_df['Id'], how='inner', on=['Id'])[['Id', 'Predicted']]
+    predictions_df.to_csv(predictions_path + '/' + predictions_name + '.csv', index = False)
+
+def train_model(model, model_name, dataloaders, criterion, optimizer, scheduler, num_epochs):
+    """
+    Description
+    -------------
+    Train model, saves and returns one with best validation accuracy
+
+    Parameters
+    -------------
+    model               : model
+    model_name          : name of the model which will be the name of the saved weights file within weights/
+    dataloaders         : dictionary of dataloaders (keys are 'training' and 'validation')
+    criterion           : criterion
+    optimizer           : optimizer
+    scheduler           : scheduler
+    num_epochs          : number of epochs
+    """
+    since = time.time()
+
+    best_model_wts = copy.deepcopy(model.state_dict())
+    best_acc = 0.0
+
+    for epoch in range(num_epochs):
+        print(f'Epoch {epoch}/{num_epochs - 1}')
+        print('-' * 10)
+
+        # each epoch has a training and validation phase
+        for phase in ['training', 'validation']:
+            if phase == 'training':
+                model.train()  # Set model to training mode
+            else:
+                model.eval()   # Set model to evaluate mode
+
+            running_loss = 0.0
+            running_corrects = 0
+
+            # iterate over data
+            for inputs, labels in Bar(dataloaders[phase]):
+                inputs = inputs.to(device)
+                labels = labels.to(device)
+
+                # zero the parameter gradients
+                optimizer.zero_grad()
+
+                # forward
+                # track history if only in train
+                with torch.set_grad_enabled(phase == 'training'):
+                    outputs = model(inputs)
+                    _, preds = torch.max(outputs, 1)
+                    loss = criterion(outputs, labels)
+
+                    # backward + optimize only if in training phase
+                    if phase == 'training':
+                        loss.backward()
+                        optimizer.step()
+
+                # statistics
+                running_loss += loss.item() * inputs.size(0)
+                running_corrects += torch.sum(preds == labels.data)
+            if phase == 'training':
+                scheduler.step()
+
+            epoch_loss = running_loss / len(dataloaders[phase].dataset)
+            epoch_acc = running_corrects.double() / len(dataloaders[phase].dataset)
+
+            print(f'{phase} Loss: {epoch_loss:.4f} Acc: {epoch_acc:.4f}')
+
+            # deep copy the model
+            if phase == 'validation' and epoch_acc > best_acc:
+                best_acc = epoch_acc
+                best_model_wts = copy.deepcopy(model.state_dict())
+
+    time_elapsed = time.time() - since
+    print(f'Training complete in {time_elapsed // 60:.0f}m {time_elapsed % 60:.0f}s')
+    print(f'Best val Acc: {best_acc:4f}')
+
+    # load best model weights
+    model.load_state_dict(best_model_wts)
+    # save best model weights
+    torch.save(model.state_dict(), weights_path + '/' + model_name + '.pkl')
+    return model
