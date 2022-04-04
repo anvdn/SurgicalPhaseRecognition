@@ -16,7 +16,7 @@ class HernitiaModel(nn.Module):
         model_name             : string, name of the model
         num_classes            : int, number of classes
         pretrained             : boolean, whether the bottleneck is pretrained
-        skip_lstm              : whether to skip the lstm (for cnn pretraining)
+        skip_lstm              : whether to skip the lstm (for cnn finetuning)
         """
         super(HernitiaModel, self).__init__()
 
@@ -48,10 +48,6 @@ class HernitiaModel(nn.Module):
         for param in self.lstm.parameters():
             param.requires_grad = True
 
-    def switch_mode(self):
-        """ Switch from CNN mode to CNN-LSTM mode. """
-        self.skip_lstm = not self.skip_lstm
-
     def forward(self, input):
         """
         Description
@@ -60,12 +56,12 @@ class HernitiaModel(nn.Module):
 
         Parameters
         -------------
-        input                : tensor of shape (batch_size, temporal length, c, w, h) if skip_lstm is True else (batch_size, c, w, h)
+        input                : tensor of shape (temporal length, c, w, h) if skip_lstm is True else (batch_size, c, w, h)
         """
         hidden = None
         if not self.skip_lstm:
             for t in range(input.size(1)):
-                x = self.bottleneck(input[:, t, :, :, :])  
+                x = self.bottleneck(input[t, :, :, :])  
                 out, hidden = self.lstm(x.unsqueeze(0), hidden) 
             x = nn.functional.relu(x)        
             x = self.fc(out[-1, :, :])

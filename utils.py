@@ -226,7 +226,7 @@ def get_train_test_video_names(videos_path = videos_path, labels_path = labels_p
 class HernitiaDataset(Dataset):
     """Hernitia dataset defined by annotation df."""
 
-    def __init__(self, annotation_path, transform = None, test_mode = False):
+    def __init__(self, annotation_path, transform = None, test_mode = False, frame_idx_white_pad = 10000):
         """
         Description
         -------------
@@ -234,9 +234,10 @@ class HernitiaDataset(Dataset):
 
         Parameters
         -------------
-        annotation_path   : path to annotation df
-        transform         : transforms to be applied to the frame (eg. data augmentation)
-        test_mode         : boolean, if true there are no label in the annotation df and in the output of __getitem__
+        annotation_path     : path to annotation df
+        transform           : transforms to be applied to the frame (eg. data augmentation)
+        test_mode           : boolean, if true there are no label in the annotation df and in the output of __getitem__
+        frame_idx_white_pad : int, frame index in dataframes for which there is no image (padding),the output should be a white frame
 
         Returns
         -------------
@@ -246,6 +247,7 @@ class HernitiaDataset(Dataset):
         self.transform = transform
         self.test_mode = test_mode
         self.num_classes = num_classes
+        self.frame_idx_white_pad = frame_idx_white_pad
 
     def __len__(self):
         return len(self.annotation)
@@ -255,12 +257,17 @@ class HernitiaDataset(Dataset):
         videoname = self.annotation.iloc[index]['videoname']
         frame_idx = self.annotation.iloc[index]['frame']
         if not self.test_mode: label = self.annotation.iloc[index]['label']
-        # load frame
-        frame_path = images_path + '/' + videoname + '/' + str(frame_idx) + '.jpg'
-        frame = cv2.imread(frame_path)
-        # transform
-        if self.transform:
-            frame = self.transform(frame)
+        if frame_idx == self.frame_idx_white_pad:
+            # frame should be white
+            frame = np.zeros((224,224,3), np.uint8)
+        else:
+            # load frame
+            frame_path = images_path + '/' + videoname + '/' + str(frame_idx) + '.jpg'
+            frame = cv2.imread(frame_path)
+            # transform
+            if self.transform:
+                frame = self.transform(frame)
+
         if self.test_mode: return frame
         else: return frame, label
 
