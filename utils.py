@@ -14,7 +14,7 @@ import torchvision.transforms as T
 import torch.nn.functional as F
 
 # memorize all paths
-videos_path = os.path.join(os.getcwd(), 'surgery.videos.hernitia')
+videos_path = os.path.join(os.getcwd(), 'surgery.videos.hernia')
 csv_path = os.path.join(os.getcwd(), 'video.phase.trainingData.clean.StudentVersion.csv')
 dfs_path = os.path.join(os.getcwd(), 'dfs')
 labels_path = dfs_path + '/labels.pkl'
@@ -349,7 +349,7 @@ def predict_kaggle(model, model_name, transform, weights_path = weights_path, pr
     testing_dataset = HernitiaDataset(dfs_path + '/testing.pkl', transform, test_mode=True)
 
     # instantiate data loader
-    testing_dataloader = DataLoader(dataset=testing_dataset, batch_size=128, shuffle=False)
+    testing_dataloader = DataLoader(dataset=testing_dataset, batch_size=batch_size, shuffle=False)
 
     # load testing df
     testing_df = testing_dataset.annotation
@@ -392,7 +392,7 @@ def train_model(model, model_name, dataloaders, criterion, optimizer, scheduler,
     best_acc = 0.0
 
     for epoch in range(num_epochs):
-        print(f'Epoch {epoch}/{num_epochs - 1}')
+        print(f'Epoch {epoch + 1}/{num_epochs}')
         print('-' * 10)
 
         # each epoch has a training and validation phase
@@ -449,4 +449,3 @@ def train_model(model, model_name, dataloaders, criterion, optimizer, scheduler,
     model.load_state_dict(best_model_wts)
     # save best model weights
     torch.save(model.state_dict(), weights_path + '/' + model_name + '.pkl')
-    return model
