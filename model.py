@@ -3,7 +3,7 @@ import torch.nn as nn
 from torchvision import models
 
 
-class HernitiaModel(nn.Module):
+class HerniaModel(nn.Module):
     """ Hernitia model made of pretrained bottleneck + lstm. """
 
     def __init__(self, model_name, num_classes, pretrained = True, num_layers_lstm = 2, hidden_size_lstm = 64,  skip_lstm = False):
@@ -21,7 +21,7 @@ class HernitiaModel(nn.Module):
         hidden_size_lstm       : int, hidden size of lstm
         skip_lstm              : whether to skip the lstm (for cnn finetuning)
         """
-        super(HernitiaModel, self).__init__()
+        super(HerniaModel, self).__init__()
 
         self.model_name = model_name
         self.num_layers_lstm = num_layers_lstm
@@ -74,8 +74,6 @@ class HernitiaModel(nn.Module):
         """
         x = self.bottleneck(input) 
         if not self.skip_lstm:
-            print(x.shape)
-            print(x.shape)
             out, hidden = self.lstm(x[None, :], None) # None is because it expects a batch dim
             x = nn.functional.relu(x)
             x = self.fc_lstm(x)     

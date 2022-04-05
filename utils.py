@@ -259,7 +259,7 @@ class HernitiaDataset(Dataset):
         if not self.test_mode: label = self.annotation.iloc[index]['label']
         if frame_idx == self.frame_idx_white_pad:
             # frame should be white
-            frame = np.zeros((224,224,3), np.uint8)
+            frame = torch.zeros((3,224,224))
         else:
             # load frame
             frame_path = images_path + '/' + videoname + '/' + str(frame_idx) + '.jpg'
@@ -411,11 +411,15 @@ def train_model(model, model_name, dataloaders, criterion, optimizer, scheduler,
 
             running_loss = 0.0
             running_corrects = 0
+            num_true_examples = 0 # length of the dataset without the padded white images
 
             # iterate over data
             for inputs, labels in Bar(dataloaders[phase]):
                 inputs = inputs.to(device)
                 labels = labels.to(device)
+
+                idx_true_images = (labels != -1)
+                num_true_examples += idx_true_images.sum().item()
 
                 # zero the parameter gradients
                 optimizer.zero_grad()
@@ -425,7 +429,7 @@ def train_model(model, model_name, dataloaders, criterion, optimizer, scheduler,
                 with torch.set_grad_enabled(phase == 'training'):
                     outputs = model(inputs)
                     _, preds = torch.max(outputs, 1)
-                    loss = criterion(outputs[labels != -1], labels[labels != -1]) # don't take into account padded white images
+                    loss = criterion(outputs[idx_true_images], labels[idx_true_images]) # don't take into account padded white images
 
                     # backward + optimize only if in training phase
                     if phase == 'training':
@@ -433,13 +437,13 @@ def train_model(model, model_name, dataloaders, criterion, optimizer, scheduler,
                         optimizer.step()
 
                 # statistics
-                running_loss += loss.item() * inputs.size(0)
-                running_corrects += torch.sum(preds == labels.data)
+                running_loss += loss.item() * idx_true_images.sum().item()
+                running_corrects += torch.sum(preds[idx_true_images] == labels.data[idx_true_images])
             if phase == 'training':
                 scheduler.step()
 
-            epoch_loss = running_loss / len(dataloaders[phase].dataset)
-            epoch_acc = running_corrects.double() / len(dataloaders[phase].dataset)
+            epoch_loss = running_loss / num_true_examples
+            epoch_acc = running_corrects.double() / num_true_examples
 
             print(f'{phase} Loss: {epoch_loss:.4f} Acc: {epoch_acc:.4f}')
 
