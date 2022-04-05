@@ -425,7 +425,7 @@ def train_model(model, model_name, dataloaders, criterion, optimizer, scheduler,
                 with torch.set_grad_enabled(phase == 'training'):
                     outputs = model(inputs)
                     _, preds = torch.max(outputs, 1)
-                    loss = criterion(outputs, labels)
+                    loss = criterion(outputs[labels != -1], labels[labels != -1]) # don't take into account padded white images
 
                     # backward + optimize only if in training phase
                     if phase == 'training':
