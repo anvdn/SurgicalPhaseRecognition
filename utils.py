@@ -226,7 +226,7 @@ def get_train_test_video_names(videos_path = videos_path, labels_path = labels_p
 class HernitiaDataset(Dataset):
     """Hernitia dataset defined by annotation df."""
 
-    def __init__(self, annotation_path, transform = None, test_mode = False, frame_idx_white_pad = 10000):
+    def __init__(self, annotation_path, transform = None, test_mode = False, frame_idx_black_pad = 10000):
         """
         Description
         -------------
@@ -237,7 +237,7 @@ class HernitiaDataset(Dataset):
         annotation_path     : path to annotation df
         transform           : transforms to be applied to the frame (eg. data augmentation)
         test_mode           : boolean, if true there are no label in the annotation df and in the output of __getitem__
-        frame_idx_white_pad : int, frame index in dataframes for which there is no image (padding),the output should be a white frame
+        frame_idx_white_pad : int, frame index in dataframes for which there is no image (padding),the output should be a black frame
 
         Returns
         -------------
@@ -247,7 +247,7 @@ class HernitiaDataset(Dataset):
         self.transform = transform
         self.test_mode = test_mode
         self.num_classes = num_classes
-        self.frame_idx_white_pad = frame_idx_white_pad
+        self.frame_idx_black_pad = frame_idx_black_pad
 
     def __len__(self):
         return len(self.annotation)
@@ -257,16 +257,17 @@ class HernitiaDataset(Dataset):
         videoname = self.annotation.iloc[index]['videoname']
         frame_idx = self.annotation.iloc[index]['frame']
         if not self.test_mode: label = self.annotation.iloc[index]['label']
-        if frame_idx == self.frame_idx_white_pad:
-            # frame should be white
+        if frame_idx == self.frame_idx_black_pad:
+            # frame should be black
             frame = torch.zeros((3,224,224))
         else:
             # load frame
             frame_path = images_path + '/' + videoname + '/' + str(frame_idx) + '.jpg'
             frame = cv2.imread(frame_path)
-            # transform
-            if self.transform:
-                frame = self.transform(frame)
+            
+        # transform
+        if self.transform:
+            frame = self.transform(frame)
 
         if self.test_mode: return frame
         else: return frame, label
@@ -353,7 +354,7 @@ def predict_kaggle(model, model_name, transform, weights_path = weights_path, pr
     model.eval()
 
     # create pytorch dataset
-    testing_dataset = HernitiaDataset(dfs_path + '/testing.pkl', transform, test_mode=True)
+    testing_dataset = HernitiaDataset(dfs_path + '/testing_lstm.pkl', transform, test_mode=True)
 
     # instantiate data loader
     testing_dataloader = DataLoader(dataset=testing_dataset, batch_size=batch_size, shuffle=False)
@@ -367,7 +368,8 @@ def predict_kaggle(model, model_name, transform, weights_path = weights_path, pr
     # iterate over testing data to make predictions
     for batch_idx, inputs in enumerate(Bar(testing_dataloader)):
         inputs = inputs.to(device)
-        outputs = model(inputs)
+        with torch.no_grad():
+            outputs = model(inputs)
         _, preds = torch.max(outputs, 1)
         Predicted += preds.tolist()
     
@@ -460,3 +462,48 @@ def train_model(model, model_name, dataloaders, criterion, optimizer, scheduler,
     model.load_state_dict(best_model_wts)
     # save best model weights
     torch.save(model.state_dict(), weights_path + '/' + model_name + '.pkl')
+
+
+def evaluate_model(model, dataloader, criterion):
+    """
+    Description
+    -------------
+    Train model, saves and returns one with best validation accuracy
+
+    Parameters
+    -------------
+    model               : model
+    dataloader          : validation dataloader
+    criterion           : criterion
+    """
+    since = time.time()
+
+    model.eval()   # Set model to evaluate mode
+
+    running_loss = 0.0
+    running_corrects = 0
+    num_true_examples = 0 # length of the dataset without the padded white images
+
+    # iterate over data
+    for inputs, labels in Bar(dataloader):
+        inputs = inputs.to(device)
+        labels = labels.to(device)
+
+        idx_true_images = (labels != -1)
+        num_true_examples += idx_true_images.sum().item()
+
+        # forward
+        with torch.set_grad_enabled(False):
+            outputs = model(inputs)
+            _, preds = torch.max(outputs, 1)
+            loss = criterion(outputs[idx_true_images], labels[idx_true_images]) # don't take into account padded white images
+
+        # statistics
+        running_loss += loss.item() * idx_true_images.sum().item()
+        running_corrects += torch.sum(preds[idx_true_images] == labels.data[idx_true_images])
+
+    epoch_loss = running_loss / num_true_examples
+    epoch_acc = running_corrects.double() / num_true_examples
+
+    print(f'Loss: {epoch_loss:.4f} Acc: {epoch_acc:.4f}')
+

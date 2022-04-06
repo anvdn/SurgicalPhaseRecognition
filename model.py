@@ -3,10 +3,19 @@ import torch.nn as nn
 from torchvision import models
 
 
-class HerniaModel(nn.Module):
-    """ Hernitia model made of pretrained bottleneck + lstm. """
+class Identity(nn.Module):
+    def __init__(self, out_features):
+        super(Identity, self).__init__()
+        self.out_features = out_features
+        
+    def forward(self, x):
+        return x
 
-    def __init__(self, model_name, num_classes, pretrained = True, num_layers_lstm = 2, hidden_size_lstm = 64,  skip_lstm = False):
+
+class HerniaModel(nn.Module):
+    """ Hernitia model made of pretrained backbone + lstm. """
+
+    def __init__(self, model_name, num_classes, pretrained = True, num_layers_lstm = 1, bidirectional = False, hidden_size_lstm = 32, skip_lstm = False):
         """
         Description
         -------------
@@ -16,8 +25,9 @@ class HerniaModel(nn.Module):
         -------------
         model_name             : string, name of the model
         num_classes            : int, number of classes
-        pretrained             : boolean, whether the bottleneck is pretrained
+        pretrained             : boolean, whether the backbone is pretrained
         num_layers_lstm        : int, number of layers in lstm
+        bidirectional          : boolean, whether to make the lstm bidirectional
         hidden_size_lstm       : int, hidden size of lstm
         skip_lstm              : whether to skip the lstm (for cnn finetuning)
         """
@@ -28,22 +38,22 @@ class HerniaModel(nn.Module):
         self.hidden_size_lstm = hidden_size_lstm
         self.skip_lstm = skip_lstm
         # build model
-        self.bottleneck = models.mobilenet_v2(pretrained=pretrained)
-        self.bottleneck.classifier[1] = nn.Linear(self.bottleneck.classifier[1].in_features, hidden_size_lstm)
-        self.lstm = nn.LSTM(input_size=hidden_size_lstm, hidden_size=hidden_size_lstm, num_layers=num_layers_lstm, batch_first = True)
-        self.fc_finetuning = nn.Linear(hidden_size_lstm, num_classes)
-        self.fc_lstm = nn.Linear(hidden_size_lstm, num_classes)
+        self.backbone = models.mobilenet_v2(pretrained=pretrained)
+        self.backbone.classifier[1] = Identity(self.backbone.classifier[1].in_features) # convert classifier to identity
+        self.lstm = nn.LSTM(input_size=self.backbone.classifier[1].out_features, hidden_size=hidden_size_lstm, num_layers=num_layers_lstm, batch_first = True, bidirectional=bidirectional)
+        self.fc_finetuning = nn.Linear(self.backbone.classifier[1].out_features, num_classes)
+        self.fc_lstm = nn.Linear(hidden_size_lstm + bidirectional * hidden_size_lstm, num_classes)
 
-    def freeze_bottleneck(self):
-        """ Freeze all parameters of bottleneck. """
-        for param in self.bottleneck.parameters():
+    def freeze_backbone(self):
+        """ Freeze all parameters of backbone. """
+        for param in self.backbone.parameters():
             param.requires_grad = False
         for param in self.fc_finetuning.parameters():
             param.requires_grad = False
 
-    def unfreeze_bottleneck(self):
-        """ Unfreeze all parameters of bottleneck. """
-        for param in self.bottleneck.parameters():
+    def unfreeze_backbone(self):
+        """ Unfreeze all parameters of backbone. """
+        for param in self.backbone.parameters():
             param.requires_grad = True
         for param in self.fc_finetuning.parameters():
             param.requires_grad = True
@@ -72,11 +82,13 @@ class HerniaModel(nn.Module):
         -------------
         input                : tensor of shape (temporal length, c, w, h) if skip_lstm is True else (batch_size, c, w, h)
         """
-        x = self.bottleneck(input) 
+        x = self.backbone(input) 
         if not self.skip_lstm:
             out, hidden = self.lstm(x[None, :], None) # None is because it expects a batch dim
-            x = nn.functional.relu(x)
+            x = nn.functional.relu(out[0])
             x = self.fc_lstm(x)     
         else:
             x = self.fc_finetuning(x)
         return x
+
+
