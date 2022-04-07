@@ -24,7 +24,7 @@ predictions_path = os.path.join(os.getcwd(), 'predictions')
 kaggle_template_path = os.path.join(os.getcwd(), 'predictions')
 
 # memorize number of classes
-num_classes = pd.read_pickle(labels_path).label.unique().size
+if os.path.exists(labels_path): num_classes = pd.read_pickle(labels_path).label.unique().size
 
 # setting device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -272,40 +272,6 @@ class HernitiaDataset(Dataset):
         if self.test_mode: return frame
         else: return frame, label
 
-def save_testing_df(dfs_path = dfs_path):
-    """
-    Description
-    -------------
-    Creates and saves testing dataframe ('videoname', 'frame') for kaggle prediction.
-
-    Parameters
-    -------------
-    dfs_path      : path where all dataframes for training are stored
-    """
-    if os.path.exists(dfs_path + '/testing.pkl'): return 'testing dataframe already in storage'
-
-    # list names of all videos in the test set
-    surgeon1_test_videonames = ['RALIHR_surgeon01_fps01_' + str(x).zfill(4) for x in range(71,126)]
-    surgeon2_test_videonames = ['RALIHR_surgeon02_fps01_' + str(x).zfill(4) for x in range(1,5)]
-    surgeon3_test_videonames = ['RALIHR_surgeon03_fps01_0001']
-    all_test_videonames = surgeon1_test_videonames + surgeon2_test_videonames + surgeon3_test_videonames
-
-    # generate df with all frames of these videos
-    videonames = []
-    frames = []
-    Ids = [] # id list for kaggle prediction
-    for videoname in all_test_videonames:
-        video_id = re.sub('[^0-9]', '',  videoname)
-        video_id = video_id[0:2].zfill(3) + '-' + video_id[-4:] + '-'
-        for frame in range(count_frames(videoname)):
-            videonames.append(videoname)
-            frames.append(frame)
-            Ids.append(video_id + str(frame + 1).zfill(5))
-    testing_df = pd.DataFrame({'videoname' : videonames, 'frame' : frames, 'Id': Ids})
-
-    # save df
-    testing_df.to_pickle(dfs_path + '/testing.pkl')
-
 def predict_kaggle(model, model_name, transform, weights_path = weights_path, predictions_path = predictions_path, 
                 kaggle_template_path = kaggle_template_path, batch_size = 128, predictions_name = 'kaggle_prediction'):
     """
@@ -354,7 +320,7 @@ def predict_kaggle(model, model_name, transform, weights_path = weights_path, pr
     model.eval()
 
     # create pytorch dataset
-    testing_dataset = HernitiaDataset(dfs_path + '/testing_lstm.pkl', transform, test_mode=True)
+    testing_dataset = HernitiaDataset(dfs_path + '/testing.pkl', transform, test_mode=True)
 
     # instantiate data loader
     testing_dataloader = DataLoader(dataset=testing_dataset, batch_size=batch_size, shuffle=False)
@@ -506,4 +472,3 @@ def evaluate_model(model, dataloader, criterion):
     epoch_acc = running_corrects.double() / num_true_examples
 
     print(f'Loss: {epoch_loss:.4f} Acc: {epoch_acc:.4f}')
-
