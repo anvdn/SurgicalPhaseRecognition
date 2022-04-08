@@ -226,7 +226,7 @@ def get_train_test_video_names(videos_path = videos_path, labels_path = labels_p
 class HernitiaDataset(Dataset):
     """Hernitia dataset defined by annotation df."""
 
-    def __init__(self, annotation_path, transform = None, test_mode = False, frame_idx_black_pad = 10000):
+    def __init__(self, annotation_path, return_ratio_frame_idx, transform = None, test_mode = False, frame_idx_black_pad = 10000):
         """
         Description
         -------------
@@ -234,16 +234,18 @@ class HernitiaDataset(Dataset):
 
         Parameters
         -------------
-        annotation_path     : path to annotation df
-        transform           : transforms to be applied to the frame (eg. data augmentation)
-        test_mode           : boolean, if true there are no label in the annotation df and in the output of __getitem__
-        frame_idx_white_pad : int, frame index in dataframes for which there is no image (padding),the output should be a black frame
+        annotation_path         : path to annotation df
+        return_ratio_frame_idx  : boolean, whether to return ratio frame number / max number of frame of the video as extra feature
+        transform               : transforms to be applied to the frame (eg. data augmentation)
+        test_mode               : boolean, if true there are no label in the annotation df and in the output of __getitem__
+        frame_idx_white_pad     : int, frame index in dataframes for which there is no image (padding),the output should be a black frame
 
         Returns
         -------------
         Torch Dataset for the training set
         """
         self.annotation = pd.read_pickle(annotation_path)
+        self.return_ratio_frame_idx = return_ratio_frame_idx
         self.transform = transform
         self.test_mode = test_mode
         self.num_classes = num_classes
@@ -256,23 +258,30 @@ class HernitiaDataset(Dataset):
         # recover frame info
         videoname = self.annotation.iloc[index]['videoname']
         frame_idx = self.annotation.iloc[index]['frame']
+        video_num_frames = self.annotation.iloc[index]['video_num_frames']
         if not self.test_mode: label = self.annotation.iloc[index]['label']
+
         if frame_idx == self.frame_idx_black_pad:
-            # frame should be black
-            frame = torch.zeros((3,224,224))
+                # frame should be black
+                frame = torch.zeros((3,224,224))
         else:
             # load frame
             frame_path = images_path + '/' + videoname + '/' + str(frame_idx) + '.jpg'
             frame = cv2.imread(frame_path)
-            
         # transform
-        if self.transform:
-            frame = self.transform(frame)
+            if self.transform:
+                frame = self.transform(frame)
 
-        if self.test_mode: return frame
-        else: return frame, label
+        # treat cases if or if not we should add the frame index ratio as extra feature
+        if self.return_ratio_frame_idx:
+            ratio_frame_idx = frame_idx / video_num_frames
+            if self.test_mode: return frame, ratio_frame_idx
+            else: return (frame, ratio_frame_idx), label
+        else:
+            if self.test_mode: return frame
+            else: return frame, label
 
-def predict_kaggle(model, model_name, transform, weights_path = weights_path, predictions_path = predictions_path, 
+def predict_kaggle(model, model_name, return_ratio_frame_idx, transform, weights_path = weights_path, predictions_path = predictions_path, 
                 kaggle_template_path = kaggle_template_path, batch_size = 128, predictions_name = 'kaggle_prediction'):
     """
     Description
@@ -281,14 +290,15 @@ def predict_kaggle(model, model_name, transform, weights_path = weights_path, pr
 
     Parameters
     -------------
-    model               : model
-    model_name          : name of the model from which to load the weights within weights/
-    transform           : transforms to be applied to the frame (eg. data augmentation)
-    weights_path        : path to model weights
-    predictions_path    : path to make predictions to
-    kaggle_template_path: path to the kaggle template for submissions
-    batch_size          : batch size to use to make predictions
-    predictions_name    : name of the csv file to which the predictions are saved
+    model                   : model
+    model_name              : name of the model from which to load the weights within weights/
+    return_ratio_frame_idx  : boolean, whether the dataset should return ratio frame number / max number of frame of the video as extra feature
+    transform               : transforms to be applied to the frame (eg. data augmentation)
+    weights_path            : path to model weights
+    predictions_path        : path to make predictions to
+    kaggle_template_path    : path to the kaggle template for submissions
+    batch_size              : batch size to use to make predictions
+    predictions_name        : name of the csv file to which the predictions are saved
     """
 
     if os.path.exists(predictions_path + '/' + predictions_name + '.csv'): return 'predictions already exist under this file name'
@@ -320,7 +330,7 @@ def predict_kaggle(model, model_name, transform, weights_path = weights_path, pr
     model.eval()
 
     # create pytorch dataset
-    testing_dataset = HernitiaDataset(dfs_path + '/testing.pkl', transform, test_mode=True)
+    testing_dataset = HernitiaDataset(dfs_path + '/testing.pkl', return_ratio_frame_idx, transform, test_mode=True)
 
     # instantiate data loader
     testing_dataloader = DataLoader(dataset=testing_dataset, batch_size=batch_size, shuffle=False)
@@ -332,12 +342,13 @@ def predict_kaggle(model, model_name, transform, weights_path = weights_path, pr
     Predicted = []
 
     # iterate over testing data to make predictions
-    for batch_idx, inputs in enumerate(Bar(testing_dataloader)):
+    for batch_idx, inputs in Bar(testing_dataloader):
         inputs = inputs.to(device)
         with torch.no_grad():
             outputs = model(inputs)
         _, preds = torch.max(outputs, 1)
         Predicted += preds.tolist()
+        
     
     # save predictions
     Predicted = [label_to_phase[prediction] for prediction in Predicted]
@@ -383,7 +394,10 @@ def train_model(model, model_name, dataloaders, criterion, optimizer, scheduler,
 
             # iterate over data
             for inputs, labels in Bar(dataloaders[phase]):
-                inputs = inputs.to(device)
+                if isinstance(inputs , list):
+                    inputs = [input.to(device) for input in inputs]
+                else:
+                    inputs = inputs.to(device)
                 labels = labels.to(device)
 
                 idx_true_images = (labels != -1)

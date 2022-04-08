@@ -169,3 +169,95 @@ class MobileNetFC(nn.Module):
             x = x[0]
         return x
 
+class MobileNetRatio(nn.Module):
+    """ Hernitia model where the input also comprises frame idx ratio. """
+
+    def __init__(self, model_name, num_classes, pretrained = True):
+        """
+        Description
+        -------------
+        Initialize Hernitia model
+
+        Parameters
+        -------------
+        model_name             : string, name of the model
+        num_classes            : int, number of classes
+        pretrained             : boolean, whether the backbone is pretrained
+        """
+        super(MobileNetRatio, self).__init__()
+
+        self.model_name = model_name
+        # build model
+        self.backbone = models.mobilenet_v2(pretrained=pretrained)
+        self.backbone.classifier[1] = Identity(self.backbone.classifier[1].in_features)
+        self.fc11 = nn.Linear(self.backbone.classifier[1].out_features, 256)
+        self.fc12 = nn.Linear(1, 64)
+        self.fc2 = nn.Linear(256 + 64, num_classes)
+
+    def freeze_backbone(self):
+        """ Freeze all parameters of backbone. """
+        for param in self.backbone.parameters():
+            param.requires_grad = False
+
+    def unfreeze_backbone(self):
+        """ Unfreeze all parameters of backbone. """
+        for param in self.backbone.parameters():
+            param.requires_grad = True
+
+    def freeze_fc11(self):
+        """ Freeze all parameters of fc11. """
+        for param in self.fc11.parameters():
+            param.requires_grad = False
+
+    def unfreeze_fc11(self):
+        """ Unfreeze all parameters of fc11. """
+        for param in self.fc11.parameters():
+            param.requires_grad = True
+
+    def freeze_fc12(self):
+        """ Freeze all parameters of fc12. """
+        for param in self.fc12.parameters():
+            param.requires_grad = False
+
+    def unfreeze_fc12(self):
+        """ Unfreeze all parameters of fc12. """
+        for param in self.fc12.parameters():
+            param.requires_grad = True
+
+    def freeze_fc2(self):
+        """ Freeze all parameters of fc2. """
+        for param in self.fc2.parameters():
+            param.requires_grad = False
+
+    def unfreeze_fc2(self):
+        """ Unfreeze all parameters of fc2. """
+        for param in self.fc2.parameters():
+            param.requires_grad = True
+
+    def forward(self, input):
+        """
+        Description
+        -------------
+        Forward pass
+
+        Parameters
+        -------------
+        input                : tuple (tensor : (batch_size, c, w, h), tensor (batch_size))
+        """
+        # frames treatment
+        x11 = self.backbone(input[0])
+        x11 = self.fc11(x11)
+        x11 = torch.nn.ReLU()(x11)
+
+        # ratio treatment
+        x12 = self.fc12(input[1][:, None].float())
+        x12 = torch.nn.ReLU()(x12)
+
+        # concat
+        x2 =  torch.cat([x11, x12], dim=1)
+
+        # through last linear layer
+        x = self.fc2(x2)
+
+        return x
+
