@@ -282,7 +282,7 @@ class HernitiaDataset(Dataset):
             else: return frame, label
 
 def predict_kaggle(model, model_name, return_ratio_frame_idx, transform, weights_path = weights_path, predictions_path = predictions_path, 
-                kaggle_template_path = kaggle_template_path, batch_size = 128, predictions_name = 'kaggle_prediction'):
+                kaggle_template_path = kaggle_template_path, batch_size = 64, predictions_name = 'kaggle_prediction'):
     """
     Description
     -------------
@@ -294,7 +294,7 @@ def predict_kaggle(model, model_name, return_ratio_frame_idx, transform, weights
     model_name              : name of the model from which to load the weights within weights/
     return_ratio_frame_idx  : boolean, whether the dataset should return ratio frame number / max number of frame of the video as extra feature
     transform               : transforms to be applied to the frame (eg. data augmentation)
-    weights_path            : path to model weights
+    weights_path            : path to model weights (folder)
     predictions_path        : path to make predictions to
     kaggle_template_path    : path to the kaggle template for submissions
     batch_size              : batch size to use to make predictions
@@ -342,8 +342,11 @@ def predict_kaggle(model, model_name, return_ratio_frame_idx, transform, weights
     Predicted = []
 
     # iterate over testing data to make predictions
-    for batch_idx, inputs in Bar(testing_dataloader):
-        inputs = inputs.to(device)
+    for inputs in Bar(testing_dataloader):
+        if isinstance(inputs , list):
+            inputs = [input.to(device) for input in inputs]
+        else:
+            inputs = inputs.to(device)
         with torch.no_grad():
             outputs = model(inputs)
         _, preds = torch.max(outputs, 1)
@@ -354,6 +357,10 @@ def predict_kaggle(model, model_name, return_ratio_frame_idx, transform, weights
     Predicted = [label_to_phase[prediction] for prediction in Predicted]
     predictions_df = pd.DataFrame({'Id' : Id, 'Predicted' : Predicted})
     predictions_df = pd.merge(predictions_df, kaggle_template_df['Id'], how='inner', on=['Id'])[['Id', 'Predicted']]
+    predictions_df['sort'] = (predictions_df['Id'].str[:-11] + predictions_df['Id'].str[-10:-6] + predictions_df['Id'].str[-5:]).astype(int)
+    # sort rows
+    predictions_df.sort_values(['sort'],inplace=True, ascending=True)
+    predictions_df = predictions_df.drop(['sort'], axis=1)
     predictions_df.to_csv(predictions_path + '/' + predictions_name + '.csv', index = False)
 
 def train_model(model, model_name, dataloaders, criterion, optimizer, scheduler, num_epochs):
@@ -466,7 +473,10 @@ def evaluate_model(model, dataloader, criterion):
 
     # iterate over data
     for inputs, labels in Bar(dataloader):
-        inputs = inputs.to(device)
+        if isinstance(inputs , list):
+            inputs = [input.to(device) for input in inputs]
+        else:
+            inputs = inputs.to(device)
         labels = labels.to(device)
 
         idx_true_images = (labels != -1)
@@ -486,3 +496,33 @@ def evaluate_model(model, dataloader, criterion):
     epoch_acc = running_corrects.double() / num_true_examples
 
     print(f'Loss: {epoch_loss:.4f} Acc: {epoch_acc:.4f}')
+
+
+def smooth_predictions(predictions_name, threshold = 6):
+    """
+    Description
+    -------------
+    Smoothes labels of prediction.
+
+    Parameters
+    -------------
+    predictions_name    : name of predictions within predictions/
+    threshold           : threshold to use for label smoothing out of 11 surrounding labels
+    """
+    # read original predictions file
+    preds = pd.read_csv(predictions_path + '/' + predictions_name + '.csv')
+    
+    labels = preds['Predicted'].tolist()
+    
+    for index in range(5, len(labels) - 5):
+        surrounding_labels = labels[index-5:index+6]
+        freqs = dict()
+        for label in surrounding_labels:
+            freqs[label] = freqs.get(label, 0) + 1
+        for key in freqs.keys():
+            if freqs[key] >= 6:
+                labels[index] = key
+            
+    preds['Predicted'] = labels
+    
+    preds.to_csv(predictions_path + '/' + predictions_name + '_smoothed.csv', index = False)
