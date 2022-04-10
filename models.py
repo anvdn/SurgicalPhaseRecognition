@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 from torchvision import models
 
-
 class Identity(nn.Module):
     def __init__(self, out_features):
         super(Identity, self).__init__()
@@ -11,15 +10,14 @@ class Identity(nn.Module):
     def forward(self, x):
         return x
 
-
 class MobileNet(nn.Module):
-    """ Hernitia model made of pretrained backbone mobilenet. """
+    """ Pretrained mobilenet_v2. """
 
-    def __init__(self, model_name, num_classes, pretrained = True):
+    def __init__(self, model_name, num_classes, pretrained):
         """
         Description
         -------------
-        Initialize Hernitia model
+        Initialize model
 
         Parameters
         -------------
@@ -45,17 +43,18 @@ class MobileNet(nn.Module):
         input                : tensor of shape (batch_size, c, w, h)
         """
         x = self.backbone(input) 
+        
         return x
 
 
 class MobileNetLSTM(nn.Module):
-    """ Hernitia model made of pretrained backbone mobilenet + lstm. """
+    """ Model made of pretrained backbone mobilenet_v2 + lstm. """
 
-    def __init__(self, model_name, num_classes, pretrained = True, num_layers_lstm = 1, bidirectional = False, hidden_size_lstm = 32, skip_lstm = False):
+    def __init__(self, model_name, num_classes, pretrained, num_layers_lstm = 1, bidirectional = False, hidden_size_lstm = 32, skip_lstm = False):
         """
         Description
         -------------
-        Initialize Hernitia model
+        Initialize model
 
         Parameters
         -------------
@@ -78,7 +77,7 @@ class MobileNetLSTM(nn.Module):
         self.backbone.classifier[1] = Identity(self.backbone.classifier[1].in_features) # convert classifier to identity
         self.lstm = nn.LSTM(input_size=self.backbone.classifier[1].out_features, hidden_size=hidden_size_lstm, num_layers=num_layers_lstm, batch_first = True, bidirectional=bidirectional)
         self.fc_finetuning = nn.Linear(self.backbone.classifier[1].out_features, num_classes)
-        self.fc_lstm = nn.Linear(hidden_size_lstm + bidirectional * hidden_size_lstm, num_classes)
+        self.fc_lstm = nn.Linear(hidden_size_lstm + bidirectional * hidden_size_lstm, num_classes) # output size is twice as large if lstm is bidirectional
 
     def freeze_backbone(self):
         """ Freeze all parameters of backbone. """
@@ -125,24 +124,25 @@ class MobileNetLSTM(nn.Module):
             x = self.fc_lstm(x)     
         else:
             x = self.fc_finetuning(x)
+
         return x
 
 
 class MobileNetFC(nn.Module):
-    """ Hernitia model made of pretrained backbone mobilenet + fc for temporal treatment. """
+    """ Model made of pretrained backbone mobilenet_v2 + fc for temporal treatment. """
 
-    def __init__(self, model_name, num_classes, pretrained = True, skip_temp_fc = False):
+    def __init__(self, model_name, num_classes, pretrained, skip_temp_fc):
         """
         Description
         -------------
-        Initialize Hernitia model
+        Initialize model
 
         Parameters
         -------------
         model_name             : string, name of the model
         num_classes            : int, number of classes
         pretrained             : boolean, whether the backbone is pretrained
-        skip_temp_fc             : whether to skip the lstm (for cnn finetuning)
+        skip_temp_fc           : whether to skip the fc for temporal treatment (for cnn finetuning)
         """
         super(MobileNetFC, self).__init__()
 
@@ -203,12 +203,14 @@ class MobileNetFC(nn.Module):
             x = self.temp_fc(x)  
             # remove batch dim
             x = x[0]
+
+
         return x
 
-class MobileNetRatio(nn.Module):
-    """ Hernitia model where the input also comprises frame idx ratio. """
+class MobileNetStage(nn.Module):
+    """ Model made of backbone mobilenet_v2 + parallel fc for stage treatment. """
 
-    def __init__(self, model_name, num_classes, pretrained = True):
+    def __init__(self, model_name, num_classes, pretrained, num_stages):
         """
         Description
         -------------
@@ -219,16 +221,17 @@ class MobileNetRatio(nn.Module):
         model_name             : string, name of the model
         num_classes            : int, number of classes
         pretrained             : boolean, whether the backbone is pretrained
+        num_stages             : int, number of stages for the operation to consider (e.g. if 20 stages, the operation duration is divided into 20 intervals)
         """
-        super(MobileNetRatio, self).__init__()
+        super(MobileNetStage, self).__init__()
 
         self.model_name = model_name
         # build model
         self.backbone = models.mobilenet_v2(pretrained=pretrained)
         self.backbone.classifier[1] = Identity(self.backbone.classifier[1].in_features)
-        self.fc11 = nn.Linear(self.backbone.classifier[1].out_features, 64)
-        self.fc12 = nn.Linear(50, 64)
-        self.fc2 = nn.Linear(64 + 64, num_classes)
+        self.fc11 = nn.Linear(self.backbone.classifier[1].out_features, 32)
+        self.fc12 = nn.Linear(num_stages, 32)
+        self.fc2 = nn.Linear(32 + 32, num_classes)
 
     def freeze_backbone(self):
         """ Freeze all parameters of backbone. """

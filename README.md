@@ -1,6 +1,6 @@
-# Phase detection in hernitia surgery
+# Phase detection in hernia surgery
 
-This project aims at classifying frames of hernitia surgery videos. The target labels are the phases of the operation and are listed below in alphabetical order.
+This project aims at classifying frames of hernia surgery videos. The target labels are the phases of the operation and are listed below in alphabetical order.
 
 | Label             | Corresponding phase       |
 | ----------------- | ----------- |
