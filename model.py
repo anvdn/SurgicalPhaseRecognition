@@ -12,6 +12,42 @@ class Identity(nn.Module):
         return x
 
 
+class MobileNet(nn.Module):
+    """ Hernitia model made of pretrained backbone mobilenet. """
+
+    def __init__(self, model_name, num_classes, pretrained = True):
+        """
+        Description
+        -------------
+        Initialize Hernitia model
+
+        Parameters
+        -------------
+        model_name             : string, name of the model
+        num_classes            : int, number of classes
+        pretrained             : boolean, whether the backbone is pretrained
+        """
+        super(MobileNet, self).__init__()
+
+        self.model_name = model_name
+        # build model
+        self.backbone = models.mobilenet_v2(pretrained=pretrained)
+        self.backbone.classifier[1] = nn.Linear(self.backbone.classifier[1].in_features, num_classes)
+
+    def forward(self, input):
+        """
+        Description
+        -------------
+        Forward pass
+
+        Parameters
+        -------------
+        input                : tensor of shape (batch_size, c, w, h)
+        """
+        x = self.backbone(input) 
+        return x
+
+
 class MobileNetLSTM(nn.Module):
     """ Hernitia model made of pretrained backbone mobilenet + lstm. """
 
@@ -190,9 +226,9 @@ class MobileNetRatio(nn.Module):
         # build model
         self.backbone = models.mobilenet_v2(pretrained=pretrained)
         self.backbone.classifier[1] = Identity(self.backbone.classifier[1].in_features)
-        self.fc11 = nn.Linear(self.backbone.classifier[1].out_features, 256)
-        self.fc12 = nn.Linear(1, 64)
-        self.fc2 = nn.Linear(256 + 64, num_classes)
+        self.fc11 = nn.Linear(self.backbone.classifier[1].out_features, 64)
+        self.fc12 = nn.Linear(50, 64)
+        self.fc2 = nn.Linear(64 + 64, num_classes)
 
     def freeze_backbone(self):
         """ Freeze all parameters of backbone. """
@@ -242,7 +278,7 @@ class MobileNetRatio(nn.Module):
 
         Parameters
         -------------
-        input                : tuple (tensor : (batch_size, c, w, h), tensor (batch_size))
+        input                : tuple (tensor : (batch_size, c, w, h), tensor (batch_size, 50))
         """
         # frames treatment
         x11 = self.backbone(input[0])
@@ -250,7 +286,7 @@ class MobileNetRatio(nn.Module):
         x11 = torch.nn.ReLU()(x11)
 
         # ratio treatment
-        x12 = self.fc12(input[1][:, None].float())
+        x12 = self.fc12(input[1])
         x12 = torch.nn.ReLU()(x12)
 
         # concat
