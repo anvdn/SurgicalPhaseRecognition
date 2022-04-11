@@ -8,6 +8,7 @@ import utils
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
+    parser.add_argument('--model', type=str)
     parser.add_argument('--lr', type=float, default=.005)
     parser.add_argument('--epochs', type=int, default=4)
     parser.add_argument('--batch_size', type=int, default=128)
@@ -18,20 +19,52 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # set model name
-    model_name = 'MobileNet_l' + str(args.lr) + '_e' + str(args.epochs) + '_g' + str(args.gamma) + '_s' + str(args.step_size) + '_os' + str(args.os)
+    model_name = args.model + '_l' + str(args.lr) + '_e' + str(args.epochs) + '_g' + str(args.gamma) + '_s' + str(args.step_size) + '_os' + str(args.os)
 
-    # set model parameters
-    model_parameters = (model_name, utils.num_classes, True, 20)
+    if args.model == 'MobileNet':
+        # set model parameters
+        model_parameters = (model_name, utils.num_classes, True)
+        # load model
+        model = models.MobileNet(*model_parameters).to(utils.device)
+        # create pytorch datasets
+        datasets = {x: utils.HerniaDataset(utils.dfs_path + '/' + x + '_no_temp' + ((x == 'training' and args.os == 1) * '_os') + '.pkl', 
+                is_stage_feature = False, transform = utils.data_transforms[x]) for x in ['training', 'validation']}
+        # instantiate data loaders
+        dataloaders = {x: utils.DataLoader(dataset=datasets[x], batch_size=args.batch_size, shuffle=True) for x in ['training', 'validation']}
 
-    # load model
-    model = models.MobileNetStage(*model_parameters).to(utils.device)
+    if args.model == 'MobileNetStage':
+        # set model parameters
+        model_parameters = (model_name, utils.num_classes, True, 20)
+        # load model
+        model = models.MobileNetStage(*model_parameters).to(utils.device)
+        # create pytorch datasets
+        datasets = {x: utils.HerniaDataset(utils.dfs_path + '/' + x + '_no_temp' + ((x == 'training' and args.os == 1) * '_os') + '.pkl', 
+                is_stage_feature = True, num_stages = 20, transform = utils.data_transforms[x]) for x in ['training', 'validation']}
+        # instantiate data loaders
+        dataloaders = {x: utils.DataLoader(dataset=datasets[x], batch_size=args.batch_size, shuffle=True) for x in ['training', 'validation']}
+    
+    if args.model == 'MobileNetFC':
+        # set model parameters
+        model_parameters = (model_name, utils.num_classes, True, False)
+        # load model
+        model = models.MobileNetFC(*model_parameters).to(utils.device)
+        # create pytorch datasets
+        datasets = {x: utils.HerniaDataset(utils.dfs_path + '/' + x + '_temp' + '.pkl', 
+                is_stage_feature = False, transform = utils.data_transforms[x]) for x in ['training', 'validation']}
+        # instantiate data loaders
+        dataloaders = {x: utils.DataLoader(dataset=datasets[x], batch_size=args.batch_size, shuffle=False) for x in ['training', 'validation']}
 
-    # create pytorch datasets
-    datasets = {x: utils.HerniaDataset(utils.dfs_path + '/' + x + '_no_temp' + ((x == 'training' and args.os == 1) * '_os') + '.pkl', is_stage_feature = True, num_stages = 20,
-                transform = utils.data_transforms[x]) for x in ['training', 'validation']}
-
-    # instantiate data loaders
-    dataloaders = {x: utils.DataLoader(dataset=datasets[x], batch_size=args.batch_size, shuffle=True) for x in ['training', 'validation']}
+    if args.model == 'MobileNetLSTM':
+        # set model parameters
+        model_parameters = (model_name, utils.num_classes, True, 1, False, 32, False)
+        # load model
+        model = models.MobileNetLSTM(*model_parameters).to(utils.device)
+        # create pytorch datasets
+        datasets = {x: utils.HerniaDataset(utils.dfs_path + '/' + x + '_temp' + '.pkl', 
+                is_stage_feature = False, transform = utils.data_transforms[x]) for x in ['training', 'validation']}
+        # instantiate data loaders
+        dataloaders = {x: utils.DataLoader(dataset=datasets[x], batch_size=args.batch_size, shuffle=False) for x in ['training', 'validation']}
+    
 
     # criterion is cross entropy loss
     criterion = nn.CrossEntropyLoss()

@@ -4,3 +4,4 @@ surgery.videos.hernia/
 labels/
 images/
 weights/
+*.log

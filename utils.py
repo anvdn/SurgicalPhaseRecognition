@@ -7,6 +7,7 @@ import os
 import pandas as pd
 import pickle
 import re
+from sklearn.metrics import f1_score
 import time
 import torch
 from torch.utils.data import Dataset, DataLoader
@@ -368,6 +369,9 @@ def train_model(model, model_name, dataloaders, criterion, optimizer, scheduler,
             running_corrects = 0
             num_true_examples = 0 # length of the dataset without the padded white images
 
+            outputs_f1 = []
+            targets_f1 = []
+
             # iterate over data
             for inputs, labels in Bar(dataloaders[phase]):
                 if isinstance(inputs , list):
@@ -394,16 +398,26 @@ def train_model(model, model_name, dataloaders, criterion, optimizer, scheduler,
                         loss.backward()
                         optimizer.step()
 
+                # store preds and ground truth for epoch f1 score computation
+                outputs_f1.append(preds[idx_true_images].cpu().detach().numpy())
+                targets_f1.append(labels[idx_true_images].cpu().detach().numpy())
+
                 # statistics
                 running_loss += loss.item() * idx_true_images.sum().item()
                 running_corrects += torch.sum(preds[idx_true_images] == labels.data[idx_true_images])
+
             if phase == 'training':
                 scheduler.step()
 
+            # compute epoch loss and acc
             epoch_loss = running_loss / num_true_examples
             epoch_acc = running_corrects.double() / num_true_examples
+            # compute epoch macro f1 score
+            outputs_f1 = np.concatenate(outputs_f1)
+            targets_f1 = np.concatenate(targets_f1)
+            epoch_f1 = f1_score(outputs_f1, targets_f1, average='macro')
 
-            print(f'{phase} Loss: {epoch_loss:.4f} Acc: {epoch_acc:.4f}')
+            print(f'{phase} Loss: {epoch_loss:.4f} Acc: {epoch_acc:.4f} F1: {epoch_f1:.4f}')
 
             # deep copy the model
             if phase == 'validation' and epoch_acc > best_acc:
@@ -427,7 +441,7 @@ def evaluate_model(model, dataloaders, criterion):
     """
     Description
     -------------
-    Compute validation loss and accuracy
+    Compute validation loss, accuracy and macro f1 score
 
     Parameters
     -------------
@@ -442,6 +456,9 @@ def evaluate_model(model, dataloaders, criterion):
     running_loss = 0.0
     running_corrects = 0
     num_true_examples = 0 # length of the dataset without the padded white images
+
+    outputs_f1 = []
+    targets_f1 = []
 
     # iterate over data
     for inputs, labels in Bar(dataloaders['validation']):
@@ -461,6 +478,10 @@ def evaluate_model(model, dataloaders, criterion):
             _, preds = torch.max(outputs, 1)
             loss = criterion(outputs[idx_true_images], labels[idx_true_images]) # don't take into account padded black images
 
+        # store preds and ground truth for epoch f1 score computation
+        outputs_f1.append(preds[idx_true_images].cpu().detach().numpy())
+        targets_f1.append(labels[idx_true_images].cpu().detach().numpy())
+
         # compute running loss and correct predictions
         running_loss += loss.item() * idx_true_images.sum().item()
         running_corrects += torch.sum(preds[idx_true_images] == labels.data[idx_true_images])
@@ -468,8 +489,12 @@ def evaluate_model(model, dataloaders, criterion):
     # compute epoch loss and accuracy
     epoch_loss = running_loss / num_true_examples
     epoch_acc = running_corrects.double() / num_true_examples
+    # compute epoch macro f1 score
+    outputs_f1 = np.concatenate(outputs_f1)
+    targets_f1 = np.concatenate(targets_f1)
+    epoch_f1 = f1_score(outputs_f1, targets_f1, average='macro')
 
-    print(f'Loss: {epoch_loss:.4f} Acc: {epoch_acc:.4f}')
+    print(f'Loss: {epoch_loss:.4f} Acc: {epoch_acc:.4f} F1: {epoch_f1:.4f}')
 
 
 def smooth_predictions(predictions_name, window_size = 11):
