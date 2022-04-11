@@ -1,0 +1,1 @@
+nohup python -u train-validate.py --model_name='mobilenet-test' > mobilenet-test.log &

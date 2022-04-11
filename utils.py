@@ -29,6 +29,26 @@ if os.path.exists(labels_path): num_classes = pd.read_pickle(labels_path).label.
 # setting device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
+# setting data transformation dictionary for training, validation and testing
+data_transforms = {
+    'training': T.Compose([
+        T.ToPILImage(),
+        T.RandomHorizontalFlip(),
+        T.ToTensor(),
+        T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+    ]),
+    'validation': T.Compose([
+        T.ToPILImage(),
+        T.ToTensor(),
+        T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+    ]),
+    'testing': T.Compose([
+        T.ToPILImage(),
+        T.ToTensor(),
+        T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+    ]),
+}
+
 def count_frames(videoname):
     """
     Description
@@ -224,7 +244,7 @@ class HerniaDataset(Dataset):
             if self.test_mode: return frame
             else: return frame, label
 
-def predict_kaggle(model, model_name, is_stage_feature, num_stages, transform = None, weights_path = weights_path, 
+def predict_kaggle(model, model_name, is_stage_feature, num_stages = 20, transform = data_transforms['testing'], weights_path = weights_path, 
         predictions_path = predictions_path, kaggle_template_path = kaggle_template_path, batch_size = 64, predictions_name = 'kaggle_prediction'):
     """
     Description
