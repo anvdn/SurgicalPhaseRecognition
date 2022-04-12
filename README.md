@@ -70,5 +70,5 @@ python split.ipynb # split into training and validation, oversample, ...
 | ---------------- | -------------------- | ------------------- |
 | MobileNet        | 0.8037               | 0.5545              |
 | MobileNetStage   | 0.7988               | 0.5239              |
-| MobileNetLSTM    | 0.7011               | 0.3265              |
 | MobileNetFC      | 0.7002               | 0.3124              |
+| MobileNetLSTM    | 0.7011               | 0.3265              |
