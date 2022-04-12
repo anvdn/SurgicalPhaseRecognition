@@ -26,3 +26,7 @@ Unwrap videos and save the resized frames (224 x 224 x 3).
 ```
 python videos-to-images.py
 ```
+
+## Models
+
+![models](./report/models.png)
