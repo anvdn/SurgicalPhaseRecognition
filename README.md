@@ -6,8 +6,8 @@ State-of-the-art CNN based architectures have
 been developed to automatically recognize surgical phases in a
 supervised learning fashion. This repo contains our work (team
 HAAV) on a dataset of 193 hernia surgery videos whose frames
-all belonged to one of 14 phases treated as labels. We exploited pretrained CNN architectures such
-as ResNet and MobileNet to serve as backbone of our models.
+all belong to one of 14 phases treated as labels. We exploited pretrained CNN architectures such
+as ResNet and MobileNet to serve as backbone to our models.
 We completed our architectures with LSTM (MobileNetLSTM)
 or linear layers (MobileNetFC) to model temporal correlation
 between frames and eventually added stage of the operation as
