@@ -4,3 +4,6 @@ surgery.videos.hernia/
 labels/
 images/
 *.log
+weights/.ipynb_checkpoints/
+dfs/.ipynb_checkpoints/
+predictions/.ipynb_checkpoints/
