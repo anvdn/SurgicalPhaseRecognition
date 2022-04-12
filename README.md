@@ -19,7 +19,7 @@ on the test set.
 ## Preprocessing
 
 ```
-python videos-to-images.py # converts videos to frames
+python videos-to-images.py # convert videos to frames
 python label.ipynb # create label dataframe
 python split.ipynb # split into training and validation, oversample, ...
 ```
