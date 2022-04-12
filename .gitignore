@@ -3,5 +3,4 @@ __pycache__/
 surgery.videos.hernia/
 labels/
 images/
-weights/
 *.log
